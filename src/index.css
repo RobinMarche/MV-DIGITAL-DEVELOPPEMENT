@@ -138,3 +138,25 @@ body{
 #font-menu{
     font-family: 'Bowlby One SC', sans-serif;
 }
+
+
+#carousel{
+    background-image: url("./assets/peinture2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#contact{
+    background-image: url("./assets/bgcontact.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1020px) {
+    #contact {
+        background-color: white;
+        background-image: none;
+    }
+
+    
+}

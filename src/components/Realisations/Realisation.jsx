@@ -20,6 +20,7 @@ function Realisations() {
             imagen={fromagerie} 
             title={"La Fromagerie d'Ema"}
             description={"Site E-Commerce de Click & Collect pour la Fromagerie d'Ema, situé à Dole dans le Jura"}
+            link={"https://www.lafromageriedema.fr"}
         />
       )
     },
@@ -29,7 +30,9 @@ function Realisations() {
         <Card 
             imagen={logiworks} 
             title={"Logiworks"}
-            description={"Site de service d'emploi spécialisé dans le recrutement des métiers du transport et de la logistique"}/>
+            description={"Site de service d'emploi spécialisé dans le recrutement des métiers du transport et de la logistique"}
+            link={"https://www.logiworks.fr"}
+        />
       )
     },
     {
@@ -39,6 +42,7 @@ function Realisations() {
             imagen={asphalteater} 
             title={"Asphalt Eater"}
             description={"Site E-Commerce pour la vente de prestation automobile sur circuit et sur route ouverte"}
+            link={"https://www.asphalt-eater.fr"}
         />
       )
     },
@@ -49,6 +53,7 @@ function Realisations() {
             imagen={pronotistik} 
             title={"Pronotistik"}
             description={"Site E-Commerce basé sur un système d'abonnement afin d'avoir accès à différentes fonctionnalités centrées sur les paris sportifs"}
+            link={"https://www.pronotistik.fr"}
         />
       )
     },
@@ -59,15 +64,16 @@ function Realisations() {
             imagen={coachsportif} 
             title={"Franck Marche - Coach Sportif"}
             description={"Site vitrine pour un coach sportif, présentant ses différentes prestations"}
+            link={"https://franck-marche-coach.vercel.app"}
         />
       )
     }
   ];
   return (
-    <div className=" mt-24">
-        <h1 className="uppercase text-3xl text-center">Nos dernieres Réalisations</h1>
+    <div className="mt-[-10px] pt-24" id="carousel">
+        <h1 className="uppercase text-3xl text-center text-white">Nos dernieres creations web</h1>
         <div className='mb-16 lg:mb-36 flex justify-center items-center mt-2'>
-            <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+            <div className='bg-white w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
         </div>
       <Carousel
         cards={cards}

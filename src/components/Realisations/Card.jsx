@@ -2,8 +2,9 @@ import Styles from "./Card.module.css";
 import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
-function Card({ imagen, title, description }) {
+function Card({ imagen, title, description, link }) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -25,7 +26,9 @@ function Card({ imagen, title, description }) {
         {description}
       </p>
       <div className={Styles.btnn}>
-        <Button text="Visiter" />
+        <Link to={link} target="_blank">
+          <Button text="Visiter" />
+        </Link>
       </div>
     </animated.div>
   );

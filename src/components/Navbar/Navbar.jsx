@@ -7,6 +7,7 @@ import xWhite from '../../assets/xcircle.png';
 import phoneWhite from '../../assets/phoneWhite.png';
 import { useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -41,7 +42,9 @@ export default function Navbar() {
                     {showMenu ? <img src={xWhite} alt="close-menu" /> : <img src={menu} alt="menu-burger" />}
                 </div>
                 <div>
-                    <p className='text-xl' id='title-navbar'>M&V</p>
+                    <Link to="/">
+                        <p className='text-xl' id='title-navbar'>M&V</p>
+                    </Link>
                 </div>
                 <div>
                     {showMenu ? <img src={phoneWhite} alt="phone" /> : <img src={phone} alt="phone" />}
@@ -87,7 +90,9 @@ export default function Navbar() {
                         {showMenu ? <img src={xcircle} alt="close-menu" className='xl:w-[1.7vw]'/> : <img src={menu} alt="menu-burger" className='xl:w-[1.7vw]'/>}
                     </div>
                     <div>
-                        <img src={logo} alt="logo" className='w-[10vw]'/>
+                        <Link to="/">
+                            <img src={logo} alt="logo" className='w-[10vw]'/>
+                        </Link>
                     </div>
                     <div className='flex text-white p-2 rounded-xl items-center'>
 

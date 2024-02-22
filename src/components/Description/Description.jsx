@@ -10,7 +10,7 @@ export default function Description() {
                 <div className='lg:w-1/3 fade-right'>
                     <h1 className='text-3xl uppercase text-center lg:text-start mt-8'>Agence de communication</h1>
                     <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
-                        <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[35vw] 2xl:w-[8vw]'></div>
+                        <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                     </div>
                     <p className='text-center lg:text-start'>
                         M&V Digital Developpement allie créativité et technicité pour créer, cultiver et accompagner les marques vers le succès. <br /><br />
