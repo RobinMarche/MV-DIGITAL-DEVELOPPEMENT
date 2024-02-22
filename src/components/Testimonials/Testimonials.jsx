@@ -1,6 +1,6 @@
 import Ema from "../../assets/LogoEma_cmjn.jpg"
 import logoAsphalt from "../../assets/logo_svg.png"
-import LogoLogiworks from "../../assets/logoLogiworks.ico"
+import LogoLogiworks from "../../assets/faviconLogo.png"
 
 export default function Testimonials() {
     return (
