@@ -2,6 +2,7 @@ import separation from '../../assets/sep2.png';
 import web from '../../assets/web-browser.gif';
 import newspaper from '../../assets/newspaper.gif';
 import society from '../../assets/society.gif';
+import checked from '../../assets/check.png';
 
 export default function Services() {
     return (
@@ -32,12 +33,37 @@ export default function Services() {
                     <div className="space-y-6">
                       <h3 className="text-2xl font-semibold text-gray-800 transition text-6xl" id='finesse'>
                         Web
-                      </h3>
-                      <p className="text-gray-900 text-start">
-                      C&apos;est ici que prennent vie les vitrines digitales qui captivent, charment et transforment. Le design web devient l&apos;art subtil de fusionner esthétisme et performance, créant des expériences en ligne qui marquent les esprits. Que ce soit pour donner vie à votre site internet ou façonner le webdesign d&apos;une application, notre savoir-faire vous ouvre les portes d&apos;une réussite digitale distinctive.
-                      </p>  
-                      <p>- Sites Vitrines / E-Commerce</p>
-                      <p>- SEO</p>             
+                      </h3> 
+                      <div className='text-start'>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Création de votre site Vitrine</p>
+                        </div>
+                        <div className='flex items-center my-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Création de votre boutique en ligne</p>
+                        </div>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Mise en avant de votre marque sur les navigateurs (Référencement SEO)</p>
+                        </div>
+                        <div className='flex items-center my-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Optimisation de la vitesse du site et expérience utilisateur (UX)</p>
+                        </div>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Refonte de site Internet existant</p>
+                        </div>
+                        <div className='flex items-center my-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Analyse et Rapports de Performance</p>
+                        </div>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Sécurité Web optimale</p>
+                        </div>                        
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -54,9 +80,28 @@ export default function Services() {
                       <h3 className="text-2xl font-semibold text-gray-800 transition text-6xl"  id='finesse'>
                         Print
                       </h3>
-                      <p className="text-gray-900 text-start">
-                      Brochures, dépliants, flyers, affiches ou cartes de visite, ces ambassadeurs matériels propagent l&apos;essence de votre marque dans le monde tangible. Ils captent le regard, communiquent des informations et laissent une empreinte inoubliable. Le design graphique devient l&apos;art influent de susciter l&apos;attention, d&apos;informer et d&apos;inspirer à l&apos;action.
-                      </p>
+                      <div className='text-start'>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Brochures</p>
+                        </div>
+                        <div className='flex items-center my-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Dépliants</p>
+                        </div>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Flyers</p>
+                        </div>
+                        <div className='flex items-center my-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Affiches</p>
+                        </div>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Cartes de visite</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -73,9 +118,24 @@ export default function Services() {
                       <h3 className="text-2xl font-semibold text-gray-800 transition text-6xl"  id='finesse'>
                         Community Management
                       </h3>
-                      <p className="text-gray-900 text-start">
-                      Nous étendons notre expertise au-delà du tangible pour offrir également une gestion communautaire dynamique. Le community management devient ainsi un pilier essentiel de notre approche, permettant à votre marque de rayonner non seulement dans le monde matériel, mais aussi au cœur des communautés virtuelles, créant ainsi une empreinte inoubliable à chaque interaction.
-                      </p>
+                      <div className='text-start'>
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Gestion des Réseaux Sociaux</p>
+                        </div> 
+                        <div className='flex items-center my-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Marketing de Contenu</p>
+                        </div> 
+                        <div className='flex items-center'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Publicité en Ligne</p>
+                        </div> 
+                        <div className='flex items-center mt-4'>
+                          <img src={checked} alt="checked" className='mr-2'/> 
+                          <p>Email Marketing</p>
+                        </div> 
+                      </div>
                     </div>
                   </div>
                 </div>

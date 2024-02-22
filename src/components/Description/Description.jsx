@@ -8,7 +8,7 @@ export default function Description() {
                     <img src={logo} alt="logo" />
                 </div>
                 <div className='lg:w-1/3 fade-right'>
-                    <h1 className='text-3xl uppercase text-center lg:text-start mt-8'>Agence de communication</h1>
+                    <h1 className='text-3xl uppercase text-center lg:text-start mt-8'>Agence de Développement Web et Marketing digital</h1>
                     <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
                         <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                     </div>
