@@ -6,8 +6,8 @@ export default function Testimonials() {
     return (
 
         <div className="py-16">
-        <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-          <h2 className="mb-2 text-center text-3xl text-gray-800 md:text-4xl uppercase">
+        <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-0">
+          <h2 className="mb-2 text-3xl text-gray-800 uppercase text-center">
             Ce qu&apos;en disent nos clients
           </h2>
 

@@ -53,7 +53,7 @@ function Realisations() {
             imagen={pronotistik} 
             title={"Pronotistik"}
             description={"Site E-Commerce basé sur un système d'abonnement afin d'avoir accès à différentes fonctionnalités centrées sur les paris sportifs"}
-            link={"https://www.pronotistik.fr"}
+            link={"https://www.pronotistik.com"}
         />
       )
     },
@@ -70,7 +70,7 @@ function Realisations() {
     }
   ];
   return (
-    <div className="mt-[-10px] pt-24" id="carousel">
+    <div className="mt-[-10px] pt-12 px-12" id="carousel">
         <h1 className="uppercase text-3xl text-center text-white">Nos dernieres creations web</h1>
         <div className='mb-16 lg:mb-36 flex justify-center items-center mt-2'>
             <div className='bg-white w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>

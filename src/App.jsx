@@ -6,6 +6,10 @@ import Realisations from "./components/Realisations/Realisation"
 import ContactHomepage from "./components/ContactHomepage/ContactHomepage"
 import Testimonials from "./components/Testimonials/Testimonials"
 import Footer from "./components/Footer/Footer"
+import HeroOtherPage from "./components/Hero/HeroOtherPage"
+import Timeline from "./components/Equipe/Timeline"
+
+import Equipe from "./components/Equipe/Equipe"
 
 import { Route, Routes } from "react-router-dom"
 
@@ -28,7 +32,22 @@ function App() {
               <Testimonials />
               <Footer />
             </>
-          } />
+          } 
+        />
+
+        <Route
+          path="/equipe"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Notre Equipe"}/>
+              <Equipe/>
+              <Timeline/>
+              <Footer/>
+            </>
+          }
+        />
+        
       </Routes>
     </>
   )

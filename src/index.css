@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+/********************************* ANIMATION MENU DEROULANT MOBILE *************************************/
+
 .menu-enter {
     transform: translateY(150%);
 }
@@ -21,7 +23,7 @@
     transition: transform 1s ease-in-out;
 }
 
-/**************************************************************************/
+/******************************** ANIMATION MENU DEROULANT DESKTOP ******************************************/
 
 .desktop-enter {
     transform: translateX(150%);
@@ -43,25 +45,6 @@
 
 /**************************************************************************/
 
-.transition-bg {
-    transition: background-color 1s ease, color 1s ease; /* 1s est la durée de la transition, vous pouvez ajuster selon vos préférences *//* 1s est la durée de la transition, vous pouvez ajuster selon vos préférences */
-}
-
-#hero{
-    background-image: url('./assets/hero3.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-
-body{
-    font-family: 'Quicksand';
-}
-
-#root{
-    box-shadow: 10px 10px 20px black;
-}
-
 @media (max-width: 1020px) {
     body {
         padding: 0;
@@ -74,9 +57,23 @@ body{
 }
 
 
+/******************************** ANIMATION HERO ******************************************/
+
 .fade-in {
     opacity: 0;
     transform: translateY(-20px);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.fade-in2 {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.fade-in3 {
+    opacity: 0;
+    transform: translateY(100%);
     animation: fadeInUp 1s ease-out forwards;
 }
 
@@ -87,32 +84,41 @@ body{
     }
 }
 
-@keyframes slideInFromLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
+@keyframes fadeInUp2 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
+}
+
+@keyframes fadeInUp3 {
+    to {
+        opacity: 0.5;
+        transform: translateY(0);
     }
-  }
-  
-  .web-section {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: slideInFromLeft 1s ease-out forwards;
-  }
+}
+
+/******************************** FONT FAMILY ******************************************/
+
 
 #finesse{
     font-family: "Tangerine", cursive;
 }
 
+#font-menu{
+    font-family: 'Bowlby One SC', sans-serif;
+}
+
+body{
+    font-family: 'Quicksand';
+}
+
+/******************************** ANIMATION DESCRIPTION ******************************************/
 
 .fade-left {
     opacity: 0;
     transform: translateX(-100px);
-    animation: fadeInleft 3s ease-out forwards;
+    animation: fadeInleft 2s ease-out forwards;
 }
 
 @keyframes fadeInleft {
@@ -135,9 +141,7 @@ body{
     }
 }
 
-#font-menu{
-    font-family: 'Bowlby One SC', sans-serif;
-}
+/******************************** BACKGROUND ******************************************/
 
 
 #carousel{
@@ -146,17 +150,157 @@ body{
     background-size: cover;
 }
 
-#contact{
-    background-image: url("./assets/bgcontact.png");
+#hero{
+    background-image: url('./assets/hero3.jpg');
     background-position: center;
     background-size: cover;
 }
 
-@media (max-width: 1020px) {
-    #contact {
-        background-color: white;
-        background-image: none;
-    }
+#root{
+    box-shadow: 10px 10px 20px black;
+}
 
-    
+#parcours{
+    background-image: url('./assets/pexels-katerina-holmes-5905710.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.transition-bg {
+    transition: background-color 1s ease, color 1s ease; /* 1s est la durée de la transition, vous pouvez ajuster selon vos préférences *//* 1s est la durée de la transition, vous pouvez ajuster selon vos préférences */
+}
+
+
+
+/******************************** ANIMATION NOS SERVICES HOMEPAGE ******************************************/
+
+/******************* ENTREE *******************/
+  
+.slideInRight {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slideInRight2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slideInRight3 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/******************* SORTIE *******************/
+
+.slideOffRight1 {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.slideOffRight2 {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.slideOffRight3 {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+/************* ANIMATION ENTREE ***************/
+
+.slideInRight {
+    animation: slideInRightAnimation 1s ease-out;
+  }
+
+.slideInRight2 {
+    animation: slideInRightAnimation2 1s ease-out;
+}
+
+.slideInRight3 {
+    animation: slideInRightAnimation3 1s ease-out;
+}
+
+/************* ANIMATION SORTIE ***************/
+
+.slideOffRight1 {
+    animation: slideoffRightAnimation1 1s ease-out;
+}
+
+.slideOffRight2 {
+    animation: slideoffRightAnimation2 1s ease-out;
+}
+
+.slideOffRight3 {
+    animation: slideoffRightAnimation3 1s ease-out;
+}
+
+/************* ANIMATION KEYFRAMES ***************/
+  
+@keyframes slideInRightAnimation {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInRightAnimation2 {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInRightAnimation3 {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideoffRightAnimation3 {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+}
+
+@keyframes slideoffRightAnimation2 {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+}
+
+@keyframes slideoffRightAnimation1 {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
 }

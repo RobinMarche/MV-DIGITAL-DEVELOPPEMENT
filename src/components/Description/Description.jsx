@@ -1,6 +1,25 @@
 import logo from '../../assets/logo.png';
+import { useState, useEffect } from 'react';
 
 export default function Description() {
+
+
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollY(window.scrollY || window.pageYOffset);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+
+
     return(
         <>
             <div className='flex flex-col items-center p-8 lg:p-16 lg:flex-row'>
@@ -12,7 +31,7 @@ export default function Description() {
                     <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
                         <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                     </div>
-                    <p className='text-center lg:text-start'>
+                    <p className={`text-center lg:text-start ${scrollY > 150 ? 'fade-in3' : 'slideOffRight2'}`}>
                         M&V Digital Developpement allie créativité et technicité pour créer, cultiver et accompagner les marques vers le succès. <br /><br />
 
                         Du graphisme au développement web & mobile, en passant par le community management et le packaging, nos différents domaines d&apos;expertise nous permettent de vous proposer un panel de services à 360° pour affiner votre stratégie.</p>

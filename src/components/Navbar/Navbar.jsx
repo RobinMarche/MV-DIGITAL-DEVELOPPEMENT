@@ -59,8 +59,13 @@ export default function Navbar() {
                 >
                 <div className="menu-container bg-[#022a60] pb-24 min-h-screen absolute w-full lg:w-1/2 top-14 right-0">
                     <ul className='text-white text-center text-[300%] uppercase flex flex-col font-bold lg:text-start lg:pl-24 lg:text-[600%]' id='font-menu'>
-                            <li className='text-container mt-4 mb-4'>Accueil</li>
-                            <li className='text-container mb-4'>Equipe</li>
+                            <Link to="/" onClick={handleMenu}>
+                                <li className='text-container mt-4 mb-4'>Accueil</li>
+                            </Link>
+
+                            <Link to="/equipe" onClick={handleMenu}>
+                                <li className='text-container mb-4'>Equipe</li>
+                            </Link>
                             <li className='text-container mb-4'>Services</li>
                             <li className='text-container mb-4'>Projets</li>
                             <li className='text-container mb-4'>Contact</li>
@@ -91,7 +96,7 @@ export default function Navbar() {
                     </div>
                     <div>
                         <Link to="/">
-                            <img src={logo} alt="logo" className='w-[10vw]'/>
+                            <img src={logo} alt="logo" className={`${scrollBackground ? 'w-[5vw]' : 'w-[10vw]'}`}/>
                         </Link>
                     </div>
                     <div className='flex text-white p-2 rounded-xl items-center'>
@@ -108,8 +113,13 @@ export default function Navbar() {
                 <div className="desktop-container bg-[#022a60] pb-24 min-h-screen absolute lg:w-2/3 top-0 right-0 shadow-2xl flex flex-col">
                     <ul className='text-white text-end text-[400%] uppercase flex flex-col font-bold lg:text-start lg:pl-24 lg:text-[400%]' id='font-menu'>
                         <img src={logoWhite} alt="logo" className='w-[15vw] py-12'/>
-                        <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Accueil</li>       
-                        <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Equipe</li>
+                        <Link to="/" onClick={handleMenu}>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Accueil</li>       
+                        </Link>
+
+                        <Link to="/equipe" onClick={handleMenu}>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Equipe</li>
+                        </Link>
                         <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Services</li>
                         <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Projets</li>
                         <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Contact</li>
