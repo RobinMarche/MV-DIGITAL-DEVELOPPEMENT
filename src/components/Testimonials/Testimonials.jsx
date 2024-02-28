@@ -1,18 +1,36 @@
 import Ema from "../../assets/LogoEma_cmjn.jpg"
 import logoAsphalt from "../../assets/logo_svg.png"
 import LogoLogiworks from "../../assets/faviconLogo.png"
+import { useState, useEffect } from 'react';
 
 export default function Testimonials() {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY || window.pageYOffset);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
     return (
 
-        <div className="py-16">
-        <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-0">
-          <h2 className="mb-2 text-3xl text-gray-800 uppercase text-center">
-            Ce qu&apos;en disent nos clients
-          </h2>
-
-          <div className="flex items-center justify-center">
-            <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw] mt-2 mb-16'></div>
+        <div className="pb-16">
+        <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-0 flex flex-col justify-center items-center">
+          <div className="px-4 flex flex-col items-center justify-center lg:w-1/2 pb-10 m-4" id='contact'>
+            <div>
+              <h1 className={`text-3xl uppercase text-center lg:text-start ${scrollY > 3100 ? 'fade-in' : 'slideOffRight2'}`}>Ce que disent nos clients</h1>
+              <div className={`my-8 flex justify-center items-center lg:block lg:mt-2 ${scrollY > 3100 ? 'slideInRight3' : 'slideOffRight3'}`}>
+                <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-8 md:grid-rows-2 lg:grid-cols-2">

@@ -29,11 +29,14 @@ export default function Services() {
             <img src={separation} alt="" />
           </div>
           <div className="py-16 bg-[#022a60]">
-            <div className="xl:container m-auto space-y-12 px-6 md:px-12 lg:px-20 ">
-              <div className='mb-24 flex justify-center items-center'>
-                <h2 className="mt-4 text-center text-3xl text-white uppercase">
-                  Notre éventail de compétences
-                </h2>
+            <div className="xl:container m-auto space-y-12 px-6 md:px-12 lg:px-20 flex flex-col justify-center items-center">
+              <div className={`px-4 flex flex-col items-center justify-center lg:w-1/2 pb-10 m-4 ${scrollY > 600 ? 'fade-in' : 'slideOffRight2'}`} id='contact'>
+                <div className="mb-12">
+                  <h1 className="text-3xl uppercase text-center lg:text-start text-white">Notre eventail de compétences</h1>
+                  <div className={`my-8 flex justify-center items-center lg:block lg:mt-2 ${scrollY > 600 ? 'slideInRight3' : 'slideOffRight3'}`}>
+                    <div className='bg-white w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+                  </div>
+                </div>
               </div>
               <div className="mt-16 grid gap-8 sm:w-2/3 sm:mx-auto md:w-full md:grid-cols-2 lg:grid-cols-3">
                 <div className={`p-8 py-12 sm:p-12 bg-white rounded-xl web-section ${scrollY > 700 ? 'slideInRight' : 'slideOffRight1'}`}>

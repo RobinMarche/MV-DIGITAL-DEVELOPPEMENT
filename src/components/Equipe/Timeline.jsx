@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 export default function Timeline() {
     return (
         <>
-        <div className='mt-12 bg-red-200' id='parcours'>
+        <div className='mt-12'>
 
             <h1 className='uppercase text-3xl text-center mb-12 pt-20 text-white'>Notre parcours</h1>
 

@@ -7,7 +7,10 @@ import ContactHomepage from "./components/ContactHomepage/ContactHomepage"
 import Testimonials from "./components/Testimonials/Testimonials"
 import Footer from "./components/Footer/Footer"
 import HeroOtherPage from "./components/Hero/HeroOtherPage"
-import Timeline from "./components/Equipe/Timeline"
+import PageServices from "./components/PageServices/PageServices"
+import Projets from "./components/Projets/Projets"
+import RealisationPage from "./components/Realisations/RealisationPage"
+import ContactPage from "./components/ContactHomepage/ContactPage"
 
 import Equipe from "./components/Equipe/Equipe"
 
@@ -42,7 +45,42 @@ function App() {
               <Navbar />
               <HeroOtherPage title={"Notre Equipe"}/>
               <Equipe/>
-              <Timeline/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/services"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Nos Services"}/>
+              <PageServices/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/projets"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Nos Projets"}/>
+              <RealisationPage/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Contactez-nous"}/>
+              <ContactPage />
               <Footer/>
             </>
           }

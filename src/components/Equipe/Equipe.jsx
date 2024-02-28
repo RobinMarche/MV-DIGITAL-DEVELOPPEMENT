@@ -29,12 +29,12 @@ export default function Equipe() {
 
             <div className='lg:flex justify-start items-start'>
                 <div className={`flex justify-center flex-col items-center ${scrollY > 10 ? 'slideInRight' : 'slideOffRight1'}`}>
-                    <img src={thomas} alt="thomas" className='w-1/2 xl:h-[50vh] lg:h-[40vh] rounded-full'/>
+                    <img src={thomas} alt="thomas" className='w-1/2 xl:h-[52vh] lg:h-[40vh] rounded-full'/>
                     <p className='text-xl my-12'>Thomas Vannier</p>
                     <p className='text-center px-4 lg:px-24'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dolores excepturi inventore, blanditiis expedita tempora quia quisquam omnis mollitia quas, error ipsam iste! Dolorum ullam dolore minus rerum quibusdam, eius repudiandae, accusamus nam molestias quod eligendi rem eos aut error iure non aperiam voluptates nostrum veritatis dignissimos necessitatibus ipsum sit.</p>
                 </div>
                 <div className={`flex justify-center flex-col items-center mt-8 lg:mt-0 ${scrollY > 10 ? 'slideInRight3' : 'slideOffRight3'}`}>
-                    <img src={robin} alt="thomas" className='w-1/2 xl:h-[50vh] lg:h-[40vh] rounded-full'/>
+                    <img src={robin} alt="thomas" className='w-1/2 xl:h-[52vh] lg:h-[40vh] rounded-full'/>
                     <p className='text-xl my-12'>Robin Marche</p>
                     <p className='text-center px-4 lg:px-24'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dolores excepturi inventore, blanditiis expedita tempora quia quisquam omnis mollitia quas, error ipsam iste! Dolorum ullam dolore minus rerum quibusdam, eius repudiandae, accusamus nam molestias quod eligendi rem eos aut error iure non aperiam voluptates nostrum veritatis dignissimos necessitatibus ipsum sit.</p>
                 </div>

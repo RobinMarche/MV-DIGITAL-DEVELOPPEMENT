@@ -1,6 +1,6 @@
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
-import Card from "./Card";
+import Card from "./CardPage";
 import Carousel from "./Carousel";
 
 import fromagerie from "../../assets/fromagerie-ema.png";
@@ -10,7 +10,7 @@ import logiworks from "../../assets/logiworks.png";
 import coachsportif from "../../assets/coachsportif.png";
 import { useState, useEffect } from 'react';
 
-function Realisations() {
+function RealisationPage() {
 
 
   const [scrollY, setScrollY] = useState(0);
@@ -86,7 +86,7 @@ function Realisations() {
     }
   ];
   return (
-    <div className="mt-[-10px] pt-12 px-12 flex flex-col justify-center items-center" id="carousel">
+    <div className="mt-[-10px] pt-12 px-12 flex flex-col justify-center items-center">
       <div className={`px-4 flex flex-col items-center justify-center lg:w-1/2 pb-10 m-4 ${scrollY > 1500 ? 'fade-in' : 'slideOffRight2'}`} id='contact'>
         <div className="mb-12">
           <h1 className="text-3xl uppercase text-center lg:text-start text-white">Nos dernieres realisations web</h1>
@@ -98,7 +98,7 @@ function Realisations() {
       <Carousel
         cards={cards}
         height="500px"
-        width="35%"
+        width="45%"
         margin="0 auto"
         offset={2}
         showArrows={false}
@@ -107,4 +107,4 @@ function Realisations() {
   );
 }
 
-export default Realisations;
+export default RealisationPage;

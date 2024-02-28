@@ -66,9 +66,15 @@ export default function Navbar() {
                             <Link to="/equipe" onClick={handleMenu}>
                                 <li className='text-container mb-4'>Equipe</li>
                             </Link>
-                            <li className='text-container mb-4'>Services</li>
-                            <li className='text-container mb-4'>Projets</li>
-                            <li className='text-container mb-4'>Contact</li>
+                            <Link to="/services" onClick={handleMenu}>
+                                <li className='text-container mb-4'>Services</li>
+                            </Link>
+                            <Link to="/projets" onClick={handleMenu}>
+                                <li className='text-container mb-4'>Projets</li>
+                            </Link>
+                            <Link to="/contact" onClick={handleMenu}>
+                                <li className='text-container mb-4'>Contact</li>
+                            </Link>
                     </ul>
                     <footer className="footer pt-10 bg-[#022a60] text-neutral-content flex justify-around items-center">
                         <aside>
@@ -120,9 +126,15 @@ export default function Navbar() {
                         <Link to="/equipe" onClick={handleMenu}>
                             <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Equipe</li>
                         </Link>
-                        <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Services</li>
-                        <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Projets</li>
-                        <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Contact</li>
+                        <Link to="/services" onClick={handleMenu}>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Services</li>
+                        </Link>
+                        <Link to="/projets" onClick={handleMenu}>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Projets</li>
+                        </Link>
+                        <Link to="/contact" onClick={handleMenu}>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Contact</li>
+                        </Link>
                     </ul>
 
                     <footer className="footer pt-10 bg-[#022a60] text-neutral-content pl-24 2xl:pt-18">

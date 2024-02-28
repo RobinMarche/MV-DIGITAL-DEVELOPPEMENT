@@ -111,8 +111,12 @@
 
 body{
     font-family: 'Quicksand';
+    overflow-x: hidden;
 }
 
+#root{
+    overflow-x: hidden;
+}
 /******************************** ANIMATION DESCRIPTION ******************************************/
 
 .fade-left {
@@ -304,3 +308,6 @@ body{
       opacity: 0;
     }
 }
+
+/******************************** ANIMATION NOS SERVICES PAGE SERVICES ******************************************/
+
