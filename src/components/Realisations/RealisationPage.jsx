@@ -86,7 +86,7 @@ function RealisationPage() {
     }
   ];
   return (
-    <div className="mt-[-10px] pt-12 px-12 flex flex-col justify-center items-center">
+    <div className="mt-[-10px] lg:pt-12 px-12 flex flex-col justify-center items-center">
       <div className={`px-4 flex flex-col items-center justify-center lg:w-1/2 pb-10 m-4 ${scrollY > 1500 ? 'fade-in' : 'slideOffRight2'}`} id='contact'>
         <div className="mb-12">
           <h1 className="text-3xl uppercase text-center lg:text-start text-white">Nos dernieres realisations web</h1>
@@ -97,9 +97,9 @@ function RealisationPage() {
       </div>
       <Carousel
         cards={cards}
-        height="500px"
+        height=""
         width="45%"
-        margin="0 auto"
+        margin="0px auto 250px auto"
         offset={2}
         showArrows={false}
       />

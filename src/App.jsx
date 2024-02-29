@@ -11,13 +11,22 @@ import PageServices from "./components/PageServices/PageServices"
 import Projets from "./components/Projets/Projets"
 import RealisationPage from "./components/Realisations/RealisationPage"
 import ContactPage from "./components/ContactHomepage/ContactPage"
+import ProjetsPage from "./components/Projets/ProjetsPage"
 
 import Equipe from "./components/Equipe/Equipe"
 
 import { Route, Routes } from "react-router-dom"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 
 
 function App() {
+
+  const location = useLocation();
+
+    useEffect(() => {
+      document.documentElement.scrollTop = 0 // Remonte en haut de la page à chaque changement de route
+    }, [location]);
 
   return (
     <>
@@ -57,6 +66,7 @@ function App() {
               <Navbar />
               <HeroOtherPage title={"Nos Services"}/>
               <PageServices/>
+              <Testimonials/>
               <Footer/>
             </>
           }
@@ -68,7 +78,7 @@ function App() {
             <>
               <Navbar />
               <HeroOtherPage title={"Nos Projets"}/>
-              <RealisationPage/>
+              <ProjetsPage/>
               <Footer/>
             </>
           }

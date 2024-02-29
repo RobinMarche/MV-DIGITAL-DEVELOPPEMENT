@@ -1,4 +1,6 @@
+
 export default function HeroOtherPage( {title} ) {
+
     return (
         <>
             <div className='h-[30vh] lg:h-[40vh] flex justify-around items-center text-gray-900 shadow-3xl' id='hero'>

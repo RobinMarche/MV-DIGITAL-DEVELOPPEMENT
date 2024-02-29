@@ -110,7 +110,7 @@
 }
 
 body{
-    font-family: 'Quicksand';
+    font-family: "Source Sans 3", sans-serif;
     overflow-x: hidden;
 }
 
@@ -173,6 +173,12 @@ body{
 
 .transition-bg {
     transition: background-color 1s ease, color 1s ease; /* 1s est la durée de la transition, vous pouvez ajuster selon vos préférences *//* 1s est la durée de la transition, vous pouvez ajuster selon vos préférences */
+}
+
+#equipe_contact{
+    background-image: url('./assets/equipe_contact.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -311,3 +317,15 @@ body{
 
 /******************************** ANIMATION NOS SERVICES PAGE SERVICES ******************************************/
 
+#contactPage{
+    background-image: url('./assets/call.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#servicesPage{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}

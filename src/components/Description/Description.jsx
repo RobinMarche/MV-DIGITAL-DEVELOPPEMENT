@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.png';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Description() {
 
@@ -36,7 +37,9 @@ export default function Description() {
 
                         Du graphisme au développement web & mobile, en passant par le community management et le packaging, nos différents domaines d&apos;expertise nous permettent de vous proposer un panel de services à 360° pour affiner votre stratégie.</p>
                     <div className='flex mt-16 justify-center lg:justify-start'>
-                        <p className='text-[#022a60] border-[1px] py-2 px-2 border-[#022a60] rounded-xl shadow-xl hover:bg-[#022a60] hover:text-white hover:cursor-pointer'>En savoir plus</p>
+                        <Link to="/services">
+                            <p className='text-[#022a60] border-[1px] py-2 px-2 border-[#022a60] rounded-xl shadow-xl hover:bg-[#022a60] hover:text-white hover:cursor-pointer'>En savoir plus</p>
+                        </Link>
                     </div>
                 </div>
             </div>

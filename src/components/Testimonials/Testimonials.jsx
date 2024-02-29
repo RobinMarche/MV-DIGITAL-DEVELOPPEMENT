@@ -23,7 +23,7 @@ export default function Testimonials() {
     return (
 
         <div className="pb-16">
-        <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-0 flex flex-col justify-center items-center">
+        <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-0 flex flex-col justify-center items-center lg:mt-8">
           <div className="px-4 flex flex-col items-center justify-center lg:w-1/2 pb-10 m-4" id='contact'>
             <div>
               <h1 className={`text-3xl uppercase text-center lg:text-start ${scrollY > 3100 ? 'fade-in' : 'slideOffRight2'}`}>Ce que disent nos clients</h1>
