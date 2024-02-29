@@ -74,7 +74,7 @@ export default function Equipe() {
             <div id='equipe_contact' className='flex flex-col text-white justify-center items-center py-12 lg:py-36'>
                 <h1 className='uppercase text-2xl lg:text-4xl text-center font-bold'>Nous mettons notre expertise à votre service</h1>
                 <p className='px-12 text-center py-12 lg:text-2xl'>Transformez vos idées en une outils de communication percutants grâce à notre savoir-faire</p>
-                <div className='flex flex-col lg:flex-row'>
+                <div className='flex flex-col lg:flex-row justify-center items-center'>
                     <Link to="/contact">
                         <button className='btn bg-blue-700 text-white my-8 lg:mt-24 lg:px-12 lg:mr-12 border-none'>Contactez-nous !</button>
                     </Link>
