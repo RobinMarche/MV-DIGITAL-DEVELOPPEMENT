@@ -12,6 +12,7 @@ import Projets from "./components/Projets/Projets"
 import RealisationPage from "./components/Realisations/RealisationPage"
 import ContactPage from "./components/ContactHomepage/ContactPage"
 import ProjetsPage from "./components/Projets/ProjetsPage"
+import TestHomePageScroll from "./components/TestHomePageScroll/TestHomePageScroll"
 
 import Equipe from "./components/Equipe/Equipe"
 
@@ -22,11 +23,6 @@ import { useLocation } from "react-router-dom"
 
 function App() {
 
-  const location = useLocation();
-
-    useEffect(() => {
-      document.documentElement.scrollTop = 0 // Remonte en haut de la page à chaque changement de route
-    }, [location]);
 
   return (
     <>
@@ -35,14 +31,16 @@ function App() {
           path="/" 
           element={
             <>
-              <Navbar />
-              <Hero />
-              <Description/>
-              <Services />
-              <Realisations />
-              <ContactHomepage />
-              <Testimonials />
-              <Footer />
+                {/* <Navbar />
+                <Hero />
+                <Description/>
+                <Services />
+                <Realisations />
+                <ContactHomepage />
+                <Testimonials />
+                <Footer /> */}
+                <Navbar />
+                <TestHomePageScroll/>
             </>
           } 
         />
