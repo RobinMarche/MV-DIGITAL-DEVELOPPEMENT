@@ -14,63 +14,67 @@ import { debounce } from "lodash";
 import chevLeft from '../../assets/chevron-left.png';
 import chevRight from '../../assets/chevron-right.png';
 import uxDesign from '../../assets/ux_design.jpg';
+import webpage2 from '../../assets/webpage2.png';
+import socials from '../../assets/socials.png';
 
 
 export default function TestHomePageScroll() {
 
-    const text = "M &V Digital";
-    const text2 = " Developpement";
-    const [displayText, setDisplayText] = useState('');
-    const [displayText2, setDisplayText2] = useState('');
-    const [value , setValue] = useState(0);
+    const initialText = "L'Agence web dédiée aux ";
+    const [displayText, setDisplayText] = useState(initialText);
+    const words = [
+        { id: "word", text: "Artisans" },
+        { id: "word", text: "Commercants" },
+        { id: "word", text: "Indépendants" }
+      ];
+    const wordDuration = 1000;
+    const letterDuration = 100; // Délai entre chaque lettre
+    const deleteDuration = 500; // Délai entre la suppression et l'écriture du mot suivant
+    const [value, setValue] = useState(0);
   
     useEffect(() => {
-        let index = 0;
+        let wordIndex = 0;
+        let letterIndex = 0;
+        let timeoutId;
     
-        const intervalId = setInterval(() => {
-          setDisplayText((prevText) => {
-            const nextChar = text[index];
-        
-            // Sinon, ajoutez le caractère suivant uniquement s'il est défini et différent du précédent
-            return nextChar !== undefined && prevText !== nextChar
-              ? prevText + nextChar
-              : prevText;
-          });
+        const animateText = () => {
+          const currentWord = words[wordIndex].text;
+          const currentId = words[wordIndex].id;
     
-          index += 1;
-    
-          if (index === text.length) {
-            clearInterval(intervalId);
+          if (letterIndex <= currentWord.length) {
+            setDisplayText(initialText + currentWord.substring(0, letterIndex + 1));
+            letterIndex += 1;
+            timeoutId = setTimeout(animateText, letterDuration);
+          } else {
+            // Efface le mot après la durée spécifiée
+            timeoutId = setTimeout(() => {
+              deleteText();
+            }, deleteDuration);
           }
-        }, 100);
+        };
     
-        return () => clearInterval(intervalId);
-    }, []);
-
-    useEffect(() => {
-        let index = 0;
+        const deleteText = () => {
+          const currentWord = words[wordIndex].text;
     
-        const intervalId = setInterval(() => {
-          setDisplayText2((prevText) => {
-            const nextChar = text2[index];
-        
-            // Sinon, ajoutez le caractère suivant uniquement s'il est défini et différent du précédent
-            return nextChar !== undefined && prevText !== nextChar
-              ? prevText + nextChar
-              : prevText;
-          });
+          if (letterIndex >= 0) {
+            setDisplayText(initialText + currentWord.substring(0, letterIndex));
+            letterIndex -= 1;
+            timeoutId = setTimeout(deleteText, letterDuration);
+          } else {
+            // Passe au mot suivant
+            wordIndex = (wordIndex + 1) % words.length;
+            letterIndex = 0;
     
-          index += 1;
-    
-          if (index === text2.length) {
-            clearInterval(intervalId);
+            // Appelle récursivement la fonction après le temps restant dans wordDuration
+            timeoutId = setTimeout(animateText, wordDuration - initialText.length);
           }
-        }, 100);
+        };
     
-        return () => clearInterval(intervalId);
-
-    }, []);
-
+        animateText();
+    
+        // Nettoie le timeout à la fin pour éviter les fuites de mémoire
+        return () => clearTimeout(timeoutId);
+      }, []);
 
 
     const containerRef = useRef();
@@ -132,9 +136,9 @@ export default function TestHomePageScroll() {
 
             <div id='container' onWheel={horizontalScroll} ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative h-[100vh] overflow-y-hidden">
                 <div className='page page_1' id="page1">
-                    <div className='lg:h-[80vh] h-[100vh] flex flex-col lg:pt-20 text-gray-900 lg:mx-24 pt-24 lg:my-32 lg:rounded-tl-[70%] lg:rounded-tr-[30%] lg:rounded-bl-[30%] lg:rounded-br-[70%] shadow-2xl'  id='hero'>
-                        <h1 className="lg:text-start text-center text-5xl xl:text-9xl lg:text-8xl uppercase fade-in lg:h-[12.5vh] h-[15vh] text-white lg:text-gray-900" id="title">{displayText}</h1>
-                        <h1 className="lg:text-start text-center text-5xl xl:text-9xl lg:text-8xl uppercase fade-in lg:h-[12.5vh] h-[15vh] text-white lg:text-gray-900" id="title">{displayText2}</h1>
+                    <div className='lg:h-[80vh] h-[100vh] flex flex-col lg:pt-20 text-gray-900 lg:mx-24 pt-24 lg:my-32 lg:rounded-tl-[70%] lg:rounded-tr-[30%] lg:rounded-bl-[30%] lg:rounded-br-[70%]'  id='hero'>
+                        <h1 className={`lg:text-start text-center text-5xl xl:text-9xl lg:text-8xl uppercase fade-in lg:h-[25vh] h-[15vh] text-white lg:text-gray-900 
+                        `} id="title">{displayText}</h1>
                         <div className="flex flex-col justify-center items-center lg:w-1/2">
                             <p className="mt-24 text-4xl text-center text-white fade-in italic" id="subtitle">Aujourd&apos;hui,</p>
                             <p className="text-4xl text-center text-white fade-in italic" id="subtitle">joignons l&apos;utile</p>
@@ -146,8 +150,59 @@ export default function TestHomePageScroll() {
                     </div>
                 </div>
 
+                <div className='page page_1' id="page2">
+                    <div className='lg:h-[100vh] h-[100vh] flex flex-col lg:pt-20 text-gray-900 flex flex-col items-center' id="price">
+                        <h2 className='text-2xl uppercase text-center lg:text-start mt-8 text-gray-900 pt-12'>Devenez visible sur le web</h2>
+                        <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
+                            <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+                        </div>
+                        <div className="flex w-full justify-around">
+                            <div className="bg-gray-800/[0.1] rounded-2xl p-8 shadow-2xl h-[80vh] w-[40vw]">
+                                <h1 className="text-center text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-menu">Site Web</h1>
+                                <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
+                                <div className="flex justify-center items-end">
+                                    <p className="text-[100px] uppercase text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">44.99€</p>
+                                    <div className="text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">
+                                        <p>par</p>
+                                        <p>mois</p>
+                                    </div>
+                                </div>
+                                <div className="flex justify-center my-6 text-2xl text-center">
+                                    <p className="">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
+                                </div>
+                                <div className="flex justify-center my-6">
+                                    <button className="btn rounded-full bg-green-500 border-green-500 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                </div>
+                                <div className="flex jusitfy-center items-center">
+                                    <img src={webpage2} alt="" />
+                                </div>
+                            </div>
+                            <div className="bg-gray-800/[0.1] rounded-2xl p-8 shadow-2xl w-[40vw]">
+                                <h1 className="text-center text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-menu">Réseaux sociaux</h1>
+                                <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
+                                <div className="flex justify-center items-end">
+                                    <p className="text-[100px] uppercase text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">144.99€</p>
+                                    <div className="text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">
+                                        <p>par</p>
+                                        <p>mois</p>
+                                    </div>
+                                </div>
+                                <div className="flex justify-center my-6 text-2xl text-center">
+                                    <p className="">Développez votre notoriété et gagnez en <br /> crédibilité pour attirer de nouveaux clients.</p>
+                                </div>
+                                <div className="flex justify-center my-6">
+                                    <button className="btn rounded-full bg-green-500 border-green-500 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                </div>
+                                <div className="flex justify-center">
+                                    <img src={socials} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div className='page page_2 flex items-center justify-center' id="page2">
+
+                <div className='page page_2 flex items-center justify-center' id="page3">
                     <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-center'>
                         <div className='lg:w-1/2 fade-right'>
                             <h2 className='text-lg uppercase text-center lg:text-start mt-8 text-[#f5c120]'>Soyez accompagné par une agence de communication</h2>
@@ -187,16 +242,16 @@ export default function TestHomePageScroll() {
 
 
 
-                <div className='page page_3 flex flex-col justify-center' id="page3">
+                <div className='page page_3 flex flex-col justify-center' id="page4">
                     <div className='text-center px-8 mt-12'>
                         <h1 className='text-3xl lg:text-6xl'>Comment pouvons nous <span className="text-red-800">vous aider</span> ?</h1>
                     </div>
-                    <div className='flex flex-nowrap lg:mx-24 2xl:mx-48'>
+                    <div className='flex flex-wrap items-center justify-center lg:mx-24 2xl:mx-48'>
                         <div className="box rounded-xl">
                             <div className="box-inner rounded-xl shadow-xl">
                                 <div className="box-front flex flex-col items-center justify-center">
                                     <img src={web} alt="" className="w-1/2" />
-                                    <h2>Web et Web Mobile</h2>
+                                    <h2 className="font-bold text-xl">Web et Web Mobile</h2>
                                 </div>
                                 <div className="box-back">
                                     <h2>Print</h2>
@@ -208,7 +263,7 @@ export default function TestHomePageScroll() {
                             <div className="box-inner rounded-xl shadow-xl">
                                 <div className="box-front flex flex-col items-center justify-center">
                                     <img src={print} alt="" className="w-1/2" />
-                                    <h2>Print</h2>
+                                    <h2 className="font-bold text-xl">Logo et Supports Imprimés</h2>
                                 </div>
                                 <div className="box-back">
                                     <h2>Face arrière</h2>
@@ -220,7 +275,7 @@ export default function TestHomePageScroll() {
                             <div className="box-inner rounded-xl shadow-xl">
                                 <div className="box-front flex flex-col items-center justify-center">
                                     <img src={community} alt="" className="w-1/2" />
-                                    <h2>Community Management</h2>
+                                    <h2 className="font-bold text-xl">Community Management</h2>
                                 </div>
                                 <div className="box-back">
                                     <h2>Face arrière</h2>
@@ -232,7 +287,7 @@ export default function TestHomePageScroll() {
                             <div className="box-inner rounded-xl shadow-xl">
                                 <div className="box-front flex flex-col items-center justify-center">
                                     <img src={uxDesign} alt="" className="w-1/2" />
-                                    <h2>UX Design</h2>
+                                    <h2 className="font-bold text-xl">Publicités Réseaux Sociaux</h2>
                                 </div>
                                 <div className="box-back">
                                     <h2>Face arrière</h2>
@@ -263,36 +318,8 @@ export default function TestHomePageScroll() {
                     </div>
                 </div>
 
-                <div className='page page_3 flex flex-col justify-center' id="page4">
-                    <div className='text-center px-8 my-12'>
-                        <h1 className='text-3xl lg:text-6xl'>Comment pouvons nous vous aider ?</h1>
-                    </div>
-                    <div className='flex flex-nowrap justify-center items-center lg:mx-24 2xl:mx-48'>
-                        <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-12 lg:px-12'>
-                            <img src={web} alt="web" className='md:w-1/2' />
-                            <h1 className='font-bold text-xl my-8'>Web et Web Mobile</h1>
-                            <p className='my-6'>Votre présence en ligne est cruciale. Nous concevons des sites web fonctionnels, esthétiques et adaptés à vos besoins spécifiques. Que ce soit une vitrine, un site e-commerce ou une application web, nous utilisons les dernières technologies pour assurer une expérience utilisateur optimale.</p>
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
-                        </div>
 
-                        <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-14 lg:px-12'>
-                            <img src={print} alt="web" className='md:w-1/2' />
-                            <h1 className='font-bold text-xl my-8'>Print</h1>
-                            <p className='my-6'>Donnez une dimension tangible à votre identité avec notre expertise en impression. Chez M&V Digital Developpement, nous sublimons vos idées sur papier, créant des supports print exceptionnels qui captivent et laissent une impression mémorable.</p>
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
-                        </div>
-
-                        <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-12 lg:px-12'>
-                            <img src={community} alt="web" className='md:w-1/2' />
-                            <h1 className='font-bold text-xl my-8'>Community Management</h1>
-                            <p className='my-6'>De la création d&apos;identité visuelle à la gestion de campagnes publicitaires, notre équipe créative s&apos;engage à donner vie à votre histoire de manière captivante. Nous concevons des messages impactants et des stratégies de communication cohérentes pour renforcer votre positionnement sur le marché.</p>
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 flex ${value === 0 && "bg-[#041e42]/[0.8]"} ${value === 1 && "bg-[#f5c120]/[0.8]"} ${value === 2 && "bg-red-800/[0.8]"} ${value === 3 && "bg-green-800/[0.8]"} lg:w-[25vw] w-[50vw] xl:w-[15vw] rounded-full justify-around items-center py-2 px-4`}>
+                <div className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 flex ${value === 0 && "bg-[#041e42]/[0.5]"} ${value === 1 && "bg-green-500/[0.5]"} ${value === 2 && "bg-[#f5c120]/[0.5]"} ${value === 3 && "bg-red-800/[0.5]"} lg:w-[25vw] w-[50vw] xl:w-[15vw] rounded-full justify-around items-center py-2 px-4`}>
                     <div>
                         <div className={`${ value === 0 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`}  onClick={click1}></div>
                         <div className={`${ value === 0 ? "flex bg-[#041e42] rounded-full py-2 px-2" : "hidden"}`}>
@@ -303,7 +330,7 @@ export default function TestHomePageScroll() {
                     
                     <div>
                         <div className={`${ value === 1 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`} onClick={click2}></div>
-                        <div className={`${ value === 1 ? "flex bg-[#f5c120] rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
+                        <div className={`${ value === 1 ? "flex bg-green-700 rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
                             <img src={chevLeft} alt="" />
                             <img src={chevRight} alt="" />
                         </div>
@@ -311,7 +338,7 @@ export default function TestHomePageScroll() {
                     
                     <div>
                         <div className={`${ value === 2 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`} onClick={click3}></div>
-                        <div className={`${ value === 2 ? "flex bg-red-800 rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
+                        <div className={`${ value === 2 ? "flex bg-[#f5c120] rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
                             <img src={chevLeft} alt="" />
                             <img src={chevRight} alt="" />
                         </div>
@@ -319,7 +346,7 @@ export default function TestHomePageScroll() {
                     
                     <div>
                         <div className={`${ value === 3 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`} onClick={click4}></div>
-                        <div className={`${ value === 3 ? "flex bg-green-800 rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
+                        <div className={`${ value === 3 ? "flex bg-red-800 rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
                             <img src={chevLeft} alt="" />
                             <img src={chevRight} alt="" />
                         </div>
