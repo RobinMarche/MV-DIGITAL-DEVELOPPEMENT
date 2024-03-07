@@ -126,7 +126,11 @@
 
 #font-price{
     font-family: 'Bowlby One SC', sans-serif;
-    text-shadow: black 0px 0px 5px;
+    /* text-shadow: black 0px 0px 5px; */
+}
+
+.shadowtext{
+    text-shadow: white 0px 0px 20px;
 }
 
 body{
@@ -221,7 +225,6 @@ body{
     background-image: url('./assets/83.jpg');
     background-position: bottom;
     background-size: cover;
-
 }
 
 

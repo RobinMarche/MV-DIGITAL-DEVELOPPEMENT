@@ -20,7 +20,7 @@ import socials from '../../assets/socials.png';
 
 export default function TestHomePageScroll() {
 
-    const initialText = "L'Agence web dédiée aux ";
+    const initialText = `L'Agence web dédiée aux `;
     const [displayText, setDisplayText] = useState(initialText);
     const words = [
         { id: "word", text: "Artisans" },
@@ -39,7 +39,6 @@ export default function TestHomePageScroll() {
     
         const animateText = () => {
           const currentWord = words[wordIndex].text;
-          const currentId = words[wordIndex].id;
     
           if (letterIndex <= currentWord.length) {
             setDisplayText(initialText + currentWord.substring(0, letterIndex + 1));
@@ -136,9 +135,10 @@ export default function TestHomePageScroll() {
 
             <div id='container' onWheel={horizontalScroll} ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative h-[100vh] overflow-y-hidden">
                 <div className='page page_1' id="page1">
-                    <div className='lg:h-[80vh] h-[100vh] flex flex-col lg:pt-20 text-gray-900 lg:mx-24 pt-24 lg:my-32 lg:rounded-tl-[70%] lg:rounded-tr-[30%] lg:rounded-bl-[30%] lg:rounded-br-[70%]'  id='hero'>
-                        <h1 className={`lg:text-start text-center text-5xl xl:text-9xl lg:text-8xl uppercase fade-in lg:h-[25vh] h-[15vh] text-white lg:text-gray-900 
+                    <div className='lg:h-[80vh] h-[100vh] flex flex-col lg:pt-20 text-gray-900 lg:ml-24 pt-24 lg:my-32 lg:rounded-tl-[70%] lg:rounded-tr-[30%] lg:rounded-bl-[30%] lg:rounded-br-[70%]'  id='hero'>
+                        <h1 className={`lg:text-start text-center text-5xl 2xl:text-8xl lg:text-8xl uppercase fade-in lg:h-[25vh] h-[15vh] text-white lg:text-gray-900 w-2/3
                         `} id="title">{displayText}</h1>
+                        <h1></h1>
                         <div className="flex flex-col justify-center items-center lg:w-1/2">
                             <p className="mt-24 text-4xl text-center text-white fade-in italic" id="subtitle">Aujourd&apos;hui,</p>
                             <p className="text-4xl text-center text-white fade-in italic" id="subtitle">joignons l&apos;utile</p>
@@ -152,17 +152,14 @@ export default function TestHomePageScroll() {
 
                 <div className='page page_1' id="page2">
                     <div className='lg:h-[100vh] h-[100vh] flex flex-col lg:pt-20 text-gray-900 flex flex-col items-center' id="price">
-                        <h2 className='text-2xl uppercase text-center lg:text-start mt-8 text-gray-900 pt-12'>Devenez visible sur le web</h2>
-                        <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
-                            <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
-                        </div>
+                        <h2 className='text-6xl mx-[22vw] font-bold text-center my-8 text-gray-900 pt-12 shadowtext'>Les <span className="text-blue-500">meilleures</span> offres adaptées à votre activité et à votre budget</h2>
                         <div className="flex w-full justify-around">
-                            <div className="bg-gray-800/[0.1] rounded-2xl p-8 shadow-2xl h-[80vh] w-[40vw]">
-                                <h1 className="text-center text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-menu">Site Web</h1>
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl w-[35vw]">
+                                <h1 className="text-center text-2xl text-blue-400" id="font-menu">Site Web</h1>
                                 <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
-                                <div className="flex justify-center items-end">
-                                    <p className="text-[100px] uppercase text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">44.99€</p>
-                                    <div className="text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">
+                                <div className="flex justify-center items-center">
+                                    <p className="2xl:text-[80px] text-[70px] uppercase text-blue-500" id="font-price">44.99€</p>
+                                    <div className="text-2xl text-blue-400 ml-2" id="">
                                         <p>par</p>
                                         <p>mois</p>
                                     </div>
@@ -171,18 +168,18 @@ export default function TestHomePageScroll() {
                                     <p className="">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
                                 </div>
                                 <div className="flex justify-center my-6">
-                                    <button className="btn rounded-full bg-green-500 border-green-500 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    <button className="btn rounded-full bg-blue-500 border-blue-500 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
                                 </div>
-                                <div className="flex jusitfy-center items-center">
+                                {/* <div className="flex justify-center items-center">
                                     <img src={webpage2} alt="" />
-                                </div>
+                                </div> */}
                             </div>
-                            <div className="bg-gray-800/[0.1] rounded-2xl p-8 shadow-2xl w-[40vw]">
-                                <h1 className="text-center text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-menu">Réseaux sociaux</h1>
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl w-[35vw]">
+                                <h1 className="text-center text-2xl text-blue-400" id="font-menu">Réseaux sociaux</h1>
                                 <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
-                                <div className="flex justify-center items-end">
-                                    <p className="text-[100px] uppercase text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">144.99€</p>
-                                    <div className="text-2xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" id="font-price">
+                                <div className="flex justify-center items-center">
+                                    <p className="2xl:text-[80px] text-[70px] uppercase text-blue-500" id="font-price">144.99€</p>
+                                    <div className="text-2xl text-blue-400 ml-2" id="">
                                         <p>par</p>
                                         <p>mois</p>
                                     </div>
@@ -191,11 +188,11 @@ export default function TestHomePageScroll() {
                                     <p className="">Développez votre notoriété et gagnez en <br /> crédibilité pour attirer de nouveaux clients.</p>
                                 </div>
                                 <div className="flex justify-center my-6">
-                                    <button className="btn rounded-full bg-green-500 border-green-500 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    <button className="btn rounded-full bg-blue-500 border-blue-500 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
                                 </div>
-                                <div className="flex justify-center">
+                                {/* <div className="flex justify-center">
                                     <img src={socials} alt="" />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -253,8 +250,10 @@ export default function TestHomePageScroll() {
                                     <img src={web} alt="" className="w-1/2" />
                                     <h2 className="font-bold text-xl">Web et Web Mobile</h2>
                                 </div>
-                                <div className="box-back">
-                                    <h2>Print</h2>
+                                <div className="box-back py-4 px-10">
+                                    <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
+                                    <p className="mb-4">À l&apos;ère numérique en constante évolution, avoir une présence en ligne efficace est essentiel pour le succès de votre entreprise. Notre équipe dédiée de designers et de développeurs talentueux s&apos;engage à donner vie à votre vision. Que vous ayez besoin d&apos;un site web professionnel, d&apos;une plateforme e-commerce robuste ou d&apos;une application mobile intuitive, nous sommes là pour transformer vos idées en réalité numérique.</p>
+                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                 </div>
                             </div>
                         </div>
@@ -265,8 +264,10 @@ export default function TestHomePageScroll() {
                                     <img src={print} alt="" className="w-1/2" />
                                     <h2 className="font-bold text-xl">Logo et Supports Imprimés</h2>
                                 </div>
-                                <div className="box-back">
-                                    <h2>Face arrière</h2>
+                                <div className="box-back py-4 px-10">
+                                    <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
+                                    <p className="mb-4">Laissez-nous être les architectes visuels de votre identité d&apos;entreprise. Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports. Contactez-nous dès aujourd&apos;hui pour donner vie à une image de marque qui laisse une impression durable.</p>
+                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                 </div>
                             </div>
                         </div>
@@ -277,8 +278,10 @@ export default function TestHomePageScroll() {
                                     <img src={community} alt="" className="w-1/2" />
                                     <h2 className="font-bold text-xl">Community Management</h2>
                                 </div>
-                                <div className="box-back">
-                                    <h2>Face arrière</h2>
+                                <div className="box-back py-4 px-10">
+                                    <h2 className="font-bold text-xl mb-4">Community Management</h2>
+                                    <p className="mb-4">À l&apos;ère de la conversation en ligne, la gestion de votre communauté sur les médias sociaux est cruciale. Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique. Notre équipe dédiée de Community Managers est prête à propulser votre présence sociale vers de nouveaux sommets.</p>
+                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                 </div>
                             </div>
                         </div>
@@ -289,8 +292,10 @@ export default function TestHomePageScroll() {
                                     <img src={uxDesign} alt="" className="w-1/2" />
                                     <h2 className="font-bold text-xl">Publicités Réseaux Sociaux</h2>
                                 </div>
-                                <div className="box-back">
-                                    <h2>Face arrière</h2>
+                                <div className="box-back py-4 px-10">
+                                    <h2 className="font-bold text-xl mb-4">Publicités Réseaux Sociaux</h2>
+                                    <p className="mb-4">À l&apos;ère du numérique, la publicité sur les réseaux sociaux est un levier incontournable pour accroître votre portée. Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
+                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +324,7 @@ export default function TestHomePageScroll() {
                 </div>
 
 
-                <div className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 flex ${value === 0 && "bg-[#041e42]/[0.5]"} ${value === 1 && "bg-green-500/[0.5]"} ${value === 2 && "bg-[#f5c120]/[0.5]"} ${value === 3 && "bg-red-800/[0.5]"} lg:w-[25vw] w-[50vw] xl:w-[15vw] rounded-full justify-around items-center py-2 px-4`}>
+                <div className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 flex ${value === 0 && "bg-[#041e42]/[0.5]"} ${value === 1 && "bg-blue-400/[0.5]"} ${value === 2 && "bg-[#f5c120]/[0.5]"} ${value === 3 && "bg-red-800/[0.5]"} lg:w-[25vw] w-[50vw] xl:w-[15vw] rounded-full justify-around items-center py-2 px-4`}>
                     <div>
                         <div className={`${ value === 0 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`}  onClick={click1}></div>
                         <div className={`${ value === 0 ? "flex bg-[#041e42] rounded-full py-2 px-2" : "hidden"}`}>
@@ -330,7 +335,7 @@ export default function TestHomePageScroll() {
                     
                     <div>
                         <div className={`${ value === 1 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`} onClick={click2}></div>
-                        <div className={`${ value === 1 ? "flex bg-green-700 rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
+                        <div className={`${ value === 1 ? "flex bg-blue-700 rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
                             <img src={chevLeft} alt="" />
                             <img src={chevRight} alt="" />
                         </div>
