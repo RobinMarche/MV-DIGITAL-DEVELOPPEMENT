@@ -97,7 +97,7 @@ export default function Navbar() {
         </div>
 
 
-        <div className={`hidden lg:block items-center px-8 w-full fixed z-10 transition-all duration-500 ${scrollBackground ? 'bg-white shadow-xl' : 'bg-opacity-0 bg-white'}`}>
+        <div className={`hidden lg:block items-center px-8 w-full fixed z-10 transition-all duration-500 ${scrollBackground ? 'bg-white shadow-xl' : 'bg-opacity-[0.3] bg-white'}`}>
             <div className={`flex justify-between p-4 items-center`}>
                     <div onClick={handleMenu} className='hover:cursor-pointer'>
                         {showMenu ? <img src={xcircle} alt="close-menu" className='xl:w-[1.7vw]'/> : <img src={menu} alt="menu-burger" className='xl:w-[1.7vw]'/>}

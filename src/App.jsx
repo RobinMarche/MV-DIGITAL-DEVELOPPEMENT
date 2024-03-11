@@ -13,15 +13,33 @@ import RealisationPage from "./components/Realisations/RealisationPage"
 import ContactPage from "./components/ContactHomepage/ContactPage"
 import ProjetsPage from "./components/Projets/ProjetsPage"
 import TestHomePageScroll from "./components/TestHomePageScroll/TestHomePageScroll"
+import TestHomePageMobile from "./components/TestHomePageScroll/TestHomepageMobile"
 
 import Equipe from "./components/Equipe/Equipe"
 
 import { Route, Routes } from "react-router-dom"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 
 
 function App() {
+
+  const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 1020px)").matches);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1020px)");
+    const handleResize = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    // Ajoute un écouteur d'événements pour les changements de taille d'écran
+    mediaQuery.addListener(handleResize);
+
+    // Retire l'écouteur d'événements lors du démontage du composant
+    return () => {
+      mediaQuery.removeListener(handleResize);
+    };
+  }, []);
 
 
   return (
@@ -31,16 +49,8 @@ function App() {
           path="/" 
           element={
             <>
-                {/* <Navbar />
-                <Hero />
-                <Description/>
-                <Services />
-                <Realisations />
-                <ContactHomepage />
-                <Testimonials />
-                <Footer /> */}
-                <Navbar />
-                <TestHomePageScroll/>
+              <Navbar />
+              {isMobile ? <><TestHomePageMobile /><Footer/></> : <TestHomePageScroll />}
             </>
           } 
         />

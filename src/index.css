@@ -126,7 +126,11 @@
 
 #font-price{
     font-family: 'Bowlby One SC', sans-serif;
-    text-shadow: black 0px 0px 5px;
+    /* text-shadow: black 0px 0px 5px; */
+}
+
+.shadowtext{
+    text-shadow: white 0px 0px 20px;
 }
 
 body{
@@ -185,10 +189,18 @@ body{
 }
 
 #hero{
-    background-image: url('./assets/desk.jpg');
+    background-image: url('./assets/meuf.png');
     background-position: center;
     background-size: cover;
 }
+
+@media (max-width: 1020px) {
+    #hero {
+        background-image: url('./assets/meuf5.png');
+    }
+}
+
+
 
 #root{
     box-shadow: 10px 10px 20px black;
@@ -221,7 +233,6 @@ body{
     background-image: url('./assets/83.jpg');
     background-position: bottom;
     background-size: cover;
-
 }
 
 
@@ -408,7 +419,15 @@ body{
     height: 300px;
     perspective: 1000px;
     margin: 15px;
-  }
+}
+
+@media (max-width: 1020px) {
+    .box {
+        width: 80vw;
+        height: 400px;
+    }
+}
+
 
   .box-inner {
     position: relative;
