@@ -222,16 +222,28 @@ body{
     background-size: cover;
 }
 
-#page4{
-    background-image: url('./assets/drop.jpg');
+#page4bg{
+    background-image: url('./assets/609.jpg');
     background-position: center;
-    background-size: cover;
-
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 #price{
     background-image: url('./assets/83.jpg');
     background-position: bottom;
+    background-size: cover;
+}
+
+#bg-creation{
+    background-image: url('./assets/bg-creation.jpg');
+    background-position: right;
+    background-size: cover;
+}
+
+#bg-creation2{
+    background-image: url('./assets/111994.jpg');
+    background-position: right;
     background-size: cover;
 }
 
@@ -415,7 +427,7 @@ body{
 
 
 .box {
-    width: 30vw;
+    width: 20vw;
     height: 300px;
     perspective: 1000px;
     margin: 15px;
@@ -436,6 +448,7 @@ body{
     text-align: center;
     transition: transform 1.5s;
     transform-style: preserve-3d;
+    border: 1px solid #188FA7;
 
   }
 
