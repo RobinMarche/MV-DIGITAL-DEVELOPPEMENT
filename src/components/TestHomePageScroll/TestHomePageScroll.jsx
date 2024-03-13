@@ -97,7 +97,7 @@ export default function TestHomePageScroll() {
             // Diminuer la valeur de 1 lors du scroll vers le haut
             setValue((prevValue) => Math.max(prevValue - 1, 0));
           }
-        }, 500), // Délai d'attente d'une seconde
+        }, 100), // Délai d'attente d'une seconde
         [] // Aucune dépendance, la fonction ne change pas
     );
 
@@ -141,7 +141,7 @@ export default function TestHomePageScroll() {
 
             <div id='container' onWheel={horizontalScroll} ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative h-[100vh] overflow-y-hidden">
                 <div className='page page_1' id="page1">
-                    <div className='lg:h-[100vh] h-[100vh] flex flex-col lg:pt-32 text-gray-900'  id='hero'>
+                    <div className='h-[100vh] h-[100vh] flex flex-col lg:pt-32 text-gray-900'  id='hero'>
                         <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
                         <h1 className="text-center text-4xl lg:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication dédiée aux</h1>
                         <h1 className={`text-center text-4xl 2xl:text-7xl lg:text-7xl fade-in h-[9vh] lg:h-[16vh] text-[#188FA7] lg:mx-80 font-bold
@@ -256,67 +256,71 @@ export default function TestHomePageScroll() {
                     </div>
                 </div>
 
-                <div className='page page_3 flex items-start justify-center pt-32' id="page4">
+                <div className='page page_3 h-[100vh] w-[100vw] flex items-start justify-center pt-32' id="page4">
                     <div className='text-start pl-24 mt-12'>
-                    <h2 className='text-lg uppercase text-center lg:text-start mt-8 text-[#188FA7]'>Soyez accompagné par une agence de communication</h2>
-                            <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
-                                <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
-                            </div>
-                        <h1 className='text-8xl'>Comment pouvons <br /> nous <span className="text-[#188FA7]">vous <br /> aider</span> ?</h1>
+                        <h2 className='text-lg uppercase text-center lg:text-start mt-8 text-[#188FA7]'>Soyez accompagné par une agence de communication</h2>
+                        <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
+                            <div className='bg-[#022a60] w-[20vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+                        </div>
+                        <h1 className='text-8xl w-[35vw]'>Comment <br />pouvons nous <br /> <span className="text-[#188FA7] font-bold">vous aider</span> ?</h1>
                     </div>
                     <div className='flex flex-wrap items-center justify-center lg:mx-24 2xl:mx-48' id="page4bg">
-                        <div className="box rounded-xl">
-                            <div className="box-inner rounded-xl shadow-xl">
-                                <div className="box-front flex flex-col items-center justify-center">
-                                    <img src={web} alt="" className="w-1/2" />
-                                    <h2 className="font-bold text-xl">Web et Web Mobile</h2>
+                        <div className="flex">
+                            <div className="box rounded-xl">
+                                <div className="box-inner rounded-xl shadow-xl">
+                                    <div className="box-front flex flex-col items-center justify-center">
+                                        <img src={web} alt="" className="w-1/2" />
+                                        <h2 className="font-bold text-xl">Web et Web Mobile</h2>
+                                    </div>
+                                    <div className="box-back py-4 px-10">
+                                        <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
+                                        <p className="mb-4">Avoir une présence en ligne efficace est essentiel pour le succès de votre entreprise. Notre équipe de designers et de développeurs s&apos;engage à donner vie à votre vision. Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </div>
                                 </div>
-                                <div className="box-back py-4 px-10">
-                                    <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
-                                    <p className="mb-4">Avoir une présence en ligne efficace est essentiel pour le succès de votre entreprise. Notre équipe de designers et de développeurs s&apos;engage à donner vie à votre vision. Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                            </div>
+
+                            <div className="box w-[20vw]">
+                                <div className="box-inner rounded-xl shadow-xl">
+                                    <div className="box-front flex flex-col items-center justify-center">
+                                        <img src={print} alt="" className="w-1/2" />
+                                        <h2 className="font-bold text-xl">Logo et Supports Imprimés</h2>
+                                    </div>
+                                    <div className="box-back py-4 px-10">
+                                        <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
+                                        <p className="mb-4">Laissez-nous être les architectes visuels de votre identité d&apos;entreprise. Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports. Contactez-nous dès aujourd&apos;hui pour donner vie à une image de marque qui laisse une impression durable.</p>
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="box w-[20vw]">
-                            <div className="box-inner rounded-xl shadow-xl">
-                                <div className="box-front flex flex-col items-center justify-center">
-                                    <img src={print} alt="" className="w-1/2" />
-                                    <h2 className="font-bold text-xl">Logo et Supports Imprimés</h2>
-                                </div>
-                                <div className="box-back py-4 px-10">
-                                    <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
-                                    <p className="mb-4">Laissez-nous être les architectes visuels de votre identité d&apos;entreprise. Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports. Contactez-nous dès aujourd&apos;hui pour donner vie à une image de marque qui laisse une impression durable.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="box w-[20vw]">
-                            <div className="box-inner rounded-xl shadow-xl">
-                                <div className="box-front flex flex-col items-center justify-center">
-                                    <img src={community} alt="" className="w-1/2" />
-                                    <h2 className="font-bold text-xl">Gestion des Réseaux Sociaux</h2>
-                                </div>
-                                <div className="box-back py-4 px-10">
-                                    <h2 className="font-bold text-xl mb-4">Gestion des Réseaux Sociaux</h2>
-                                    <p className="mb-4">À l&apos;ère de la conversation en ligne, la gestion de votre communauté sur les médias sociaux est cruciale. Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique. Notre équipe dédiée de Community Managers est prête à propulser votre présence sociale vers de nouveaux sommets.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                        <div className="flex">
+                            <div className="box w-[20vw]">
+                                <div className="box-inner rounded-xl shadow-xl">
+                                    <div className="box-front flex flex-col items-center justify-center">
+                                        <img src={community} alt="" className="w-1/2" />
+                                        <h2 className="font-bold text-xl">Gestion des Réseaux Sociaux</h2>
+                                    </div>
+                                    <div className="box-back py-4 px-10">
+                                        <h2 className="font-bold text-xl mb-4">Gestion des Réseaux Sociaux</h2>
+                                        <p className="mb-4">À l&apos;ère de la conversation en ligne, la gestion de votre communauté sur les médias sociaux est cruciale. Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique. Notre équipe dédiée de Community Managers est prête à propulser votre présence sociale vers de nouveaux sommets.</p>
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="box w-[20vw]">
-                            <div className="box-inner rounded-xl shadow-xl">
-                                <div className="box-front flex flex-col items-center justify-center">
-                                    <img src={uxDesign} alt="" className="w-1/2" />
-                                    <h2 className="font-bold text-xl">Publicités en ligne</h2>
-                                </div>
-                                <div className="box-back py-4 px-10">
-                                    <h2 className="font-bold text-xl mb-4">Publicités en ligne</h2>
-                                    <p className="mb-4">À l&apos;ère du numérique, la publicité sur les réseaux sociaux est un levier incontournable pour accroître votre portée. Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                            <div className="box w-[20vw]">
+                                <div className="box-inner rounded-xl shadow-xl">
+                                    <div className="box-front flex flex-col items-center justify-center">
+                                        <img src={uxDesign} alt="" className="w-1/2" />
+                                        <h2 className="font-bold text-xl">Publicités en ligne</h2>
+                                    </div>
+                                    <div className="box-back py-4 px-10">
+                                        <h2 className="font-bold text-xl mb-4">Publicités en ligne</h2>
+                                        <p className="mb-4">À l&apos;ère du numérique, la publicité sur les réseaux sociaux est un levier incontournable pour accroître votre portée. Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
