@@ -97,7 +97,7 @@ export default function TestHomePageScroll() {
             // Diminuer la valeur de 1 lors du scroll vers le haut
             setValue((prevValue) => Math.max(prevValue - 1, 0));
           }
-        }, 100), // Délai d'attente d'une seconde
+        }, 500), // Délai d'attente d'une seconde
         [] // Aucune dépendance, la fonction ne change pas
     );
 
@@ -141,9 +141,9 @@ export default function TestHomePageScroll() {
 
             <div id='container' onWheel={horizontalScroll} ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative h-[100vh] overflow-y-hidden">
                 <div className='page page_1' id="page1">
-                    <div className='h-[100vh] h-[100vh] flex flex-col lg:pt-32 text-gray-900'  id='hero'>
+                    <div className='h-[100vh] h-[100vh] flex flex-col lg:pt-16 2xl:pt-32 text-gray-900'  id='hero'>
                         <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
-                        <h1 className="text-center text-4xl lg:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication dédiée aux</h1>
+                        <h1 className="text-center text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication dédiée aux</h1>
                         <h1 className={`text-center text-4xl 2xl:text-7xl lg:text-7xl fade-in h-[9vh] lg:h-[16vh] text-[#188FA7] lg:mx-80 font-bold
                         `} id="">{displayText}</h1>
 
@@ -162,7 +162,7 @@ export default function TestHomePageScroll() {
                             </div>
                         </div>
 
-                        <div className="flex justify-center mt-12">
+                        <div className="flex justify-center xl:mt-12 mt-4">
                             <Link to="/contact">
                                 <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Prendre rendez-vous</button>
                             </Link>
