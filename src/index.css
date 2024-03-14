@@ -440,6 +440,13 @@ body{
     }
 }
 
+@media (max-width: 1500px) {
+    .box {
+        width: 20vw;
+        height: 200px;
+    }
+}
+
 
   .box-inner {
     position: relative;
@@ -477,10 +484,5 @@ body{
     background-color: #ffffff;
   }
 
-
-
-
-
-/************************************** TEST PREVINT ************************************/
 
 
