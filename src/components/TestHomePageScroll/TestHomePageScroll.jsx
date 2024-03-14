@@ -328,14 +328,14 @@ export default function TestHomePageScroll() {
                 </div>
 
 
-                <div className='page page_4 flex items-center justify-center text-white pt-12 2xl:pt-24' id="page5">
-                    <div className='flex flex-col lg:flex-row justify-around'>
-                        <div className='w-1/2 fade-right'>
-                            <h2 className='text-lg uppercase text-center lg:text-start text-[#188FA7] font-bold'>pourquoi choisir M&V digital Developpement ?</h2>
+                <div className='page page_4 flex items-center justify-center text-white pt-12 2xl:pt-24 pt-32' id="page5">
+                    <div className='flex flex-col lg:flex-row justify-between'>
+                        <div className='w-1/2 fade-right px-6'>
+                            <h2 className='text-md uppercase text-center lg:text-start text-[#188FA7] font-bold'>pourquoi choisir M&V digital Developpement ?</h2>
                             <div className='2xl:my-8 my-2 flex justify-center items-center lg:block lg:mt-2'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="2xl:text-5xl text-4xl text-[#041e42] font-bold">Une communication par des <span className="text-[#188FA7]">pros</span>, pour des <span className="text-[#188FA7]">pros</span></h1>
+                            <h1 className="2xl:text-5xl text-3xl text-[#041e42] font-bold">Une communication par des <span className="text-[#188FA7]">pros</span>, pour des <span className="text-[#188FA7]">pros</span></h1>
 
                             <div className="items-center justify-center 2xl:mt-12">
                                 <div className="flex flex-col bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl m-4 p-4 w-[40vw] text-black" id="bg-creation">
