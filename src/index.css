@@ -117,7 +117,7 @@
 
 
 #finesse{
-    font-family: "Tangerine", cursive;
+    font-family: "Bowlby One SC", cursive;
 }
 
 #font-menu{
@@ -150,6 +150,10 @@ body{
 
 #subtitle{
     font-family: 'Quicksand', sans-serif;
+}
+
+#title2{
+    font-family: 'Satisfy', sans-serif;
 }
 /******************************** ANIMATION DESCRIPTION ******************************************/
 
@@ -245,6 +249,13 @@ body{
     background-image: url('./assets/111994.jpg');
     background-position: right;
     background-size: cover;
+}
+
+#ordi{
+    background-image: url('./assets/ordi.jpg');
+    background-position: center;
+    background-size: cover;
+
 }
 
 

@@ -1,12 +1,10 @@
 import logoWhite from '../../assets/logo_white.png'
-import separationfooter from '../../assets/separationfooter.png' 
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return(
         <>
-        <img src={separationfooter} alt="" />
-        <div className="bg-[#022a60] text-white pb-6">
+        <div className="bg-[#188FA7] text-white pb-6">
             <div className='flex justify-between items-center p-8'>
                 <div>
                     <h1 className='font-bold text-xl lg:text-2xl lg:mb-2'>Plan du site</h1>

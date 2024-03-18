@@ -78,12 +78,12 @@ export default function TestHomePageMobile() {
             <div id='' ref={containerRef} style={{ scrollBehavior: 'smooth' }}>
                 <div className='page page_1' id="page1">
                     <div className='lg:h-[100vh] h-[100vh] flex flex-col text-gray-900 '  id='hero'>
-                        <h2 className="pt-4 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
+                        <h2 className="pt-24 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
                         <h1 className="text-center text-4xl font-bold mx-8 lg:mx-48 xl:mx-80">L&apos;agence de communication dédiée aux</h1>
                         <h1 className={`text-center text-4xl fade-in h-[9vh] text-[#188FA7] font-bold
                         `} id="">{displayText}</h1>
 
-                        <div className="flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-center items-center pt-12">
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
                                 <p>Un véritable savoir faire</p>
@@ -98,7 +98,7 @@ export default function TestHomePageMobile() {
                             </div>
                         </div>
 
-                        <div className="flex justify-center mt-6">
+                        <div className="flex justify-center pt-24">
                             <Link to="/contact">
                                 <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Prendre rendez-vous</button>
                             </Link>
@@ -263,17 +263,17 @@ export default function TestHomePageMobile() {
 
                             <div className="items-center justify-center">
                                 <div className="flex flex-col rounded-2xl my-8 p-4 text-black border-[1px] border-[#188FA7] shadow-xl">
-                                    <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Expertise</h1>
-                                    <p className="py-2 2xl:py-4 2xl:text-xl">Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité.</p>
-                                    <div className="flex justify-center">
+                                    <h1 className="text-4xl text-center pb-12 font-bold uppercase">Expertise</h1>
+                                    <p className="py-2 2xl:py-4 text-center">Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité.</p>
+                                    <div className="flex justify-center py-12">
                                         <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col rounded-2xl my-8 p-4 text-black border-[1px] border-[#188FA7] shadow-xl">
-                                    <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Créativité</h1>
-                                    <p className="py-2 2xl:py-4 2xl:text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
-                                    <div className="flex justify-center">
+                                    <h1 className="text-4xl text-center pb-12 font-bold uppercase">Créativité</h1>
+                                    <p className="py-2 2xl:py-4 text-center">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
+                                    <div className="flex justify-center py-12">
                                         <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
                                     </div>
                                 </div>

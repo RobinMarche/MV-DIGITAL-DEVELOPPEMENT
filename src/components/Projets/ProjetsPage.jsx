@@ -22,23 +22,34 @@ export default function ProjetsPage() {
       };
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+    };
+    
+    useEffect(() => {
+        scrollToTop();
+    }, []);
+
+
     return (
         <>
-        <div className='flex flex-col items-center p-8 lg:p-16 lg:flex-row'>
+        <div className='flex flex-col items-center p-8 lg:p-16 lg:flex-row bg-[#188FA7]'>
                 <div className='lg:w-1/2 flex justify-center fade-left'>
                     <img src={logo} alt="logo" />
                 </div>
-                <div className='lg:w-1/3 fade-right'>
-                    <h1 className='text-3xl uppercase text-center lg:text-start mt-8'>Découvrez le fruit de notre créativité</h1>
+                <div className='lg:w-1/3 fade-right text-white'>
+                    <h1 className='text-5xl text-center lg:text-start mt-8' id='title2'>Découvrez le fruit de notre créativité</h1>
                     <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
-                        <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+                        <div className='bg-white w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                     </div>
-                    <p className={`text-center lg:text-start fade-in3`}>
+                    <p className={`text-center lg:text-start fade-in1`}>
                     Sur cette page, plongez au cœur de notre expertise créative en explorant nos dernières créations. Chaque projet est le fruit d&apos;une collaboration passionnée et d&apos;un savoir-faire dédié à faire émerger des concepts uniques. Parcourez ces pages pour découvrir comment nous transformons des idées en expériences mémorables, en mettant en avant notre engagement envers l&apos;originalité et l&apos;impact. Que ce soit dans le design, la stratégie de communication ou le marketing, nos réalisations incarnent notre vision dynamique et notre volonté constante d&apos;innover.
                     </p>
-                    <div className='flex mt-16 justify-center lg:justify-start'>
+                    <div className='flex mt-12 justify-center lg:justify-start'>
                         <Link to="/services">
-                            <p className='text-[#022a60] border-[1px] py-2 px-2 border-[#022a60] rounded-xl shadow-xl hover:bg-[#022a60] hover:text-white hover:cursor-pointer'>En savoir plus</p>
+                            <button className="btn mb-6 rounded-full px-16 btn-outline text-white">En savoir plus</button>
                         </Link>
                     </div>
                 </div>
@@ -46,7 +57,7 @@ export default function ProjetsPage() {
             </div>
                 <div className="px-4 flex flex-col items-center justify-center m-4">
                     <div>
-                        <h1 className={`text-3xl uppercase text-center fade-in`}>Nos dernieres créations web</h1>
+                        <h1 className={`text-5xl text-center fade-in mt-12`} id='title2'>Nos dernieres créations web</h1>
                         <div className={`my-8 flex justify-center items-center lg:block lg:mt-2`}>
                             <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                         </div>

@@ -6,16 +6,27 @@ import show from '../../assets/show.jpg';
 
 export default function ContactPage() {
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+    };
+    
+    useEffect(() => {
+        scrollToTop();
+    }, []);
+
+
   return (
     <>
-        <div id='contactPage' className='lg:m-16 lg:pt-20 lg:p-20 p-8 pt-12 m-6 rounded-2xl'>
+        <div className='lg:m-16 lg:pt-20 lg:p-20 p-8 pt-12 m-6 rounded-2xl bg-[#188FA7]'>
             <div>
-                <p className='text-center lg:text-start text-white lg:text-black'>Contact</p>
+                <p className='text-center lg:text-start text-white'>Contact</p>
             </div> 
-            <div className='lg:text-6xl lg:uppercase my-12 lg:w-1/3 text-center lg:text-start text-4xl text-black font-bold'>
+            <div className='lg:text-6xl lg:uppercase my-12 text-center lg:text-start text-4xl text-white font-bold'>
                 Discutons de votre projet !
             </div>
-            <div className='lg:flex lg:justify-around bg-gray-900/[0.7] lg:py-24 rounded-2xl text-white'>
+            <div className='lg:flex lg:justify-around bg-gray-200/[0.4] lg:py-24 rounded-2xl text-white'>
                 <div className='flex flex-col justify-center items-center py-12 lg:py-0'>
                     <div className='flex flex-col justify-center items-center'>
                         <img src={clock} alt="clock" className='' />
@@ -51,9 +62,9 @@ export default function ContactPage() {
         </div>
 
         <div className='my-12 px-8'>
-            <div className='text-center'>
-                <h2 className='uppercase'>Parlons en</h2>
-                <h1 className='text-3xl my-6 font-bold'>Envoyez nous votre message</h1>
+            <div className='text-center mb-6'>
+            <h1 className="text-center text-lg mt-8 uppercase tracking-widest">Parlons en</h1>
+                <h1 className='text-3xl my-4 font-bold text-[#188FA7]'>Envoyez nous votre message</h1>
                 <p>Vous avez une idée de projet ? Vous souhaitez en savoir plus sur nos services ? N&apos;hésitez pas à nous contacter pour plus d&apos;informations.</p>
             </div>
 
@@ -80,7 +91,7 @@ export default function ContactPage() {
                             </div>
                         </div>
                         <div className="flex justify-center mb-12">
-                            <button className="btn bg-[#022a60] text-white rounded-xl">Envoyer</button>
+                            <button className="btn my-8 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
                         </div>
                     </form>
                 </div>

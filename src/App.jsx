@@ -1,19 +1,17 @@
 import Navbar from "./components/Navbar/Navbar"
-import Hero from "./components/Hero/Hero"
-import Services from "./components/Services/Services"
-import Description from "./components/Description/Description"
-import Realisations from "./components/Realisations/Realisation"
-import ContactHomepage from "./components/ContactHomepage/ContactHomepage"
 import Testimonials from "./components/Testimonials/Testimonials"
 import Footer from "./components/Footer/Footer"
 import HeroOtherPage from "./components/Hero/HeroOtherPage"
 import PageServices from "./components/PageServices/PageServices"
-import Projets from "./components/Projets/Projets"
-import RealisationPage from "./components/Realisations/RealisationPage"
 import ContactPage from "./components/ContactHomepage/ContactPage"
 import ProjetsPage from "./components/Projets/ProjetsPage"
 import TestHomePageScroll from "./components/TestHomePageScroll/TestHomePageScroll"
 import TestHomePageMobile from "./components/TestHomePageScroll/TestHomepageMobile"
+
+import WebPage from "./components/PageServices/WebPage"
+import PrintPage from "./components/PageServices/PrintPage"
+import GestionRS from "./components/PageServices/GestionRS"
+import PublicitesPage from "./components/PageServices/PublicitésPage"
 
 import Equipe from "./components/Equipe/Equipe"
 
@@ -99,6 +97,54 @@ function App() {
               <Navbar />
               <HeroOtherPage title={"Contactez-nous"}/>
               <ContactPage />
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/services/web"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Web et web mobile"}/>
+              <WebPage/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/services/print"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Logo et supports imprimés"}/>
+              <PrintPage/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/services/gestion-rs"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Gestion des réseaux sociaux"}/>
+              <GestionRS/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/services/publicites"
+          element={
+            <>
+              <Navbar />
+              <HeroOtherPage title={"Publicités en ligne"}/>
+              <PublicitesPage/>
               <Footer/>
             </>
           }
