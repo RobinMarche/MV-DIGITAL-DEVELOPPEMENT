@@ -26,8 +26,8 @@ export default function Testimonials() {
         <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-0 flex flex-col justify-center items-center lg:mt-8">
           <div className="px-4 flex flex-col items-center justify-center lg:w-1/2 pb-10 m-4" id='contact'>
             <div>
-              <h1 className={`text-3xl uppercase text-center lg:text-start ${scrollY > 3100 ? 'fade-in' : 'slideOffRight2'}`}>Ce que disent nos clients</h1>
-              <div className={`my-8 flex justify-center items-center lg:block lg:mt-2 ${scrollY > 3100 ? 'slideInRight3' : 'slideOffRight3'}`}>
+              <h1 className={`text-5xl text-center lg:text-start ${scrollY > 2700 ? 'fade-in' : 'slideOffRight2'}`} id="title2">Ce que disent nos clients</h1>
+              <div className={`my-8 flex justify-center items-center lg:block lg:mt-4 ${scrollY > 2700 ? 'slideInRight3' : 'slideOffRight3'}`}>
                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
               </div>
             </div>

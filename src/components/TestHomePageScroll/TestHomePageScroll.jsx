@@ -188,17 +188,16 @@ export default function TestHomePageScroll() {
                                     <p className="">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
                                 </div>
                                 <div className="flex justify-center my-2 2xl:my-6">
-                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    <Link to="/services/web">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    </Link>
                                 </div>
-                                {/* <div className="flex justify-center items-center">
-                                    <img src={webpage2} alt="" />
-                                </div> */}
                             </div>
                             <div className="bg-white rounded-2xl p-8 shadow-2xl w-[35vw]">
                                 <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Réseaux sociaux</h1>
                                 <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
                                 <div className="flex justify-center items-center">
-                                    <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase text-[#188FA7]" id="font-price">144.99€</p>
+                                    <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase text-[#188FA7]" id="font-price">149.99€</p>
                                     <div className="text-2xl text-[#188FA7] ml-2" id="">
                                         <p>par</p>
                                         <p>mois</p>
@@ -208,11 +207,10 @@ export default function TestHomePageScroll() {
                                     <p className="">Développez votre notoriété et gagnez en <br /> crédibilité pour attirer de nouveaux clients.</p>
                                 </div>
                                 <div className="flex justify-center my-2 2xl:my-6">
-                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    <Link to="/services/gestion-rs">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    </Link>
                                 </div>
-                                {/* <div className="flex justify-center">
-                                    <img src={socials} alt="" />
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -262,7 +260,7 @@ export default function TestHomePageScroll() {
                         <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
                             <div className='bg-[#022a60] w-[20vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                         </div>
-                        <h1 className='text-7xl 2xl:text-9xl w-[35vw]'>Comment <br />pouvons nous <br /> <span className="text-[#188FA7] font-bold">vous aider</span> ?</h1>
+                        <h1 className='text-7xl 2xl:text-8xl w-[35vw]'>Comment <br />pouvons nous <br /> <span className="text-[#188FA7] font-bold">vous aider</span> ?</h1>
                     </div>
                     <div className='flex flex-wrap items-center justify-center lg:mx-24 2xl:mx-48' id="page4bg">
                         <div className="flex">
@@ -274,8 +272,10 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
-                                        <p className="mb-4">Avoir une présence en ligne efficace est essentiel pour le succès de votre entreprise. Notre équipe de designers et de développeurs s&apos;engage à donner vie à votre vision. Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
-                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        <p className="mb-4">Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
+                                        <Link to="/services/web">
+                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -288,8 +288,10 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
-                                        <p className="mb-4">Laissez-nous être les architectes visuels de votre identité d&apos;entreprise. Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports. Contactez-nous dès aujourd&apos;hui pour donner vie à une image de marque qui laisse une impression durable.</p>
-                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        <p className="mb-4">Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports et donnant vie à une image de marque qui laisse une impression durable.</p>
+                                        <Link to="/services/print">
+                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -304,8 +306,10 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Gestion des Réseaux Sociaux</h2>
-                                        <p className="mb-4">À l&apos;ère de la conversation en ligne, la gestion de votre communauté sur les médias sociaux est cruciale. Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique. Notre équipe dédiée de Community Managers est prête à propulser votre présence sociale vers de nouveaux sommets.</p>
-                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        <p className="mb-4">Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique vers de nouveaux sommets.</p>
+                                        <Link to="/services/gestion-rs">
+                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -318,8 +322,10 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Publicités en ligne</h2>
-                                        <p className="mb-4">À l&apos;ère du numérique, la publicité sur les réseaux sociaux est un levier incontournable pour accroître votre portée. Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
-                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        <p className="mb-4">Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
+                                        <Link to="/services/publicites">
+                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +335,7 @@ export default function TestHomePageScroll() {
 
 
                 <div className='page page_4 flex items-center justify-center text-white pt-12 2xl:pt-24 pt-32' id="page5">
-                    <div className='flex flex-col lg:flex-row justify-between'>
+                    <div className='flex flex-col lg:flex-row justify-around'>
                         <div className='w-1/2 fade-right px-6'>
                             <h2 className='text-md uppercase text-center lg:text-start text-[#188FA7] font-bold'>pourquoi choisir M&V digital Developpement ?</h2>
                             <div className='2xl:my-8 my-2 flex justify-center items-center lg:block lg:mt-2'>
@@ -342,7 +348,9 @@ export default function TestHomePageScroll() {
                                     <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Expertise</h1>
                                     <p className="py-2 2xl:py-4 2xl:text-xl">Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité.</p>
                                     <div className="flex justify-center">
-                                        <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        <Link to="/services">
+                                            <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -350,16 +358,22 @@ export default function TestHomePageScroll() {
                                     <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Créativité</h1>
                                     <p className="py-2 2xl:py-4 2xl:text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
                                     <div className="flex justify-center">
-                                        <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        <Link to="/services">
+                                            <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[40vw] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
+                        <div className="w-[35vw] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
                             <h1 className="text-center 2xl:text-6xl text-4xl font-bold text-white">Echangez gratuitement avec un expert</h1>
                             <div className="flex flex-col justify-center items-center 2xl:mt-24 mt-12">
-                                <button className="btn mb-6 rounded-full px-16 btn-outline text-white">En savoir plus</button>
-                                <button className="btn mb-12 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
+                                <Link to="/services">
+                                    <button className="btn mb-6 rounded-full px-16 btn-outline text-white">En savoir plus</button>
+                                </Link>
+                                <Link to="/contact">
+                                    <button className="btn mb-12 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
