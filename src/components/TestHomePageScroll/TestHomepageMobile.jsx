@@ -124,7 +124,9 @@ export default function TestHomePageMobile() {
                                     <p className="">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
                                 </div>
                                 <div className="flex justify-center my-6">
-                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    <Link to="/contact">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="bg-white rounded-2xl p-8 shadow-2xl m-8">
@@ -141,7 +143,9 @@ export default function TestHomePageMobile() {
                                     <p className="">Développez votre notoriété et gagnez en crédibilité pour attirer de nouveaux clients.</p>
                                 </div>
                                 <div className="flex justify-center my-6">
-                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    <Link to="/contact">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +207,9 @@ export default function TestHomePageMobile() {
                                 <div className="box-back py-4 px-10">
                                     <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
                                     <p className="mb-4">Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    <Link to="/services/web">
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +223,9 @@ export default function TestHomePageMobile() {
                                 <div className="box-back py-4 px-10">
                                     <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
                                     <p className="mb-4">Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports et donnant vie à une image de marque qui laisse une impression durable.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    <Link to="/services/print">
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +239,9 @@ export default function TestHomePageMobile() {
                                 <div className="box-back py-4 px-10">
                                     <h2 className="font-bold text-xl mb-4">Gestion des Réseaux Sociaux</h2>
                                     <p className="mb-4">Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique vers de nouveaux sommets.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    <Link to="/services/gestion-rs">
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +255,9 @@ export default function TestHomePageMobile() {
                                 <div className="box-back py-4 px-10">
                                     <h2 className="font-bold text-xl mb-4">Publicités en ligne</h2>
                                     <p className="mb-4">Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
-                                    <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    <Link to="/services/publicites">
+                                        <p className="text-blue-700 font-bold">En Savoir Plus</p>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                      
@@ -266,7 +278,9 @@ export default function TestHomePageMobile() {
                                     <h1 className="text-4xl text-center pb-12 font-bold uppercase">Expertise</h1>
                                     <p className="py-2 2xl:py-4 text-center">Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité.</p>
                                     <div className="flex justify-center py-12">
-                                        <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        <Link to="/services">
+                                            <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -274,7 +288,9 @@ export default function TestHomePageMobile() {
                                     <h1 className="text-4xl text-center pb-12 font-bold uppercase">Créativité</h1>
                                     <p className="py-2 2xl:py-4 text-center">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
                                     <div className="flex justify-center py-12">
-                                        <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        <Link to="/services">
+                                            <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -282,8 +298,12 @@ export default function TestHomePageMobile() {
                         <div className="p-8 bg-gradient-to-r from-[#188FA7] to-blue-300 flex flex-col justify-center" id="contact5">
                             <h1 className="text-center 2xl:text-6xl text-4xl font-bold text-white">Echangez gratuitement avec un expert</h1>
                             <div className="flex flex-col justify-center items-center 2xl:mt-24 mt-12">
-                                <button className="btn mb-6 rounded-full px-16 btn-outline text-white">En savoir plus</button>
-                                <button className="btn mb-12 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
+                            <Link to="/services">
+                                    <button className="btn mb-6 rounded-full px-16 btn-outline text-white">En savoir plus</button>
+                                </Link>
+                                <Link to="/contact">
+                                    <button className="btn mb-12 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

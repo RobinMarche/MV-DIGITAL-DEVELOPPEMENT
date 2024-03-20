@@ -26,7 +26,7 @@ export default function PageServices() {
             <div className="container mx-auto pt-20 lg:py-20 lg:flex ">
                 <div className="text-center lg:text-start lg:w-[70vw] lg:flex lg:flex-col lg:items-start lg:justify-center lg:px-16">
                     <h1 className="text-6xl text-[#188FA7]" id='title2'>Propulsez votre réussite</h1>
-                    <p className="text-xl text-[#188FA7] mt-4 uppercase text-center lg:text-start py-6">
+                    <p className="text-xl text-[#188FA7] mt-4 uppercase text-center lg:text-start py-6 px-12">
                     Chez M&V Digital Developpement, nous transformons vos idées en réalité et boostons votre présence en ligne pour un impact maximal
                     </p>
                     <p className="mt-4 px-4 text-center lg:text-start lg:px-0">
