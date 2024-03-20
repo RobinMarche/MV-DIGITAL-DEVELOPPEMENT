@@ -241,13 +241,13 @@ body{
 
 #bg-creation{
     background-image: url('./assets/bg-creation.jpg');
-    background-position: right;
+    background-position: top;
     background-size: cover;
 }
 
 #bg-creation2{
     background-image: url('./assets/111994.jpg');
-    background-position: right;
+    background-position: top;
     background-size: cover;
 }
 

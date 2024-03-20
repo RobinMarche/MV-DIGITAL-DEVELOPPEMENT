@@ -288,7 +288,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
-                                        <p className="mb-4">Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
+                                        <p className="mb-4 hidden 2xl:block">Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
                                         <Link to="/services/web">
                                             <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                         </Link>
@@ -304,7 +304,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
-                                        <p className="mb-4">Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports et donnant vie à une image de marque qui laisse une impression durable.</p>
+                                        <p className="mb-4 hidden 2xl:block">Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports et donnant vie à une image de marque qui laisse une impression durable.</p>
                                         <Link to="/services/print">
                                             <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                         </Link>
@@ -322,7 +322,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Gestion des Réseaux Sociaux</h2>
-                                        <p className="mb-4">Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique vers de nouveaux sommets.</p>
+                                        <p className="mb-4 hidden 2xl:block">Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique vers de nouveaux sommets.</p>
                                         <Link to="/services/gestion-rs">
                                             <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                         </Link>
@@ -338,7 +338,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                     <div className="box-back py-4 px-10">
                                         <h2 className="font-bold text-xl mb-4">Publicités en ligne</h2>
-                                        <p className="mb-4">Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
+                                        <p className="mb-4 lg:hidden 2xl:block">Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
                                         <Link to="/services/publicites">
                                             <p className="text-blue-700 font-bold">En Savoir Plus</p>
                                         </Link>
@@ -359,21 +359,10 @@ export default function TestHomePageScroll() {
                             </div>
                             <h1 className="2xl:text-5xl text-3xl text-[#041e42] font-bold">Une communication par des <span className="text-[#188FA7]">pros</span>, pour des <span className="text-[#188FA7]">pros</span></h1>
 
-                            <div className="items-center justify-center 2xl:mt-12">
+                            <div className="items-center justify-center 2xl:mt-12 mb-12">
                                 <div className="flex flex-col bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl m-4 p-4 w-[40vw] text-black" id="bg-creation">
-                                    <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Expertise</h1>
-                                    <p className="py-2 2xl:py-4 2xl:text-xl">Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité.</p>
-                                    <div className="flex justify-center">
-                                        <Link to="/services">
-                                            <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
-                                        </Link>
-                                    </div>
-                                </div>
-
-                                
-                                <div className="flex flex-col bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl m-4 p-4 w-[40vw] text-black" id="bg-creation2">
-                                    <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Créativité</h1>
-                                    <p className="py-2 2xl:py-4 2xl:text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
+                                    <h1 className="2xl:text-3xl text-2xl font-bold uppercase text-[#188FA7]">Expertise & Créativité</h1>
+                                    <p className="py-2 2xl:py-4 2xl:text-xl text-gray-900" style={{ textShadow: '0px 0px 1px rgba(0, 0, 0)' }}>Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité. <br /> <br /> Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
                                     <div className="flex justify-center">
                                         <Link to="/services">
                                             <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
@@ -382,7 +371,7 @@ export default function TestHomePageScroll() {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[35vw] h-[80vh] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
+                        <div className="w-[35vw] h-[65vh] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
                             <h1 className="text-center 2xl:text-6xl text-4xl font-bold text-white">Echangez gratuitement avec un expert</h1>
                             <div className="flex flex-col justify-center items-center 2xl:mt-24 mt-12">
                                 <Link to="/services">
