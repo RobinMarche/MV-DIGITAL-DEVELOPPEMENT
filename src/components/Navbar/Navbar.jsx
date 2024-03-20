@@ -31,6 +31,12 @@ export default function Navbar() {
         setShowMenu(!showMenu);
     }
 
+    const handlePhoneClick = () => {
+        // Mettre ici le numéro de téléphone à appeler
+        const phoneNumber = '0681742342';
+        window.location.href = `tel:${phoneNumber}`;
+    };
+
     return (
         <>
         <div className='relative'>
@@ -46,7 +52,7 @@ export default function Navbar() {
                         <p className='text-xl' id='title-navbar'>M&V</p>
                     </Link>
                 </div>
-                <div>
+                <div onClick={handlePhoneClick}>
                     {showMenu ? <img src={phoneWhite} alt="phone" /> : <img src={phone} alt="phone" />}
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png';
 import web from '../../assets/web.jpg';
 import { useState, useEffect, useCallback } from 'react';
 import community from '../../assets/community_manager.jpg';
@@ -14,10 +13,7 @@ import { debounce } from "lodash";
 import chevLeft from '../../assets/chevron-left.png';
 import chevRight from '../../assets/chevron-right.png';
 import uxDesign from '../../assets/ux_design.jpg';
-import webpage2 from '../../assets/webpage2.png';
-import socials from '../../assets/socials.png';
 import badgeCheck from '../../assets/badge-check.png';
-
 
 export default function TestHomePageScroll() {
 
@@ -85,6 +81,7 @@ export default function TestHomePageScroll() {
     
           const delta = e.deltaY;
           const containers = containerRef.current;
+
     
           if (delta > 0) {
             // Scroll vers le bas
@@ -104,6 +101,25 @@ export default function TestHomePageScroll() {
     const horizontalScroll = (e) => {
         e.persist();
         debouncedScrollHandler(e);
+
+        if(value === 0) {
+            const page1 = document.getElementById('page1');
+            page1.scrollIntoView({ behavior: 'smooth' });
+        } else if(value === 1) {
+            const page2 = document.getElementById('page2');
+            page2.scrollIntoView({ behavior: 'smooth' });
+        } else if(value === 2) {
+            const page3 = document.getElementById('page3');
+            page3.scrollIntoView({ behavior: 'smooth' });
+        } else if(value === 3) {
+            const page4 = document.getElementById('page4');
+            page4.scrollIntoView({ behavior: 'smooth' });
+        } else if(value === 4) {
+            const page5 = document.getElementById('page5');
+            page5.scrollIntoView({ behavior: 'smooth' });
+        }
+
+
     }
 
     const click1 = () => {
@@ -334,7 +350,7 @@ export default function TestHomePageScroll() {
                 </div>
 
 
-                <div className='page page_4 flex items-center justify-center text-white pt-12 2xl:pt-24 pt-32' id="page5">
+                <div className='page page_4 h-[100vh] w-[100vw] flex items-center justify-center text-white pt-12 2xl:pt-24 pt-32' id="page5">
                     <div className='flex flex-col lg:flex-row justify-around'>
                         <div className='w-1/2 fade-right px-6'>
                             <h2 className='text-md uppercase text-center lg:text-start text-[#188FA7] font-bold'>pourquoi choisir M&V digital Developpement ?</h2>
@@ -354,6 +370,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                 </div>
 
+                                
                                 <div className="flex flex-col bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl m-4 p-4 w-[40vw] text-black" id="bg-creation2">
                                     <h1 className="2xl:text-3xl text-2xl font-bold uppercase">Créativité</h1>
                                     <p className="py-2 2xl:py-4 2xl:text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
@@ -365,7 +382,7 @@ export default function TestHomePageScroll() {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[35vw] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
+                        <div className="w-[35vw] h-[80vh] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
                             <h1 className="text-center 2xl:text-6xl text-4xl font-bold text-white">Echangez gratuitement avec un expert</h1>
                             <div className="flex flex-col justify-center items-center 2xl:mt-24 mt-12">
                                 <Link to="/services">
