@@ -1,19 +1,17 @@
 import { Link } from "react-router-dom";
-import web from '../../assets/web.jpg';
-import { useState, useEffect, useCallback } from 'react';
-import community from '../../assets/community_manager.jpg';
-import print from '../../assets/print2.jpg';
+import { useState, useEffect } from 'react';
 import { useRef } from "react";
 import smile from '../../assets/femme.jpg';
 import visibility from '../../assets/visibility.png';
 import timer from '../../assets/timer.png';
 import chart from '../../assets/bar-chart-3.png';
 import arrow from '../../assets/move-right.png';
-import { debounce } from "lodash";
-import chevLeft from '../../assets/chevron-left.png';
-import chevRight from '../../assets/chevron-right.png';
-import uxDesign from '../../assets/ux_design.jpg';
 import badgeCheck from '../../assets/badge-check.png';
+import Service1 from '../../assets/web_web_mobile.jpg';
+import Service2 from '../../assets/phone.jpg';
+import Service3 from '../../assets/34109.jpg';
+import Service4 from '../../assets/pubRS.jpg';
+import contact from '../../assets/40001.jpg';
 
 export default function TestHomePageScroll() {
 
@@ -74,92 +72,73 @@ export default function TestHomePageScroll() {
 
     const containerRef = useRef();
 
-    const debouncedScrollHandler = useCallback(
-        debounce((e) => {
-          const container = document.getElementById('container');
-          container.scrollLeft += e.deltaY;
+    // const debouncedScrollHandler = useCallback(
+    //     debounce((e) => {
+    //       const container = document.getElementById('container');
+    //       container.scrollLeft += e.deltaY;
     
-          const delta = e.deltaY;
-          const containers = containerRef.current;
+    //       const delta = e.deltaY;
+    //       const containers = containerRef.current;
 
     
-          if (delta > 0) {
-            // Scroll vers le bas
-            containers.scrollLeft += containers.clientWidth;
-            // Augmenter la valeur de 1 lors du scroll vers le bas
-            setValue((prevValue) => Math.min(prevValue + 1, 4));
-          } else {
-            // Scroll vers le haut
-            containers.scrollLeft -= containers.clientWidth;
-            // Diminuer la valeur de 1 lors du scroll vers le haut
-            setValue((prevValue) => Math.max(prevValue - 1, 0));
-          }
-        }, 500), // Délai d'attente d'une seconde
-        [] // Aucune dépendance, la fonction ne change pas
-    );
+    //       if (delta > 0) {
+    //         // Scroll vers le bas
+    //         containers.scrollLeft += containers.clientWidth;
+    //         // Augmenter la valeur de 1 lors du scroll vers le bas
+    //         setValue((prevValue) => Math.min(prevValue + 1, 4));
+    //       } else {
+    //         // Scroll vers le haut
+    //         containers.scrollLeft -= containers.clientWidth;
+    //         // Diminuer la valeur de 1 lors du scroll vers le haut
+    //         setValue((prevValue) => Math.max(prevValue - 1, 0));
+    //       }
+    //     }, 500), // Délai d'attente d'une seconde
+    //     [] // Aucune dépendance, la fonction ne change pas
+    // );
 
-    const horizontalScroll = (e) => {
-        e.persist();
-        debouncedScrollHandler(e);
+    // const horizontalScroll = (e) => {
+    //     e.persist();
+    //     debouncedScrollHandler(e);
+    // }
 
-        if(value === 0) {
-            const page1 = document.getElementById('page1');
-            page1.scrollIntoView({ behavior: 'smooth' });
-        } else if(value === 1) {
-            const page2 = document.getElementById('page2');
-            page2.scrollIntoView({ behavior: 'smooth' });
-        } else if(value === 2) {
-            const page3 = document.getElementById('page3');
-            page3.scrollIntoView({ behavior: 'smooth' });
-        } else if(value === 3) {
-            const page4 = document.getElementById('page4');
-            page4.scrollIntoView({ behavior: 'smooth' });
-        } else if(value === 4) {
-            const page5 = document.getElementById('page5');
-            page5.scrollIntoView({ behavior: 'smooth' });
-        }
+    // const click1 = () => {
+    //     const page1 = document.getElementById('page1');
+    //     page1.scrollIntoView({ behavior: 'smooth' });
+    //     setValue(0);
+    // }
 
+    // const click2 = () => {
+    //     const page2 = document.getElementById('page2');
+    //     page2.scrollIntoView({ behavior: 'smooth' });
+    //     setValue(1);
+    // }
 
-    }
+    // const click3 = () => {
+    //     const page3 = document.getElementById('page3');
+    //     page3.scrollIntoView({ behavior: 'smooth' });
+    //     setValue(2);
+    // }
 
-    const click1 = () => {
-        const page1 = document.getElementById('page1');
-        page1.scrollIntoView({ behavior: 'smooth' });
-        setValue(0);
-    }
+    // const click4 = () => {
+    //     const page4 = document.getElementById('page4');
+    //     page4.scrollIntoView({ behavior: 'smooth' });
+    //     setValue(3);
+    // }
 
-    const click2 = () => {
-        const page2 = document.getElementById('page2');
-        page2.scrollIntoView({ behavior: 'smooth' });
-        setValue(1);
-    }
-
-    const click3 = () => {
-        const page3 = document.getElementById('page3');
-        page3.scrollIntoView({ behavior: 'smooth' });
-        setValue(2);
-    }
-
-    const click4 = () => {
-        const page4 = document.getElementById('page4');
-        page4.scrollIntoView({ behavior: 'smooth' });
-        setValue(3);
-    }
-
-    const click5 = () => {
-        const page5 = document.getElementById('page5');
-        page5.scrollIntoView({ behavior: 'smooth' });
-        setValue(4);
-    }
+    // const click5 = () => {
+    //     const page5 = document.getElementById('page5');
+    //     page5.scrollIntoView({ behavior: 'smooth' });
+    //     setValue(4);
+    // }
     
     return(
         <>
 
-            <div id='container' onWheel={horizontalScroll} ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative h-[100vh] overflow-y-hidden">
+            <div id='container' ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative">
                 <div className='page page_1' id="page1">
-                    <div className='h-[100vh] h-[100vh] flex flex-col lg:pt-16 2xl:pt-32 text-gray-900'  id='hero'>
+                    <div className='h-[100vh] h-[100vh] flex flex-col pt-16 2xl:pt-32 text-gray-900'  id='hero'>
                         <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
-                        <h1 className="text-center text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication dédiée aux</h1>
+                        <h1 className="text-center text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication <br /> dédiée aux</h1>
                         <h1 className={`text-center text-4xl 2xl:text-7xl lg:text-7xl fade-in h-[9vh] lg:h-[16vh] text-[#188FA7] lg:mx-80 font-bold
                         `} id="">{displayText}</h1>
 
@@ -187,8 +166,8 @@ export default function TestHomePageScroll() {
                 </div>
 
                 <div className='page page_1' id="page2">
-                    <div className='lg:h-[100vh] h-[100vh] flex flex-col 2xl:pt-20 pt-4 text-gray-900 flex flex-col items-center' id="price">
-                        <h2 className='text-4xl 2xl:text-6xl mx-[22vw] font-bold text-center my-8 text-[#041e42] pt-12 shadowtext'>Les <span className="text-[#188FA7]">meilleures</span> offres adaptées à votre activité et à votre budget</h2>
+                    <div className='flex flex-col 2xl:pt-8 pt-4 text-gray-900 flex flex-col items-center mb-24' id="price">
+                        <h2 className='text-5xl 2xl:text-6xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext'>Les <span className="text-[#188FA7]">meilleures</span> offres adaptées à votre activité et à votre budget</h2>
                         <div className="flex w-full justify-around">
                             <div className="bg-white rounded-2xl p-8 shadow-2xl w-[35vw]">
                                 <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
@@ -228,6 +207,46 @@ export default function TestHomePageScroll() {
                                     </Link>
                                 </div>
                             </div>
+                            
+                        </div>
+                        <div>
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl w-[85vw] mt-12 flex items-center justify-around" id="pub">
+                                <div className="my-12 mx-12">
+                                    <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Vos publicités en ligne</h1>
+                                    <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
+                                    <div className="flex justify-center items-center">
+                                        <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase text-[#188FA7]" id="font-price">130€</p>
+                                        <div className="text-2xl text-[#188FA7] ml-2" id="">
+                                            <p>par</p>
+                                            <p>mois</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-center my-2 2xl:my-6">
+                                        <Link to="/services/web">
+                                            <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="max-w-[25vw] text-center text-xl mx-8">
+                                    <h1 className="mb-8 text-2xl text-red-400" id="font-menu">Propulsez votre visibilité !</h1>
+                                    <p>
+                                        La publicité en ligne offre une visibilité mondiale ou ciblée, une mesure précise des performances et une flexibilité budgétaire, essentielle à la croissance de toute entreprise dans l&apos;économie numérique.
+                                    </p>
+                                </div>
+                                <div className="text-2xl text-[#188fa7]" id="font-menu">
+                                    <div className="mb-4">
+                                        <p>- Google Ads</p>
+                                    </div>
+                                    <div className="mb-4">
+                                        <p>- réseaux sociaux</p>
+                                    </div>
+                                    <div>
+                                        <p>- LeBonCoin</p>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,8 +259,8 @@ export default function TestHomePageScroll() {
                             <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-4xl 2xl:text-7xl text-[#041e42] font-bold">Votre <span className="text-[#188FA7]">Réussite</span>, <br /></h1>
-                            <h1 className="text-4xl 2xl:text-7xl text-[#041e42] font-bold ml-36">Notre Métier</h1>
+                            <h1 className="text-5xl 2xl:text-7xl text-[#041e42] font-bold">Votre <span className="text-[#188FA7]">Réussite</span>, <br /></h1>
+                            <h1 className="text-5xl 2xl:text-7xl text-[#041e42] font-bold ml-36">Notre Métier</h1>
                             <p className={`text-center lg:text-start 2xl:mt-8 mt-4 text-lg 2xl:text-xl`}>
                                 Votre entreprise mérite la meilleure communication. <br />
                                 Libérez votre potentiel avec M&V Digital Developpement !
@@ -270,160 +289,117 @@ export default function TestHomePageScroll() {
                     </div>
                 </div>
 
-                <div className='page page_3 h-[100vh] w-[100vw] flex items-start justify-center 2xl:pt-32 pt-24' id="page4">
-                    <div className='text-start pl-24 mt-12'>
-                        <h2 className='text-lg uppercase text-center lg:text-start mt-8 text-[#188FA7]'>Soyez accompagné par une agence de communication</h2>
-                        <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
-                            <div className='bg-[#022a60] w-[20vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
+                <div className='page page_3 w-[100vw] mb-24' id="page4bg">
+                    <div className='text-start mt-12'>
+                        <div className="flex justify-center items-center">
+                            <h1 className='text-6xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16' id="title-help">Comment pouvons nous <br />vous <span className="text-[#188FA7] font-bold"> aider</span> ?</h1>
                         </div>
-                        <h1 className='text-7xl 2xl:text-8xl w-[35vw]'>Comment <br />pouvons nous <br /> <span className="text-[#188FA7] font-bold">vous aider</span> ?</h1>
                     </div>
-                    <div className='flex flex-wrap items-center justify-center lg:mx-24 2xl:mx-48' id="page4bg">
-                        <div className="flex">
-                            <div className="box rounded-xl">
-                                <div className="box-inner rounded-xl shadow-xl">
-                                    <div className="box-front flex flex-col items-center justify-center">
-                                        <img src={web} alt="" className="w-1/2" />
-                                        <h2 className="font-bold text-xl">Web et Web Mobile</h2>
-                                    </div>
-                                    <div className="box-back py-4 px-10">
-                                        <h2 className="font-bold text-xl mb-4">Web et Web Mobile</h2>
-                                        <p className="mb-4 hidden 2xl:block">Que vous ayez besoin d&apos;un site web professionnel ou d&apos;une plateforme e-commerce robuste, nous sommes là pour transformer vos idées en réalité numérique.</p>
-                                        <Link to="/services/web">
-                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
-                                        </Link>
-                                    </div>
+                    
+                    <div className="flex h-[60vh] justify-center mt-16">
+                       <div className="flex">
+                            <div className="rounded-xl w-[20vw] mr-8 flex flex-col items-center justify-between relative overflow-hidden" id="service1">
+                                <img src={Service1} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
+                                <p className="font-bold text-xl text-white z-0 pt-8 text-center">Site Web et Web Mobile</p>
+                                <button className="btn rounded-full bg-red-400 border-red-400 text-white z-0 mb-8">en savoir plus <img src={arrow} alt="" /></button>
+                            </div>
+                            
+                            <div className="rounded-xl w-[20vw] flex flex-col items-center justify-between relative overflow-hidden" id="service2">
+                                <img src={Service2} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
+                                <p className="font-bold text-xl text-white z-0 pt-8 text-center">Gestion des Réseaux Sociaux</p>
+                                <button className="btn rounded-full bg-red-400 border-red-400 text-white z-0 mb-8">en savoir plus <img src={arrow} alt="" /></button>
+                            </div>
+                       </div>
+
+                       <div className="ml-8">
+                            <div className="rounded-xl h-[28vh] w-[25vw] mb-[32px] flex flex-col justify-between relative overflow-hidden" id="service3">
+                                <img src={Service3} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
+                                <p className="font-bold text-xl text-white z-0 p-8">Logo et Supports Imprimés</p>
+                                <div className="z-0 p-8">
+                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">en savoir plus <img src={arrow} alt="" /></button>
                                 </div>
                             </div>
 
-                            <div className="box w-[20vw]">
-                                <div className="box-inner rounded-xl shadow-xl">
-                                    <div className="box-front flex flex-col items-center justify-center">
-                                        <img src={print} alt="" className="w-1/2" />
-                                        <h2 className="font-bold text-xl">Logo et Supports Imprimés</h2>
-                                    </div>
-                                    <div className="box-back py-4 px-10">
-                                        <h2 className="font-bold text-xl mb-4">Logo et Supports Imprimés</h2>
-                                        <p className="mb-4 hidden 2xl:block">Nous transformons vos concepts en réalité visuelle, renforçant ainsi votre présence sur tous les supports et donnant vie à une image de marque qui laisse une impression durable.</p>
-                                        <Link to="/services/print">
-                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
-                                        </Link>
-                                    </div>
+                            <div className="rounded-xl h-[28vh] w-[25vw] flex flex-col justify-between relative overflow-hidden" id="service4">
+                                <img src={Service4} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
+                                <p className="font-bold text-xl text-white z-0 p-8">Publicités en ligne</p>
+                                <div className="z-0 p-8">
+                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">en savoir plus <img src={arrow} alt="" /></button>
                                 </div>
                             </div>
-                        </div>
-
-                        <div className="flex">
-                            <div className="box w-[20vw]">
-                                <div className="box-inner rounded-xl shadow-xl">
-                                    <div className="box-front flex flex-col items-center justify-center">
-                                        <img src={community} alt="" className="w-1/2" />
-                                        <h2 className="font-bold text-xl">Gestion des Réseaux Sociaux</h2>
-                                    </div>
-                                    <div className="box-back py-4 px-10">
-                                        <h2 className="font-bold text-xl mb-4">Gestion des Réseaux Sociaux</h2>
-                                        <p className="mb-4 hidden 2xl:block">Nous cultivons des relations significatives avec votre audience pour faire croître votre influence numérique vers de nouveaux sommets.</p>
-                                        <Link to="/services/gestion-rs">
-                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="box w-[20vw]">
-                                <div className="box-inner rounded-xl shadow-xl">
-                                    <div className="box-front flex flex-col items-center justify-center">
-                                        <img src={uxDesign} alt="" className="w-1/2" />
-                                        <h2 className="font-bold text-xl">Publicités en ligne</h2>
-                                    </div>
-                                    <div className="box-back py-4 px-10">
-                                        <h2 className="font-bold text-xl mb-4">Publicités en ligne</h2>
-                                        <p className="mb-4 lg:hidden 2xl:block">Nous concevons des campagnes publicitaires stratégiques, optimisées pour chaque plateforme, pour maximiser votre impact et générer des résultats tangibles.</p>
-                                        <Link to="/services/publicites">
-                                            <p className="text-blue-700 font-bold">En Savoir Plus</p>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       </div>
                     </div>
                 </div>
 
 
-                <div className='page page_4 h-[100vh] w-[100vw] flex items-center justify-center text-white pt-12 2xl:pt-24 pt-32' id="page5">
-                    <div className='flex flex-col lg:flex-row justify-around'>
-                        <div className='w-1/2 fade-right px-6'>
-                            <h2 className='text-md uppercase text-center lg:text-start text-[#188FA7] font-bold'>pourquoi choisir M&V digital Developpement ?</h2>
-                            <div className='2xl:my-8 my-2 flex justify-center items-center lg:block lg:mt-2'>
-                                <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
-                            </div>
-                            <h1 className="2xl:text-5xl text-3xl text-[#041e42] font-bold">Une communication par des <span className="text-[#188FA7]">pros</span>, pour des <span className="text-[#188FA7]">pros</span></h1>
-
-                            <div className="items-center justify-center 2xl:mt-12 mb-12">
-                                <div className="flex flex-col bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl m-4 p-4 w-[40vw] text-black" id="bg-creation">
-                                    <h1 className="2xl:text-3xl text-2xl font-bold uppercase text-[#188FA7]">Expertise & Créativité</h1>
-                                    <p className="py-2 2xl:py-4 2xl:text-xl text-gray-900" style={{ textShadow: '0px 0px 1px rgba(0, 0, 0)' }}>Bénéficiez des compétences et du savoir-faire d’experts en communication pour propulser votre activité. <br /> <br /> Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
-                                    <div className="flex justify-center">
-                                        <Link to="/services">
-                                            <button className="btn 2xl:mb-4 rounded-full px-16 glass bg-[#188FA7] text-white normal-case">En Savoir Plus</button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-[35vw] h-[65vh] p-24 bg-gradient-to-r from-[#188FA7] to-blue-300 rounded-2xl flex flex-col justify-center" id="contact5">
-                            <h1 className="text-center 2xl:text-6xl text-4xl font-bold text-white">Echangez gratuitement avec un expert</h1>
-                            <div className="flex flex-col justify-center items-center 2xl:mt-24 mt-12">
-                                <Link to="/services">
-                                    <button className="btn mb-6 rounded-full px-16 btn-outline text-white">En savoir plus</button>
-                                </Link>
-                                <Link to="/contact">
-                                    <button className="btn mb-12 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
-                                </Link>
-                            </div>
+                <div className='page page_4' id="page5">
+                    <div className='text-start mt-12'>
+                        <div className="flex flex-col justify-center items-center">
+                            <h2 className='text-lg uppercase text-center mt-8 text-[#188FA7]'>pourquoi choisir M&V Digital Developpement ?</h2>
+                            <h1 className='text-6xl 2xl:text-7xl w-[70vw] text-center' id="title-help">une communication par des<span className="text-[#188FA7] font-bold"> pros</span>, <br />pour des<span className="text-[#188FA7] font-bold"> pros</span></h1>
                         </div>
                     </div>
+                    <div className="mx-12 xl:mx-48 flex justify-center items-center mt-12">
+                        <div className="m-8 p-8 rounded-xl" id="bg-creation">
+                            <h1 className="font-bold text-4xl" id="subtitle">Expertise</h1>
+                            <p className="my-4 xl:w-2/3 text-xl">Bénéficiez des compétences et du savoir-faire d&apos;experts pour propulser votre activité.</p>
+                            <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
+                        </div>
+
+                        <div className="m-8 p-8 rounded-xl" id="bg-creation2">
+                            <h1 className="font-bold text-4xl" id="subtitle">Créativité</h1>
+                            <p className="my-4 xl:w-2/3 text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
+                            <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
+                        </div>
+                    </div>
+                    <div className="mx-20 xl:mx-56 p-8 bg-[#188fa7] rounded-2xl text-[#188fa7]" id="bgcreation3">
+                        <h1 className="text-center text-5xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement <br />avec un expert</h1>
+                        <div className="flex flex-col justify-center mt-12 items-center">
+                            <button className="btn btn-outline rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">En savoir plus</button>
+                            <button className="btn rounded-full px-12 text-lg mb-12 bg-red-400 text-white border-red-400">Contactez-nous</button>
+                        </div>
+                    </div>
+                    
                 </div>
 
-                <div className={`hidden lg:flex lg:fixed bottom-5 left-1/2 transform -translate-x-1/2 flex bg-[#188FA7]/[0.5] lg:w-[30vw] w-[50vw] xl:w-[20vw] rounded-full justify-around items-center py-2 px-4`}>
-                    <div>
-                        <div className={`${ value === 0 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`}  onClick={click1}></div>
-                        <div className={`${ value === 0 ? "flex bg-[#041e42] rounded-full py-2 px-2" : "hidden"}`}>
-                            <img src={chevLeft} alt="" />
-                            <img src={chevRight} alt="" />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div className={`${ value === 1 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`} onClick={click2}></div>
-                        <div className={`${ value === 1 ? "flex bg-[#041e42] rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
-                            <img src={chevLeft} alt="" />
-                            <img src={chevRight} alt="" />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div className={`${ value === 2 ? "" : "badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer"}`} onClick={click3}></div>
-                        <div className={`${ value === 2 ? "flex bg-[#041e42] rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
-                            <img src={chevLeft} alt="" />
-                            <img src={chevRight} alt="" />
-                        </div>
-                    </div>                    
-                    
-                    <div>
-                        <div className={`${ value === 3 ? "" : `badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer`}`} onClick={click4}></div>
-                        <div className={`${ value === 3 ? "flex bg-[#041e42] rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
-                            <img src={chevLeft} alt="" />
-                            <img src={chevRight} alt="" />
-                        </div>
-                    </div>
 
-                    <div>
-                        <div className={`${ value === 4 ? "" : `badge badge-neutral bg-white border-white badge-xs mx-2 hover:cursor-pointer`}`} onClick={click5}></div>
-                        <div className={`${ value === 4 ? "flex bg-[#041e42] rounded-full py-2 px-2 ease-out duration-1000" : "hidden"}`}>
-                            <img src={chevLeft} alt="" />
-                            <img src={chevRight} alt="" />
-                        </div>
+                <div className="relative h-[110vh] mt-24">
+                    <img src={contact} alt="contact" className="w-[70vw] xl:w-[60vw] 2xl:w-[50vw] ml-[10vw] xl:ml-[20vw] absolute rounded-2xl"/>
+                    <div className="flex absolute ml-[30vw] xl:ml-[45vw] top-[20vh] bg-white py-8 px-24 flex flex-col border-[1px] border-gray-300 rounded-xl">
+                        <h2 className="text-3xl font-bold text-[#188fa7]" id="subtitle">Contactez-nous</h2>
+                        <p className="mt-6 mb-12 text-[#188fa7]">Remplissez ce formulaire pour être contacté par l&apos;un de nos experts</p>
+                        <form>
+                            <div className="flex mb-12">
+                                <div className="flex flex-col mr-8">
+                                    <label htmlFor="name">Nom et Prénom*</label>
+                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                </div>
+                                <div className="flex flex-col">
+                                    <label htmlFor="name">Nom de l&apos;entreprise</label>
+                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                </div>
+                            </div>
+
+                            <div className="flex mb-12">
+                                <div className="flex flex-col mr-8">
+                                    <label htmlFor="name">Téléphone*</label>
+                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                </div>
+                                <div className="flex flex-col">
+                                    <label htmlFor="name">Adresse Mail*</label>
+                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col">
+                                <label htmlFor="message">Votre Message*</label>
+                                <textarea name="message" id="message" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none min-h-[10vh]"></textarea>
+                            </div>
+
+                            <div className="flex justify-center mt-8">
+                                <button className="btn glass rounded-full bg-[#188fa7] text-white px-12">Envoyer</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
