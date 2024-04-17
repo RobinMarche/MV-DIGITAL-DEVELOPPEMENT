@@ -17,7 +17,6 @@ import Equipe from "./components/Equipe/Equipe"
 
 import { Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
 
 
 function App() {
@@ -48,7 +47,7 @@ function App() {
           element={
             <>
               <Navbar />
-              {isMobile ? <><TestHomePageMobile /><Footer/></> : <TestHomePageScroll />}
+              {isMobile ? <><TestHomePageMobile /><Footer/></> : <><TestHomePageScroll /><Footer/></>}
             </>
           } 
         />
