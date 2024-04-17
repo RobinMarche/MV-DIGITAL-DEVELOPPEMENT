@@ -12,6 +12,8 @@ import Service2 from '../../assets/phone.jpg';
 import Service3 from '../../assets/34109.jpg';
 import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
+import fleche from '../../assets/fleche.svg';
+import banniereRS from '../../assets/banniere_logo_RS.svg';
 
 export default function TestHomePageScroll() {
 
@@ -24,7 +26,6 @@ export default function TestHomePageScroll() {
     const wordDuration = 1000;
     const letterDuration = 100; // Délai entre chaque lettre
     const deleteDuration = 500; // Délai entre la suppression et l'écriture du mot suivant
-    const [value, setValue] = useState(0);
   
     useEffect(() => {
         let wordIndex = 0;
@@ -72,65 +73,6 @@ export default function TestHomePageScroll() {
 
     const containerRef = useRef();
 
-    // const debouncedScrollHandler = useCallback(
-    //     debounce((e) => {
-    //       const container = document.getElementById('container');
-    //       container.scrollLeft += e.deltaY;
-    
-    //       const delta = e.deltaY;
-    //       const containers = containerRef.current;
-
-    
-    //       if (delta > 0) {
-    //         // Scroll vers le bas
-    //         containers.scrollLeft += containers.clientWidth;
-    //         // Augmenter la valeur de 1 lors du scroll vers le bas
-    //         setValue((prevValue) => Math.min(prevValue + 1, 4));
-    //       } else {
-    //         // Scroll vers le haut
-    //         containers.scrollLeft -= containers.clientWidth;
-    //         // Diminuer la valeur de 1 lors du scroll vers le haut
-    //         setValue((prevValue) => Math.max(prevValue - 1, 0));
-    //       }
-    //     }, 500), // Délai d'attente d'une seconde
-    //     [] // Aucune dépendance, la fonction ne change pas
-    // );
-
-    // const horizontalScroll = (e) => {
-    //     e.persist();
-    //     debouncedScrollHandler(e);
-    // }
-
-    // const click1 = () => {
-    //     const page1 = document.getElementById('page1');
-    //     page1.scrollIntoView({ behavior: 'smooth' });
-    //     setValue(0);
-    // }
-
-    // const click2 = () => {
-    //     const page2 = document.getElementById('page2');
-    //     page2.scrollIntoView({ behavior: 'smooth' });
-    //     setValue(1);
-    // }
-
-    // const click3 = () => {
-    //     const page3 = document.getElementById('page3');
-    //     page3.scrollIntoView({ behavior: 'smooth' });
-    //     setValue(2);
-    // }
-
-    // const click4 = () => {
-    //     const page4 = document.getElementById('page4');
-    //     page4.scrollIntoView({ behavior: 'smooth' });
-    //     setValue(3);
-    // }
-
-    // const click5 = () => {
-    //     const page5 = document.getElementById('page5');
-    //     page5.scrollIntoView({ behavior: 'smooth' });
-    //     setValue(4);
-    // }
-    
     return(
         <>
 
@@ -227,21 +169,15 @@ export default function TestHomePageScroll() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="max-w-[25vw] text-center text-xl mx-8">
-                                    <h1 className="mb-8 text-2xl text-red-400" id="font-menu">Propulsez votre visibilité !</h1>
-                                    <p>
-                                        La publicité en ligne offre une visibilité mondiale ou ciblée, une mesure précise des performances et une flexibilité budgétaire, essentielle à la croissance de toute entreprise dans l&apos;économie numérique.
-                                    </p>
-                                </div>
-                                <div className="text-2xl text-[#188fa7]" id="font-menu">
-                                    <div className="mb-4">
-                                        <p>- Google Ads</p>
+                                <div>
+                                    <div className="max-w-[25vw] text-center text-xl mx-8">
+                                        <h1 className="mb-8 text-2xl text-red-400" id="font-menu">Propulsez votre visibilité !</h1>
+                                        <p>
+                                            La publicité en ligne offre une visibilité mondiale ou ciblée, une mesure précise des performances et une flexibilité budgétaire, essentielle à la croissance de toute entreprise dans l&apos;économie numérique.
+                                        </p>
                                     </div>
-                                    <div className="mb-4">
-                                        <p>- réseaux sociaux</p>
-                                    </div>
-                                    <div>
-                                        <p>- LeBonCoin</p>
+                                    <div className="text-2xl text-[#188fa7]" id="font-menu">
+                                        <img src={banniereRS} alt="banniere_RS" className="w-[30vw]" />
                                     </div>
                                 </div>
                                 
@@ -365,6 +301,8 @@ export default function TestHomePageScroll() {
 
                 <div className="relative h-[110vh] mt-24">
                     <img src={contact} alt="contact" className="w-[70vw] xl:w-[60vw] 2xl:w-[50vw] ml-[10vw] xl:ml-[20vw] absolute rounded-2xl"/>
+                    <img src={fleche} alt="contact" className="w-[15vw] xl:w-[20vw] top-[55vh] 2xl:w-[15vw] ml-[10vw] xl:ml-[25vw] absolute rounded-2xl"/>
+
                     <div className="flex absolute ml-[30vw] xl:ml-[45vw] top-[20vh] bg-white py-8 px-24 flex flex-col border-[1px] border-gray-300 rounded-xl">
                         <h2 className="text-3xl font-bold text-[#188fa7]" id="subtitle">Contactez-nous</h2>
                         <p className="mt-6 mb-12 text-[#188fa7]">Remplissez ce formulaire pour être contacté par l&apos;un de nos experts</p>

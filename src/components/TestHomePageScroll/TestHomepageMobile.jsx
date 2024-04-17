@@ -1,21 +1,19 @@
 import { Link } from "react-router-dom";
-import web from '../../assets/web.jpg';
 import { useState, useEffect } from 'react';
-import community from '../../assets/community_manager.jpg';
-import print from '../../assets/print2.jpg';
 import { useRef } from "react";
 import smile from '../../assets/femme.jpg';
 import visibility from '../../assets/visibility.png';
 import timer from '../../assets/timer.png';
 import chart from '../../assets/bar-chart-3.png';
 import arrow from '../../assets/move-right.png';
-import uxDesign from '../../assets/ux_design.jpg';
 import badgeCheck from '../../assets/badge-check.png';
 import Service1 from '../../assets/web_web_mobile.jpg';
 import Service2 from '../../assets/phone.jpg';
 import Service3 from '../../assets/34109.jpg';
 import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
+import banniereRS from '../../assets/banniere_logo_RS.svg';
+
 
 
 
@@ -84,7 +82,7 @@ export default function TestHomePageMobile() {
             <div id='' ref={containerRef} style={{ scrollBehavior: 'smooth' }}>
                 <div className='page page_1' id="page1">
                     <div className='lg:h-[100vh] h-[100vh] flex flex-col text-gray-900 '  id='hero'>
-                        <h2 className="pt-24 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
+                        <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
                         <h1 className="text-center text-4xl font-bold mx-8 lg:mx-48 xl:mx-80">L&apos;agence de communication dédiée aux</h1>
                         <h1 className={`text-center text-4xl fade-in h-[9vh] text-[#188FA7] font-bold
                         `} id="">{displayText}</h1>
@@ -114,7 +112,7 @@ export default function TestHomePageMobile() {
 
                 <div className='page page_1' id="page2">
                     <div className='flex flex-col lg:pt-20 text-gray-900 flex flex-col items-center' id="price">
-                        <h2 className='text-4xl mx-[10vw] font-bold text-center my-8 text-gray-900 pt-12 shadowtext'>Les <span className="text-[#188FA7]">meilleures</span> offres adaptées à votre activité et à votre budget</h2>
+                        <h2 className='text-4xl mx-[10vw] font-bold text-center my-8 text-gray-900 pt-12 shadowtext'>Les <span className="text-[#188FA7]">meilleures</span> offres adaptées à votre budget</h2>
                         <div className="flex flex-col w-full justify-around">
                             <div className="bg-white rounded-2xl p-8 shadow-2xl m-8">
                                 <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
@@ -179,16 +177,8 @@ export default function TestHomePageMobile() {
                                         La publicité en ligne offre une visibilité essentielle à la croissance de toute entreprise dans l&apos;économie numérique.
                                     </p>
                                 </div>
-                                <div className="text-2xl text-[#188fa7] flex flex-col justify-center items-center mt-12" id="font-menu">
-                                    <div className="mb-4">
-                                        <p>- Google Ads</p>
-                                    </div>
-                                    <div className="mb-4">
-                                        <p>- réseaux sociaux</p>
-                                    </div>
-                                    <div>
-                                        <p>- LeBonCoin</p>
-                                    </div>
+                                <div className="text-2xl text-[#188fa7] flex flex-col justify-center items-center mt-4" id="font-menu">
+                                    <img src={banniereRS} alt="" />
                                 </div>
                                 
 
@@ -240,7 +230,7 @@ export default function TestHomePageMobile() {
                 <div className='page page_3 w-[100vw] mb-24' id="page4bg">
                     <div className='text-start mt-12'>
                         <div className="flex justify-center items-center">
-                            <h1 className='text-5xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16' id="title-help">Comment pouvons nous vous <span className="text-[#188FA7] font-bold"> aider</span> ?</h1>
+                            <h1 className='text-4xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16' id="title-help">Comment pouvons nous vous <span className="text-[#188FA7] font-bold"> aider</span> ?</h1>
                         </div>
                     </div>
                     
