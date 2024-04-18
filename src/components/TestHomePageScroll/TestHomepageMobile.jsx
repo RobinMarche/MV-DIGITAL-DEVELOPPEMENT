@@ -14,6 +14,7 @@ import Service3 from '../../assets/34109.jpg';
 import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
+import separation from '../../assets/separation.svg';
 
 import emailjs from '@emailjs/browser';
 
@@ -391,6 +392,47 @@ export default function TestHomePageMobile() {
                                 <button className="btn glass rounded-full bg-[#188fa7] text-white px-12">Envoyer</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <div className="p-8 bg-[#188fa7] m-8 rounded-xl">
+                    <div className="flex justify-center flex-col items-center">
+                        <div className="text-center text-xl font-bold mb-8 text-white" id="subtitle">Vous avez des questions ?</div>
+                        <img src={separation} alt="separation" className="w-[40vw] md:w-[20vw]"/>
+                    </div>
+                    <div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
