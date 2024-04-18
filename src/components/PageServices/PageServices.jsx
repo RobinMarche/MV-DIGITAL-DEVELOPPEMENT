@@ -42,14 +42,13 @@ export default function PageServices() {
         <div className='lg:py-12'>
             <div className='text-center px-8 my-12'>
                 <h1 className='text-4xl lg:text-5xl text-white' id='title2'>Comment pouvons nous vous aider ?</h1>
-                <p className='mt-6 lg:mx-48 text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit voluptate architecto corporis sapiente voluptatem provident. Qui eligendi reprehenderit dicta harum beatae debitis placeat! Obcaecati alias tempore voluptates.</p>
             </div>
 
             <div>
                 <div className='flex flex-wrap justify-center items-center lg:mx-24 2xl:mx-48'>
                     <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-24 lg:px-12'>
                         <img src={web} alt="web" className='md:w-1/2' />
-                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='title2'>Web et Web Mobile</h1>
+                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Web et Web Mobile</h1>
                         <p className='my-6'>Votre présence en ligne est cruciale. Nous concevons des sites web fonctionnels, esthétiques et adaptés à vos besoins spécifiques. Que ce soit une vitrine, un site e-commerce ou une application web, nous utilisons les dernières technologies pour assurer une expérience utilisateur optimale.</p>
                         <Link to="/services/web">
                             <button className='font-bold text-blue-500'>En savoir plus</button>
@@ -58,7 +57,7 @@ export default function PageServices() {
 
                     <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-24 lg:px-12'>
                         <img src={uxdesign} alt="web" className='md:w-1/2' />
-                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='title2'>Logo et supports imprimés</h1>
+                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Logo et supports imprimés</h1>
                         <p className='my-6'>Explorez une expérience utilisateur immersive et intuitive avec notre conception UX, où chaque élément est soigneusement orchestré pour créer une synergie harmonieuse entre fonctionnalité et esthétique, redéfinissant ainsi la manière dont vous interagissez avec notre site web.</p>
                         <Link to="/services/print">
                             <button className='font-bold text-blue-500'>En savoir plus</button>
@@ -67,7 +66,7 @@ export default function PageServices() {
 
                     <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-24 lg:px-12'>
                         <img src={print} alt="web" className='md:w-1/2' />
-                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='title2'>Gestion des réseaux sociaux</h1>
+                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Gestion des réseaux sociaux</h1>
                         <p className='my-6'>Donnez une dimension tangible à votre identité avec notre expertise en impression. Chez M&V Digital Developpement, nous sublimons vos idées sur papier, créant des supports print exceptionnels qui captivent et laissent une impression mémorable.</p>
                         <Link to="/services/gestion-rs">
                             <button className='font-bold text-blue-500'>En savoir plus</button>
@@ -76,7 +75,7 @@ export default function PageServices() {
 
                     <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-24 lg:px-12'>
                         <img src={community} alt="web" className='md:w-1/2' />
-                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='title2'>Publicités en ligne</h1>
+                        <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Publicités en ligne</h1>
                         <p className='my-6'>De la création d&apos;identité visuelle à la gestion de campagnes publicitaires, notre équipe créative s&apos;engage à donner vie à votre histoire de manière captivante. Nous concevons des messages impactants et des stratégies de communication cohérentes pour renforcer votre positionnement sur le marché.</p>
                         <Link to="/services/publicites">
                             <button className='font-bold text-blue-500'>En savoir plus</button>
@@ -91,7 +90,7 @@ export default function PageServices() {
                         <h2 className='mt-8 text-white'>Notre équipe à votre écoute</h2>
                         <h1 className='text-4xl lg:text-6xl mt-4 mb-4 text-white' id='title2'>Vous avez un projet ?</h1>
                         <div className='bg-white w-[10vw] h-[2px] lg:my-8 hidden lg:block'></div>
-                        <p className='lg:text-xl lg:w-2/3 text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, maiores nostrum delectus culpa illo corporis illum</p>
+                        <p className='text-white text-xl' id='subtitle'>Votre succès en ligne commence ici ! <br /><br /> Explorez de nouveaux horizons digitaux avec notre accompagnement.</p>
                         <Link to="/contact">
                             <button className="btn my-8 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
                         </Link>

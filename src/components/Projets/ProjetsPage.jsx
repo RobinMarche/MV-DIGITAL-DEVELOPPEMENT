@@ -4,6 +4,7 @@ import asphalt from '../../assets/asphalt-eater.png';
 import fromagerie from '../../assets/fromagerie-ema.png';
 import logiworks from '../../assets/logiworks.png';
 import coach from '../../assets/coachsportif.png';
+import isoleChauffe from '../../assets/isolechuaffe.png';
 import { Link } from 'react-router-dom';
 
 export default function ProjetsPage() {
@@ -65,34 +66,42 @@ export default function ProjetsPage() {
                 </div>
 
             <div className='lg:flex flex-wrap'>
-                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24'>
-                    <img src={asphalt} alt="asphalt" className='rounded-tr-xl rounded-tl-xl border-t-[16px] border-l-[16px] border-r-[16px] xl:border-t-[32px] xl:border-l-[32px] xl:border-r-[32px] border-[#f3ebe0]' />
+                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24 mb-12 bg-[#188fa7]/[0.3]'>
+                    <img src={asphalt} alt="asphalt" className='shadow-2xl border-[#f3ebe0] rounded-xl' />
                     <p className='my-6 text-xl font-bold'>Asphalt Eater</p>
                     <Link to="https://www.asphalt-eater.fr" target='_blank'>
                         <p className='text-blue-500 hover:cursor-pointer text-lg'>Visiter</p>
                     </Link>
                 </div>
 
-                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24'>
-                    <img src={fromagerie} alt="asphalt" className='rounded-tr-xl rounded-tl-xl border-t-[16px] border-l-[16px] border-r-[16px] xl:border-t-[32px] xl:border-l-[32px] xl:border-r-[32px] border-green-800' />
+                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24 mb-12 bg-[#188fa7]/[0.3]'>
+                    <img src={fromagerie} alt="asphalt" className='shadow-2xl border-green-800 rounded-xl' />
                     <p className='my-6 text-xl font-bold'>La Fromagerie d&apos;Ema</p>
                     <Link to="https://www.lafromageriedema.fr" target='_blank'>
                         <p className='text-blue-500 hover:cursor-pointer text-lg'>Visiter</p>
                     </Link>
                 </div>
 
-                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw]'>
-                    <img src={logiworks} alt="asphalt" className='rounded-tr-xl rounded-tl-xl border-t-[16px] border-l-[16px] border-r-[16px] xl:border-t-[32px] xl:border-l-[32px] xl:border-r-[32px] border-[#041e42]' />
+                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24 mb-12 bg-[#188fa7]/[0.3]'>
+                    <img src={logiworks} alt="asphalt" className='shadow-2xl border-[#041e42] rounded-xl' />
                     <p className='my-6 text-xl font-bold'>Logiworks</p>
                     <Link to="https://www.logiworks.fr" target='_blank'>
                         <p className='text-blue-500 hover:cursor-pointer text-lg'>Visiter</p>
                     </Link>
                 </div>
 
-                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw]'>
-                    <img src={coach} alt="asphalt" className='rounded-tr-xl rounded-tl-xl border-t-[16px] border-l-[16px] border-r-[16px] xl:border-t-[32px] xl:border-l-[32px] xl:border-r-[32px] border-[#94b9c1]' />
+                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24 mb-12 bg-[#188fa7]/[0.3]'>
+                    <img src={coach} alt="asphalt" className='shadow-2xl border-[#94b9c1] rounded-xl' />
                     <p className='my-6 text-xl font-bold'>Franck - Coach Sportif</p>
                     <Link to="https://franck-marche-coach.vercel.app/" target='_blank'>
+                        <p className='text-blue-500 hover:cursor-pointer text-lg'>Visiter</p>
+                    </Link>
+                </div>
+
+                <div className='flex flex-col justify-center items-center mx-6 rounded-xl p-4 lg:w-[45vw] lg:mb-24 mb-12 bg-[#188fa7]/[0.3]'>
+                    <img src={isoleChauffe} alt="asphalt" className='shadow-2xl rounded-xl' />
+                    <p className='my-6 text-xl font-bold'>Isole & Chauffe</p>
+                    <Link to="https://www.isole-et-chauffe.fr/" target='_blank'>
                         <p className='text-blue-500 hover:cursor-pointer text-lg'>Visiter</p>
                     </Link>
                 </div>

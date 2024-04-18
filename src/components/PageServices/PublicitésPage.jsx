@@ -123,7 +123,7 @@ export default function PublicitesPage() {
                 </div>
             </div>
 
-            <div className='flex justify-center my-12 text-white'>
+            <div className='flex justify-center my-12 mx-4 text-white'>
                 <div className="bg-[#188FA7] rounded-2xl p-8 shadow-2xl lg:w-[50vw]">
                     <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
                     <div className="flex justify-center items-center">
