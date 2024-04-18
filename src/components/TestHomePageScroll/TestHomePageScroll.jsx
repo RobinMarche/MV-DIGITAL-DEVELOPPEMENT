@@ -15,6 +15,8 @@ import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
 import fleche from '../../assets/fleche.svg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
+import separation from '../../assets/separation.svg';
+
 
 import emailjs from '@emailjs/browser';
 
@@ -344,7 +346,7 @@ export default function TestHomePageScroll() {
                 </div>
 
 
-                <div className="relative h-[110vh] mt-24">
+                <div className="relative h-[110vh] mt-24" id="page2">
                     <img src={contact} alt="contact" className="w-[70vw] xl:w-[60vw] 2xl:w-[50vw] ml-[10vw] xl:ml-[20vw] absolute rounded-2xl"/>
                     <img src={fleche} alt="contact" className="w-[15vw] xl:w-[20vw] top-[55vh] 2xl:w-[15vw] ml-[10vw] xl:ml-[25vw] absolute rounded-2xl"/>
 
@@ -385,6 +387,55 @@ export default function TestHomePageScroll() {
                         </form>
                     </div>
                 </div>
+
+                <div className="p-16 bg-[#188fa7] xl:mx-48 mx-24 mt-12 mb-24 rounded-xl">
+                    <div className="flex justify-center flex-col items-center">
+                        <div className="text-center text-4xl font-bold my-8 text-white italic" id="subtitle">Vous avez des questions ?</div>
+                    </div>
+                    <div className="xl:mx-48 mx-24">
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                            Pourquoi choisir une agence de communication telle que M&V Digital Developpement ?
+                            </div>
+                            <div className="collapse-content px-24"> 
+                                <p className="py-8">L&apos;importance du choix d&apos;une agence de communication dans le processus de croissance de votre entreprise est indéniable. <br /><br />
+                                    ALEO est votre partenaire stratégique dédié à accroître votre visibilité, consolider votre image de marque et à améliorer votre positionnement concurrentiel. <br /> <br />
+                                    ALEO vous offre un accompagnement complet dans toutes vos initiatives de communication. Notre agence réunit une diversité de professionnels chefs de projet, graphistes, rédacteurs, référenceurs, webdesigners, et community managers qui collaborent étroitement pour élaborer et exécuter des stratégies de communication complètes et efficaces. <br /><br />
+                                    En conclusion, choisir ALEO vous permettra de tirer profit de l&apos;expertise et du savoir-faire d&apos;une agence de communication. Nous pouvons vous aider à concevoir des stratégies de communication efficaces et à accroître votre notoriété et le développement de votre entreprise. <br /><br />
+                                    Donc, si votre objectif est d&apos;améliorer votre visibilité, d&apos;attirer plus de clients et de les fidéliser, faites appel à une agence de communication telle que ALEO. 
+                                </p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content px-24"> 
+                                <p className="py-8">tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content px-24"> 
+                                <p className="py-8">tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content px-24"> 
+                                <p className="py-8">tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
                 {messageForm !== "" && 
                     <div className="toast">
