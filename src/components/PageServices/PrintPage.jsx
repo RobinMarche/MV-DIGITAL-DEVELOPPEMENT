@@ -7,6 +7,8 @@ import print from '../../assets/34109.jpg';
 import graphiste from '../../assets/2149370126.jpg';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import servicesFAQ from '../../assets/services-faq.webp';
+
 
 
 export default function PrintPage() {
@@ -131,7 +133,42 @@ export default function PrintPage() {
                 </div>
             </div>
 
-
+            <div className='mx-6 lg:mx-24 xl:mx-48 my-24 flex flex-col lg:flex-row items-center justify-around'>
+                <div className='flex flex-col justify-center items-center lg:w-[50%] lg:items-start lg:mr-12'>
+                    <h2 className='font-bold'>FAQ</h2>
+                    <h1 className='my-6 text-3xl text-center lg:text-start font-bold capitalize'>Questions fréquemments posées</h1>
+                    <p className='text-center mb-6 lg:w-[70%] lg:text-start'>Vous trouverez ci-dessous les questions les plus fréquemments posées par nos clients concernants le service séléctionné.</p>
+                    <div className='mb-12'>
+                        <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
+                            <div className="collapse-title text-xl font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none my-6">
+                            <div className="collapse-title text-xl font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
+                            <div className="collapse-title text-xl font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='lg:w-[50%]'>
+                    <img src={servicesFAQ} alt="" />
+                </div>
+            </div>
                 
         </div>
     )
