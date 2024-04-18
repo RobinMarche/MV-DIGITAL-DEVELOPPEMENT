@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRef } from "react";
 import smile from '../../assets/femme.jpg';
 import visibility from '../../assets/visibility.png';
+import check from '../../assets/check.png';
 import timer from '../../assets/timer.png';
 import chart from '../../assets/bar-chart-3.png';
 import arrow from '../../assets/move-right.png';
@@ -15,9 +16,12 @@ import contact from '../../assets/40001.jpg';
 import fleche from '../../assets/fleche.svg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
 
+import emailjs from '@emailjs/browser';
+
 export default function TestHomePageScroll() {
 
     const [displayText, setDisplayText] = useState('');
+    const [messageForm, setMessageForm] = useState('');
     const words = [
         { id: "word", text: "Artisans" },
         { id: "word", text: "Commerçants" },
@@ -71,12 +75,37 @@ export default function TestHomePageScroll() {
       }, []);
 
 
-    const containerRef = useRef();
+      const form = useRef();
+      
+      const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+          .sendForm(
+            "MV_Digital_FORM",
+            "template_a2um0he",
+            form.current,
+            "axsoEjorY55q6cjMx"
+          )
+          .then(
+            (result) => {
+              setMessageForm("Votre message a bien été envoyé !");
+              console.log(result.text);
+              setTimeout(() => {
+                setMessageForm("");
+                form.current.reset();
+              }, 3000);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      };
+
 
     return(
         <>
 
-            <div id='container' ref={containerRef} style={{ scrollBehavior: 'smooth' }} className="relative">
+            <div id='container' style={{ scrollBehavior: 'smooth' }} className="relative">
                 <div className='page page_1' id="page1">
                     <div className='h-[100vh] h-[100vh] flex flex-col pt-16 2xl:pt-32 text-gray-900'  id='hero'>
                         <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
@@ -164,7 +193,7 @@ export default function TestHomePageScroll() {
                                         </div>
                                     </div>
                                     <div className="flex justify-center my-2 2xl:my-6">
-                                        <Link to="/services/web">
+                                        <Link to="/services/publicites">
                                             <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
                                         </Link>
                                     </div>
@@ -237,13 +266,17 @@ export default function TestHomePageScroll() {
                             <div className="rounded-xl w-[20vw] mr-8 flex flex-col items-center justify-between relative overflow-hidden" id="service1">
                                 <img src={Service1} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
                                 <p className="font-bold text-xl text-white z-0 pt-8 text-center">Site Web et Web Mobile</p>
-                                <button className="btn rounded-full bg-red-400 border-red-400 text-white z-0 mb-8">en savoir plus <img src={arrow} alt="" /></button>
+                                <Link to="/services/web" className="z-0">
+                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white z-0 mb-8">en savoir plus <img src={arrow} alt="" /></button>
+                                </Link>
                             </div>
                             
                             <div className="rounded-xl w-[20vw] flex flex-col items-center justify-between relative overflow-hidden" id="service2">
                                 <img src={Service2} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
                                 <p className="font-bold text-xl text-white z-0 pt-8 text-center">Gestion des Réseaux Sociaux</p>
-                                <button className="btn rounded-full bg-red-400 border-red-400 text-white z-0 mb-8">en savoir plus <img src={arrow} alt="" /></button>
+                                <Link to="/services/gestion-rs" className="z-0">
+                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white z-0 mb-8">en savoir plus <img src={arrow} alt="" /></button>
+                                </Link>
                             </div>
                        </div>
 
@@ -252,7 +285,9 @@ export default function TestHomePageScroll() {
                                 <img src={Service3} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
                                 <p className="font-bold text-xl text-white z-0 p-8">Logo et Supports Imprimés</p>
                                 <div className="z-0 p-8">
-                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">en savoir plus <img src={arrow} alt="" /></button>
+                                    <Link to="/services/print">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">en savoir plus <img src={arrow} alt="" /></button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -260,7 +295,9 @@ export default function TestHomePageScroll() {
                                 <img src={Service4} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_service1"/>
                                 <p className="font-bold text-xl text-white z-0 p-8">Publicités en ligne</p>
                                 <div className="z-0 p-8">
-                                    <button className="btn rounded-full bg-red-400 border-red-400 text-white">en savoir plus <img src={arrow} alt="" /></button>
+                                    <Link to="/services/publicites">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">en savoir plus <img src={arrow} alt="" /></button>
+                                    </Link>
                                 </div>
                             </div>
                        </div>
@@ -279,20 +316,28 @@ export default function TestHomePageScroll() {
                         <div className="m-8 p-8 rounded-xl" id="bg-creation">
                             <h1 className="font-bold text-4xl" id="subtitle">Expertise</h1>
                             <p className="my-4 xl:w-2/3 text-xl">Bénéficiez des compétences et du savoir-faire d&apos;experts pour propulser votre activité.</p>
-                            <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
+                            <Link to="/services">
+                                <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
+                            </Link>
                         </div>
 
                         <div className="m-8 p-8 rounded-xl" id="bg-creation2">
                             <h1 className="font-bold text-4xl" id="subtitle">Créativité</h1>
                             <p className="my-4 xl:w-2/3 text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
-                            <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
+                            <Link to="/services">
+                                <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="mx-20 xl:mx-56 p-8 bg-[#188fa7] rounded-2xl text-[#188fa7]" id="bgcreation3">
                         <h1 className="text-center text-5xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement <br />avec un expert</h1>
                         <div className="flex flex-col justify-center mt-12 items-center">
-                            <button className="btn btn-outline rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">En savoir plus</button>
-                            <button className="btn rounded-full px-12 text-lg mb-12 bg-red-400 text-white border-red-400">Contactez-nous</button>
+                            <Link to="/services">
+                                <button className="btn btn-outline rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">En savoir plus</button>
+                            </Link>
+                            <Link to="/contact">
+                                <button className="btn rounded-full px-12 text-lg mb-12 bg-red-400 text-white border-red-400">Contactez-nous</button>
+                            </Link>
                         </div>
                     </div>
                     
@@ -306,40 +351,49 @@ export default function TestHomePageScroll() {
                     <div className="flex absolute ml-[30vw] xl:ml-[45vw] top-[20vh] bg-white py-8 px-24 flex flex-col border-[1px] border-gray-300 rounded-xl">
                         <h2 className="text-3xl font-bold text-[#188fa7]" id="subtitle">Contactez-nous</h2>
                         <p className="mt-6 mb-12 text-[#188fa7]">Remplissez ce formulaire pour être contacté par l&apos;un de nos experts</p>
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className="flex mb-12">
                                 <div className="flex flex-col mr-8">
                                     <label htmlFor="name">Nom et Prénom*</label>
-                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                    <input type="text" id="name" name="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none" required/>
                                 </div>
                                 <div className="flex flex-col">
-                                    <label htmlFor="name">Nom de l&apos;entreprise</label>
-                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                    <label htmlFor="name">Nom de l&apos;entreprise <span className="italic text-gray-500">(facultatif)</span></label>
+                                    <input type="text" id="company" name="company" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
                                 </div>
                             </div>
 
                             <div className="flex mb-12">
                                 <div className="flex flex-col mr-8">
                                     <label htmlFor="name">Téléphone*</label>
-                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                    <input type="text" id="phone" name="phone" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none" required/>
                                 </div>
                                 <div className="flex flex-col">
                                     <label htmlFor="name">Adresse Mail*</label>
-                                    <input type="text" id="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                    <input type="text" id="mail" name="mail" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none" required/>
                                 </div>
                             </div>
 
                             <div className="flex flex-col">
                                 <label htmlFor="message">Votre Message*</label>
-                                <textarea name="message" id="message" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none min-h-[10vh]"></textarea>
+                                <textarea name="message" id="message" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none min-h-[10vh]" required></textarea>
                             </div>
 
                             <div className="flex justify-center mt-8">
-                                <button className="btn glass rounded-full bg-[#188fa7] text-white px-12">Envoyer</button>
+                                <button type="submit" className="btn glass rounded-full bg-[#188fa7] text-white px-12">Envoyer</button>
                             </div>
                         </form>
                     </div>
                 </div>
+
+                {messageForm !== "" && 
+                    <div className="toast">
+                        <div className="m-4 shadow-inner px-12 py-6 rounded-none bg-green-100 border-b-[2px] border-[#188fa7] flex items-center">
+                            <span className="mr-4">{messageForm}</span>
+                            <img src={check} alt="check" />
+                        </div>
+                    </div>
+                }
             </div>
         </>
     )

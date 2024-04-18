@@ -287,6 +287,12 @@
     }
 }
 
+#contact_bg{
+    background-image: url('./assets/40001.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 #ordi{
     background-image: url('./assets/ordi.jpg');
     background-position: center;

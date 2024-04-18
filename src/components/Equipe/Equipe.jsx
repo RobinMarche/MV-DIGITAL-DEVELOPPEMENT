@@ -45,7 +45,7 @@ export default function Equipe() {
             </div>
 
             <div className='lg:flex justify-around items-center py-12 bg-[#188FA7]'>
-                <div className={`flex justify-center bg-white flex-col items-center ${scrollY > 0 ? 'slideInRight' : 'slideOffRight1'} mx-6 lg:w-[40%] 2xl:w-[25%] border-[1px] border-[#188FA7]`}>
+                <div className={`flex justify-center bg-white flex-col items-center mx-6 lg:w-[40%] 2xl:w-[25%] border-[1px] border-[#188FA7]`}>
                     <img src={thomas} alt="thomas" className='lg:w-[100%]'/>
                     <div className='px-8 pb-12 bg-white'>
                         <p className='text-2xl my-2 text-start font-bold uppercase my-6 text-[#188FA7]'>Thomas Vannier</p>
@@ -63,7 +63,7 @@ export default function Equipe() {
                     </div>
                         
                 </div>
-                <div className={`flex justify-center bg-white flex-col items-center mt-8 lg:mt-0 ${scrollY > 10 ? 'slideInRight3' : 'slideOffRight3'} mx-6 lg:w-[40%] 2xl:w-[25%]  border-[1px] border-[#188FA7]`}>
+                <div className={`flex justify-center bg-white flex-col items-center mt-8 lg:mt-0 mx-6 lg:w-[40%] 2xl:w-[25%]  border-[1px] border-[#188FA7]`}>
                     <img src={robin} alt="robin" className='lg:w-[100%]'/>
                     <div className='px-8 pb-12 bg-white'>
                         <p className='text-2xl my-2 text-start font-bold uppercase my-6 text-[#188FA7]'>Robin Marche</p>

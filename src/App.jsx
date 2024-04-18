@@ -14,6 +14,7 @@ import GestionRS from "./components/PageServices/GestionRS"
 import PublicitesPage from "./components/PageServices/PublicitésPage"
 
 import Equipe from "./components/Equipe/Equipe"
+import CookieConsent from "./components/CookieConsent/CookieConsent"
 
 import { Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -46,6 +47,7 @@ function App() {
           path="/" 
           element={
             <>
+              <CookieConsent />
               <Navbar />
               {isMobile ? <><TestHomePageMobile /><Footer/></> : <><TestHomePageScroll /><Footer/></>}
             </>

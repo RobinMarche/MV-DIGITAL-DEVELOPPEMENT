@@ -1,10 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import envelopes from '../../assets/envelopes.png';
 import clock from '../../assets/clock-three.png';
 import mobile from '../../assets/mobile-notch.png';
 import show from '../../assets/show.jpg';
+import check from '../../assets/check.png';
+import emailjs from '@emailjs/browser';
+
 
 export default function ContactPage() {
+
+    const [messageForm, setMessageForm] = useState('');
+
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -17,20 +23,47 @@ export default function ContactPage() {
     }, []);
 
 
+    const form = useRef();
+      
+      const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+          .sendForm(
+            "MV_Digital_FORM",
+            "template_a2um0he",
+            form.current,
+            "axsoEjorY55q6cjMx"
+          )
+          .then(
+            (result) => {
+              setMessageForm("Votre message a bien été envoyé !");
+              console.log(result.text);
+              setTimeout(() => {
+                setMessageForm("");
+                form.current.reset();
+              }, 3000);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      };
+
+
   return (
     <>
-        <div className='lg:m-16 lg:pt-20 lg:p-20 p-8 pt-12 m-6 rounded-2xl bg-[#188FA7]'>
+        <div className='lg:mx-48 lg:mt-12 lg:pt-20 lg:p-20 p-8 pt-12 m-6 rounded-2xl bg-[#188FA7]' id='contact_bg'>
             <div>
                 <p className='text-center lg:text-start text-white'>Contact</p>
             </div> 
             <div className='lg:text-6xl lg:uppercase my-12 text-center lg:text-start text-4xl text-white font-bold'>
                 Discutons de votre projet !
             </div>
-            <div className='lg:flex lg:justify-around bg-gray-200/[0.4] lg:py-24 rounded-2xl text-white'>
+            <div className='lg:flex lg:justify-around items-start bg-black/[0.7] lg:py-12 rounded-2xl text-white'>
                 <div className='flex flex-col justify-center items-center py-12 lg:py-0'>
                     <div className='flex flex-col justify-center items-center'>
                         <img src={clock} alt="clock" className='' />
-                        <p className='text-lg font-bold lg:my-8'>Horaires d&apos;ouverture</p>
+                        <p className='text-lg font-bold lg:my-8 text-[#188fa7]'>Horaires d&apos;ouverture</p>
                     </div>
                     <div className='text-center'>
                         <p>Du Lundi au vendredi</p>
@@ -41,7 +74,7 @@ export default function ContactPage() {
                 <div className='flex flex-col justify-center items-center py-12 lg:py-0'>
                     <div className='flex flex-col justify-center items-center'>
                         <img src={envelopes} alt="envelopes" className='' />
-                        <p className='text-lg font-bold lg:my-8'>Adresse Mail</p>
+                        <p className='text-lg font-bold lg:my-8 text-[#188fa7]'>Adresse Mail</p>
                     </div>
                     <div className='text-center'>
                         <p>mvdigital3989@gmail.com</p>
@@ -51,11 +84,11 @@ export default function ContactPage() {
                 <div className='flex flex-col justify-center items-center py-12 lg:py-0'>
                     <div className='flex flex-col justify-center items-center'>
                         <img src={mobile} alt="mobile" className=''/>
-                        <p className='text-lg font-bold lg:my-8'>Téléphone</p>
+                        <p className='text-lg font-bold lg:my-8 text-[#188fa7]'>Téléphone</p>
                     </div>
                     <div className='text-center'>
-                        <p>06.33.90.40.50</p>
-                        <p>06.81.74.23.42</p>
+                        <p>06 33 90 40 50</p>
+                        <p>06 81 74 23 42</p>
                     </div>
                 </div>
             </div>
@@ -72,30 +105,52 @@ export default function ContactPage() {
                 <div className='lg:w-[50%]'>
                     <img src={show} alt="show" className='rounded-2xl lg:h-[100%]' />
                 </div>
-                <div>
-                    <form className="w-full flex flex-col">
-                        <div className="mx-6 lg:mx-0">
-                            <div className={`bg-white flex items-center border border-[#022e60] rounded-xl py-2 my-8`}>
-                                <input className={`appearance-none bg-transparent border-none w-full lg:w-[40vw] text-gray-700 py-1 px-4 leading-tight focus:outline-none`} type="text" placeholder="Votre Nom" aria-label="Full name"/>
+                <div className="flex bg-white py-8 px-12 flex flex-col  border-gray-300 rounded-xl">
+                        <h2 className="text-3xl font-bold text-[#188fa7]" id="subtitle">Contactez-nous</h2>
+                        <p className="mt-6 mb-12 text-[#188fa7]">Remplissez ce formulaire pour être contacté par l&apos;un de nos experts</p>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="flex md:mb-12 flex-col md:flex-row">
+                                <div className="flex flex-col md:mr-8 mb-4 md:mb-0">
+                                    <label htmlFor="name">Nom et Prénom*</label>
+                                    <input type="text" id="name" name="name" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none" required/>
+                                </div>
+                                <div className="flex flex-col mb-4 md:mb-0">
+                                    <label htmlFor="name">Nom de l&apos;entreprise <span className="italic text-gray-500">(facultatif)</span></label>
+                                    <input type="text" id="name" name="company" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none"/>
+                                </div>
                             </div>
-                            <div className={`bg-white flex items-center border border-[#022e60] rounded-xl py-2`}>
-                                <input className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-4 leading-tight focus:outline-none" type="text" placeholder="Votre Mail" aria-label="Mail"/>
+
+                            <div className="flex mb-12 flex-col md:flex-row">
+                                <div className="flex flex-col md:mr-8 mb-4 md:mb-0">
+                                    <label htmlFor="name">Téléphone*</label>
+                                    <input type="text" id="name" name="phone" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none" required/>
+                                </div>
+                                <div className="flex flex-col mb-4 md:mb-0">
+                                    <label htmlFor="name">Adresse Mail*</label>
+                                    <input type="text" id="name" name="mail" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none" required/>
+                                </div>
                             </div>
-                        </div>
-                        <div className="mx-6 lg:mx-0">
-                            <div className={`bg-white flex items-center border border-[#022e60] rounded-xl py-2 my-8`}>
-                                <input className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-4 leading-tight focus:outline-none" type="text" placeholder="Téléphone" aria-label="Phone"/>
+
+                            <div className="flex flex-col">
+                                <label htmlFor="message">Votre Message*</label>
+                                <textarea name="message" id="message" className="border-b-[1px] border-gray-300 p-2 mb-4 outline-none min-h-[10vh]" required></textarea>
                             </div>
-                            <div className={`bg-white flex items-center border border-[#022e60] rounded-2xl py-2 mb-8`}>
-                                <textarea className="bg-transparent border-none w-full text-gray-700 py-1 px-4 leading-tight focus:outline-none min-h-[20vh]" type="text" placeholder="Votre Message ..." aria-label="Message"></textarea>
+
+                            <div className="flex justify-center mt-8">
+                                <button className="btn glass rounded-full bg-[#188fa7] text-white px-12">Envoyer</button>
                             </div>
-                        </div>
-                        <div className="flex justify-center mb-12">
-                            <button className="btn my-8 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
-                        </div>
-                    </form>
-                </div>
+                        </form>
+                    </div>
             </div>
+
+            {messageForm !== "" && 
+                    <div className="toast">
+                        <div className="m-4 shadow-inner px-12 py-6 rounded-none bg-green-100 border-b-[2px] border-[#188fa7] flex items-center">
+                            <span className="mr-4">{messageForm}</span>
+                            <img src={check} alt="check" />
+                        </div>
+                    </div>
+                }
         </div>
 
 
