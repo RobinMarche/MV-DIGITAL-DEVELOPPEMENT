@@ -9,20 +9,20 @@ import { useEffect } from 'react';
 
 export default function PageServices() {
 
-    const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-        });
-    };
+    // const scrollToTop = () => {
+    //     window.scrollTo({
+    //       top: 0,
+    //     });
+    // };
     
-    useEffect(() => {
-        scrollToTop();
-    }, []);
+    // useEffect(() => {
+    //     scrollToTop();
+    // }, []);
 
   return (
     <>
-      <div className="text-gray-900 bg-[#188FA7] lg:pb-24" id='servicesPage'>
-        <div className='bg-white'>
+      <div className="text-gray-900 lg:pb-24" id='servicesPage'>
+        <div className='bg-white'  id='page2'>
             <div className="container mx-auto pt-20 lg:py-20 lg:flex ">
                 <div className="text-center lg:text-start lg:w-[70vw] lg:flex lg:flex-col lg:items-start lg:justify-center lg:px-16">
                     <h1 className="text-6xl text-[#188FA7]" id='title2'>Propulsez votre réussite</h1>
@@ -41,10 +41,10 @@ export default function PageServices() {
 
         <div className='lg:py-12'>
             <div className='text-center px-8 my-12'>
-                <h1 className='text-4xl lg:text-5xl text-white' id='title2'>Comment pouvons nous vous aider ?</h1>
+                <h1 className='text-4xl lg:text-6xl text-[#041e42] capitalize font-bold' id=''>Comment pouvons nous vous <span className='text-[#188FA7]'>aider</span> ?</h1>
             </div>
 
-            <div>
+            <div id='page4bg'>
                 <div className='flex flex-wrap justify-center items-center lg:mx-24 2xl:mx-48'>
                     <div className='flex flex-col items-center text-center m-6 shadow-xl p-4 rounded-xl bg-white lg:w-[30vw] lg:py-24 lg:px-12'>
                         <img src={web} alt="web" className='md:w-1/2' />
@@ -84,13 +84,27 @@ export default function PageServices() {
                 </div>
             </div>
 
-            <div>
+            <div id='page2'>
                 <div className='lg:flex lg:flex-row-reverse lg:mt-32 lg:justify-center'>
                     <div className='text-center lg:text-start px-8 lg:w-[40%]' >
-                        <h2 className='mt-8 text-white'>Notre équipe à votre écoute</h2>
-                        <h1 className='text-4xl lg:text-6xl mt-4 mb-4 text-white' id='title2'>Vous avez un projet ?</h1>
+                        <h2 className='mt-8 text-[#188FA7] uppercase'>Notre Mission</h2>
+                        <h1 className='text-4xl lg:text-6xl mt-4 mb-4 text-[#188FA7] font-bold capitalize' id=''>Transformer vos idées en réalité</h1>
                         <div className='bg-white w-[10vw] h-[2px] lg:my-8 hidden lg:block'></div>
-                        <p className='text-white text-xl' id='subtitle'>Votre succès en ligne commence ici ! <br /><br /> Explorez de nouveaux horizons digitaux avec notre accompagnement.</p>
+                        <p className='text-[#188FA7] text-xl' id='subtitle'>Votre succès en ligne commence ici !</p>
+                        <div className='flex justify-around items-center my-12 text-[#188FA7]'>
+                            <div className='flex flex-col items-center justify-center'>
+                                <h1 className='text-2xl font-bold'>SEO</h1>
+                                <p className='text-5xl mt-4 font-bold text-[#041e42]'>96%</p>
+                            </div>
+                            <div className='flex flex-col items-center justify-center'>
+                                <h1 className='text-2xl font-bold'>Developpement</h1>
+                                <p className='text-5xl mt-4 font-bold text-[#041e42]'>98%</p>
+                            </div>
+                            <div className='flex flex-col items-center justify-center'>
+                                <h1 className='text-2xl font-bold'>Design</h1>
+                                <p className='text-5xl mt-4 font-bold text-[#041e42]'>94%</p>
+                            </div>
+                        </div>
                         <Link to="/contact">
                             <button className="btn my-8 rounded-full px-16 bg-red-400 border-red-400 text-white">Contactez-nous</button>
                         </Link>

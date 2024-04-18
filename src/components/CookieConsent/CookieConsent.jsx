@@ -16,7 +16,7 @@ const CookieConsent = () => {
     localStorage.setItem('cookieConsent', 'given');
     setShowBanner(false);
     // Activer Google Analytics ici si nécessaire
-    ReactGA.initialize('G-XXXXXXXXXXXXXXX');
+    ReactGA.initialize('G-WPSXB94Q39');
     ReactGA.pageview(window.location.pathname + window.location.search);
   };
 

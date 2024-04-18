@@ -3,7 +3,6 @@ import timer from '../../assets/timer.png';
 import chart from '../../assets/bar-chart-3.png';
 import badgeCheck from '../../assets/badge-check.png';
 import arrow from '../../assets/move-right.png';
-import print from '../../assets/34109.jpg';
 import ads1 from '../../assets/59.jpg';
 import ads2 from '../../assets/75742.jpg';
 import { useEffect } from 'react';
@@ -25,9 +24,9 @@ export default function PublicitesPage() {
 
     return (
         <div>
-            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40">
+            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40" id='page2'>
                 <h2 className="uppercase">Studio graphique</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl">Obtenez un <span className="text-[#188FA7]">maximum </span> de contrats grâce à la publicité en ligne</h1>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]">Obtenez un <span className="text-[#188FA7]">maximum </span> de contrats grâce à la publicité en ligne</h1>
                 <p className="lg:text-xl">Lancez des campagnes publicitaires ciblées avec un budget maîtrisé pour générer plus de ventes.</p>
                 <div className="mt-12">
                     <Link to="/contact">
@@ -78,11 +77,10 @@ export default function PublicitesPage() {
                     </div>
             </div>
 
-            <div>
+            <div id='page4bg'>
                 <div className='text-center xl:mx-[25vw] px-4'>
                     <h2>DES CAMPAGNES GÉRÉES PAR DES EXPERTS SEA</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl '>Un <span className='text-[#188FA7]'>expert </span>en référencement dédié à votre projet</h1>
-                    <p className='xl:px-16'>Pour vous assurer les meilleurs résultats, un référenceur prend en charge de A à Z votre campagne.</p>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Un <span className='text-[#188FA7]'>expert </span>en référencement dédié à votre projet</h1>
                 </div>
 
                 <div className='px-4 lg:flex lg:justify-center lg:items-center mt-12'>
@@ -123,8 +121,8 @@ export default function PublicitesPage() {
                 </div>
             </div>
 
-            <div className='flex justify-center my-12 mx-4 text-white'>
-                <div className="bg-[#188FA7] rounded-2xl p-8 shadow-2xl lg:w-[50vw]">
+            <div className='flex justify-center my-12 mx-8 text-white'>
+                <div className="bg-[#188FA7] rounded-2xl p-4 shadow-2xl lg:w-[50vw]">
                     <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
                     <div className="flex justify-center items-center">
                         <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase" id="font-price">249.99€</p>
