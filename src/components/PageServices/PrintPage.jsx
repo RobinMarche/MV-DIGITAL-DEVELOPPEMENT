@@ -24,9 +24,9 @@ export default function PrintPage() {
 
     return (
         <div>
-            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40">
+            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40" id='page2'>
                 <h2 className="uppercase">Studio graphique</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl">Un logo percutant pour <span className="text-[#188FA7]">rassurer ses clients</span></h1>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]" >Un logo percutant pour <span className="text-[#188FA7]">rassurer ses clients</span></h1>
                 <p className="lg:text-xl">Unique et impactant, un logo pro vous permet de vous différencier et de marquer les esprits de vos clients.</p>
                 <div className="mt-12">
                     <Link to="/contact">
@@ -38,7 +38,7 @@ export default function PrintPage() {
             <div className='page page_2 flex items-center justify-center' id="page3">
                     <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-center'>
                         <div className='lg:w-1/2 fade-right'>
-                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>UNE IDENTITÉ VISUELLE UNIQUE AVEC L’AGENCE DE GRAPHISME ALEO</h2>
+                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>UNE IDENTITÉ VISUELLE UNIQUE AVEC NOTRE AGENCE DE GRAPHISME</h2>
                             <div className='my-8 flex justify-start items-center'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
@@ -77,10 +77,10 @@ export default function PrintPage() {
                     </div>
             </div>
 
-            <div>
+            <div id='page4bg'>
                 <div className='text-center xl:mx-[25vw] px-4'>
-                    <h2>POURQUOI FAIRE APPEL À ALEO POUR SON IDENTITÉ VISUELLE ?</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl '>M&V Digital Developpement vous propose une solution <span className='text-[#188FA7]'>clé en main</span></h1>
+                    <h2>POURQUOI FAIRE APPEL À M&V DIGITAL DEVELOPPEMENT POUR SON IDENTITÉ VISUELLE ?</h2>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>M&V Digital Developpement vous propose une solution <span className='text-[#188FA7]'>clé en main</span></h1>
                     <p className='xl:px-16'>Quels que soient vos besoins, nous avons une solution pour vous !</p>
                 </div>
 

@@ -58,7 +58,7 @@ export default function ProjetsPage() {
             </div>
                 <div className="px-4 flex flex-col items-center justify-center m-4">
                     <div>
-                        <h1 className={`text-5xl text-center fade-in mt-12`} id='title2'>Nos dernieres créations web</h1>
+                        <h1 className={`text-5xl text-center fade-in mt-12 text-[#041e42]`} id='title2'>Nos dernieres créations web</h1>
                         <div className={`my-8 flex justify-center items-center lg:block lg:mt-2`}>
                             <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                         </div>

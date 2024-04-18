@@ -388,7 +388,7 @@ export default function TestHomePageScroll() {
                     </div>
                 </div>
 
-                <div className="p-16 bg-[#188fa7] xl:mx-48 mx-24 mt-12 mb-24 rounded-xl">
+                <div className="p-16 bg-[#188fa7] xl:mx-48 mx-24 mt-12 mb-24 rounded-xl" id="question">
                     <div className="flex justify-center flex-col items-center">
                         <div className="text-center text-4xl font-bold my-8 text-white italic" id="subtitle">Vous avez des questions ?</div>
                     </div>
@@ -408,7 +408,7 @@ export default function TestHomePageScroll() {
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            Quels types de sites web pouvons-nous développer ?
                             </div>
                             <div className="collapse-content px-24"> 
                                 <p className="py-8">tabIndex={0} attribute is necessary to make the div focusable</p>

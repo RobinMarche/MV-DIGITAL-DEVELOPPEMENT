@@ -257,6 +257,18 @@
     background-repeat: no-repeat;
 }
 
+#question{
+    background-image: url('./assets/question.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#bg_equipe{
+    background-image: url('./assets/bg_equipe.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 /* #price{
     background-image: url('./assets/83.jpg');
     background-position: bottom;

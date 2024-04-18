@@ -23,9 +23,9 @@ export default function GestionRS() {
 
     return (
         <div>
-            <div className="text-center py-12 px-12 lg:pt-24 xl:px-60 lg:px-32" id='ordi'>
+            <div className="text-center py-12 px-12 lg:pt-24 xl:px-60 lg:px-32" id='page2'>
                 <h2 className="uppercase">GESTION DE VOS PUBLICATIONS sur les réseaux sociaux</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl"><span className="text-[#188FA7]">Rassurez vos clients </span>avec des réseaux sociaux professionnels</h1>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]"><span className="text-[#188FA7]">Rassurez vos clients </span>avec des réseaux sociaux professionnels</h1>
                 <p className="lg:text-xl">Affirmez votre expertise avec des comptes Instagram et Facebook professionnels gérés par des experts.</p>
                 <div className="mt-12">
                     <Link to="/contact">
@@ -49,7 +49,7 @@ export default function GestionRS() {
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
                                         <div>
                                             <p className="font-bold text-lg">Design</p>
-                                            <p>Confiez la création de vos publications aux experts ALEO et mettez en avant vos expertises.</p>
+                                            <p>Confiez la création de vos publications à nos experts et mettez en avant vos expertises.</p>
                                         </div>
 
                                     </div>
@@ -76,10 +76,10 @@ export default function GestionRS() {
                     </div>
             </div>
 
-            <div>
+            <div id='page4bg'>
                 <div className='text-center xl:mx-[25vw] px-4'>
                     <h2>VOTRE STRATÉGIE SOCIALE GÉRÉE PAR NOTRE AGENCE DE COMMUNICATION</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl '>Le vrai <span className='text-[#188FA7]'>plus</span> pour votre crédibilité</h1>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Le vrai <span className='text-[#188FA7]'>plus</span> pour votre crédibilité</h1>
                     <p className='xl:px-16'>Profitez de toute la puissance des réseaux sociaux en toute sérénité !</p>
                 </div>
 
@@ -113,8 +113,8 @@ export default function GestionRS() {
                 </div>
             </div>
 
-            <div className='flex justify-center my-12 mx-4 text-white'>
-                <div className="bg-[#188FA7] rounded-2xl p-8 shadow-2xl lg:w-[50vw]">
+            <div className='flex justify-center my-12 mx-8 text-white'>
+                <div className="bg-[#188FA7] rounded-2xl p-4 shadow-2xl lg:w-[50vw]">
                     <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
                     <div className="flex justify-center items-center">
                         <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase" id="font-price">149.99€</p>

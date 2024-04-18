@@ -24,9 +24,9 @@ export default function WebPage() {
 
     return (
         <div>
-            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40">
+            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40" id='page2'>
                 <h2 className="uppercase">Création de site internet</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl">Un site web <span className="text-[#188FA7]">clé en main </span> et bien référencé</h1>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]">Un site web <span className="text-[#188FA7]">clé en main </span> et bien référencé</h1>
                 <p className="lg:text-xl">Devenez visible avec un site internet professionnel conçu par des experts.</p>
                 <div className="mt-12">
                     <Link to="/contact">
@@ -77,10 +77,10 @@ export default function WebPage() {
                     </div>
             </div>
 
-            <div>
+            <div id='page4bg'>
                 <div className='text-center xl:mx-[25vw] px-4'>
                     <h2>CONCEPTION DE SITE WEB ADAPTÉ À VOTRE ACTIVITÉ</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl '>Pour chaque objectif, une solution <span className='text-[#188FA7]'>Digitale</span></h1>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Pour chaque objectif, une solution <span className='text-[#188FA7]'>Digitale</span></h1>
                     <p className='xl:px-16'>En fonction de vos besoins, nous concevons le site internet adapté et mettons en place une stratégie de référencement spécifique à votre activité.</p>
                 </div>
 

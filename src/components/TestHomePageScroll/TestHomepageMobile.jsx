@@ -395,10 +395,9 @@ export default function TestHomePageMobile() {
                     </div>
                 </div>
 
-                <div className="p-8 bg-[#188fa7] m-8 rounded-xl">
+                <div className="p-8 bg-[#188fa7] m-8 rounded-xl" id="question">
                     <div className="flex justify-center flex-col items-center">
-                        <div className="text-center text-xl font-bold mb-8 text-white" id="subtitle">Vous avez des questions ?</div>
-                        <img src={separation} alt="separation" className="w-[40vw] md:w-[20vw]"/>
+                        <div className="text-center text-xl font-bold mb-8 text-white italic" id="subtitle">Vous avez des questions ?</div>
                     </div>
                     <div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">

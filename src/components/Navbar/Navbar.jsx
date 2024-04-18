@@ -128,20 +128,20 @@ export default function Navbar() {
                     <ul className='text-white text-end text-[400%] uppercase flex flex-col font-bold lg:text-start lg:pl-24 lg:text-[400%]' id='font-menu'>
                         <img src={logoWhite} alt="logo" className='w-[15vw] py-12'/>
                         <Link to="/" onClick={handleMenu}>
-                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Accueil</li>       
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-[#041e42]'>Accueil</li>       
                         </Link>
 
                         <Link to="/equipe" onClick={handleMenu}>
-                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Equipe</li>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-[#041e42]'>Equipe</li>
                         </Link>
                         <Link to="/services" onClick={handleMenu}>
-                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Services</li>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-[#041e42]'>Services</li>
                         </Link>
                         <Link to="/projets" onClick={handleMenu}>
-                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Projets</li>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-[#041e42]'>Projets</li>
                         </Link>
                         <Link to="/contact" onClick={handleMenu}>
-                            <li className='pr-4 text-container hover:cursor-pointer hover:text-black'>Contact</li>
+                            <li className='pr-4 text-container hover:cursor-pointer hover:text-[#041e42]'>Contact</li>
                         </Link>
                     </ul>
 

@@ -47,10 +47,7 @@ export default function Testimonials() {
                   loading="lazy"
                 />
                 <p className="md:text-xl">
-                  <span className="font-serif">&quot;</span> Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam
-                  consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti
-                  repudiandae ad doloribus. <span className="font-serif">&quot;</span>
+                  <span className="font-serif">&quot;</span> Un immense merci pour le magnifique site internet que vous avez créé !! Votre passion pour votre métier transparaît dans chaque détail de notre site, ce qui le rend vraiment unique. Je suis ravie d&apos;avoir collaboré avec une équipe aussi professionnelle et dévouée. Je recommande vivement vos services à tous ceux qui recherchent une qualité supérieure et un savoir-faire incomparable. Merci encore pour tout ! <span className="font-serif">&quot;</span>
                 </p>
                 <div>
                   <h6 className="text-lg font-semibold leading-none">Ema F.</h6>
@@ -92,10 +89,7 @@ export default function Testimonials() {
               />
               <div className="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
                 <p>
-                  <span className="font-serif">&quot;</span> Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam
-                  consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti
-                  repudiandae ad doloribus. <span className="font-serif">&quot;</span>
+                  <span className="font-serif">&quot;</span> Je suis absolument ravi du site internet que vous avez créé pour mon entreprise! La qualité de votre travail est tout simplement remarquable. Grâce à votre expertise en marketing digital, notre entreprise est désormais parfaitement représentée en ligne. Travailler avec vous a été un plaisir du début à la fin, et je n&apos;hésiterais pas à recommander vos services. Merci encore pour tout ce que vous avez fait pour notre entreprise ! <span className="font-serif">&quot;</span>
                 </p>
                 <div>
                   <h6 className="text-lg font-semibold leading-none">Loïc M.</h6>

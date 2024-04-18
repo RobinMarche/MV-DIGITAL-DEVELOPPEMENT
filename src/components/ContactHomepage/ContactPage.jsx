@@ -6,6 +6,8 @@ import show from '../../assets/show.jpg';
 import check from '../../assets/check.png';
 import emailjs from '@emailjs/browser';
 
+import { Link } from 'react-router-dom';
+
 
 export default function ContactPage() {
 
@@ -54,7 +56,7 @@ export default function ContactPage() {
     <>
         <div className='lg:mx-48 lg:mt-12 lg:pt-20 lg:p-20 p-8 pt-12 m-6 rounded-2xl bg-[#188FA7]' id='contact_bg'>
             <div>
-                <p className='text-center lg:text-start text-white'>Contact</p>
+                <p className='text-yellow-500 p-4 text-xl'><Link to="/" className='text-white'>Accueil</Link> {">"} <span>Contact</span></p>
             </div> 
             <div className='lg:text-6xl lg:uppercase my-12 text-center lg:text-start text-4xl text-white font-bold'>
                 Discutons de votre projet !
@@ -142,6 +144,46 @@ export default function ContactPage() {
                         </form>
                     </div>
             </div>
+
+            <div className="p-8 bg-[#188fa7] lg:mx-48 mt-12 lg:py-24 rounded-xl" id='question'>
+                    <div className="flex justify-center flex-col items-center">
+                        <div className="text-center text-xl lg:text-4xl font-bold mb-8 text-white italic" id="subtitle">Vous avez des questions ?</div>
+                    </div>
+                    <div className='lg:mx-24 xl:mx-[17vw]'>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                                Focus me to see content
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             {messageForm !== "" && 
                     <div className="toast">
