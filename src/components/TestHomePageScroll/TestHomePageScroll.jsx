@@ -15,8 +15,6 @@ import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
 import fleche from '../../assets/fleche.svg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
-import separation from '../../assets/separation.svg';
-
 
 import emailjs from '@emailjs/browser';
 
@@ -111,28 +109,28 @@ export default function TestHomePageScroll() {
                 <div className='page page_1' id="page1">
                     <div className='h-[100vh] h-[100vh] flex flex-col pt-16 2xl:pt-32 text-gray-900'  id='hero'>
                         <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
-                        <h1 className="text-center text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication <br /> dédiée aux</h1>
+                        <h1 className="text-center text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication <br />dévouée aux </h1>
                         <h1 className={`text-center text-4xl 2xl:text-7xl lg:text-7xl fade-in h-[9vh] lg:h-[16vh] text-[#188FA7] lg:mx-80 font-bold
                         `} id="">{displayText}</h1>
 
                         <div className="flex flex-col justify-center md:flex-row items-center">
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Un véritable savoir faire</p>
+                                <p>Un savoir faire à toute épreuve</p>
                             </div>
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full my-4 lg:my-0 lg:mx-6">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Les meilleurs experts</p>
+                                <p>Les meilleurs conseillers techniques</p>
                             </div>
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9]  mx-12 rounded-full lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Des offres imbattables</p>
+                                <p>Des offres abordables</p>
                             </div>
                         </div>
 
-                        <div className="flex justify-center xl:mt-12 mt-4">
+                        <div className="flex justify-center xl:mt-24 mt-4">
                             <Link to="/contact">
-                                <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Prendre rendez-vous</button>
+                                <button className="bg-red-600 text-white rounded-full px-20 py-4 capitalize text-xl">Prendre rendez-vous</button>
                             </Link>
                         </div>
                     </div>
@@ -140,7 +138,7 @@ export default function TestHomePageScroll() {
 
                 <div className='page page_1' id="page2">
                     <div className='flex flex-col 2xl:pt-8 pt-4 text-gray-900 flex flex-col items-center mb-24' id="price">
-                        <h2 className='text-5xl 2xl:text-6xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext'>Les <span className="text-[#188FA7]">meilleures</span> offres adaptées à votre activité et à votre budget</h2>
+                        <h2 className='text-5xl 2xl:text-6xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext capitalize'>Les offres les plus <span className="text-[#188FA7]">avantageuses</span>, selon vos besoins et votre budget</h2>
                         <div className="flex w-full justify-around">
                             <div className="bg-white rounded-2xl p-8 shadow-2xl w-[35vw]">
                                 <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
@@ -220,34 +218,34 @@ export default function TestHomePageScroll() {
 
 
                 <div className='page page_2 flex items-center justify-center' id="page3">
-                    <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-center'>
+                    <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-around'>
                         <div className='lg:w-1/2 fade-right'>
-                            <h2 className='text-lg uppercase text-center lg:text-start mt-8 text-[#188FA7]'>Soyez accompagné par une agence de communication</h2>
+                            <h2 className='text-lg uppercase text-center lg:text-start mt-8 text-[#188FA7]'>Soyez accompagné notre agence de communication</h2>
                             <div className='my-8 flex justify-center items-center lg:block lg:mt-2'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-5xl 2xl:text-7xl text-[#041e42] font-bold">Votre <span className="text-[#188FA7]">Réussite</span>, <br /></h1>
-                            <h1 className="text-5xl 2xl:text-7xl text-[#041e42] font-bold ml-36">Notre Métier</h1>
+                            <h1 className="text-5xl 2xl:text-7xl text-[#041e42] font-bold">Votre <span className="text-[#188FA7]">Succès</span>, <br /></h1>
+                            <h1 className="text-5xl 2xl:text-7xl text-[#041e42] font-bold ml-24 xl:ml-36">Notre Expertise</h1>
                             <p className={`text-center lg:text-start 2xl:mt-8 mt-4 text-lg 2xl:text-xl`}>
-                                Votre entreprise mérite la meilleure communication. <br />
-                                Libérez votre potentiel avec M&V Digital Developpement !
+                                Valorisez votre entreprise grâce à une communication de qualité optimale. <br />
+                                Décuplez vos performances avec M&V Digital Développement 
                             </p>
 
                             <div className="flex items-center justify-center 2xl:mt-12 mt-4">
                                 <div>
                                     <div className="flex items-center">
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
-                                        <p className="font-bold text-lg">Devenez plus visible pour attirer plus de clients</p>
+                                        <p className="font-bold text-lg" id="subtitle">Augmentez votre visibilité pour attirer davantage de clients</p>
                                     </div>
 
-                                    <div className="flex items-center 2xl:my-6 my-3">
+                                    <div className="flex items-center 2xl:my-6 my-6">
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
-                                        <p className="font-bold text-lg">Obtenez des résultats rapides et mesurables.</p>
+                                        <p className="font-bold text-lg" id="subtitle">Accédez à des résultats tangibles et rapides, mesurables à chaque étape</p>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
-                                        <p className="font-bold text-lg">Gagnez du temps grâce à une équipe d&apos;experts dédiée.</p>
+                                        <p className="font-bold text-lg" id="subtitle">Optimisez votre temps grâce à notre équipe totalement dévouée à votre projet</p>
                                     </div>
                                 </div>
                             </div>
@@ -311,13 +309,13 @@ export default function TestHomePageScroll() {
                     <div className='text-start mt-12'>
                         <div className="flex flex-col justify-center items-center">
                             <h2 className='text-lg uppercase text-center mt-8 text-[#188FA7]'>pourquoi choisir M&V Digital Developpement ?</h2>
-                            <h1 className='text-6xl 2xl:text-7xl w-[70vw] text-center' id="title-help">une communication par des<span className="text-[#188FA7] font-bold"> pros</span>, <br />pour des<span className="text-[#188FA7] font-bold"> pros</span></h1>
+                            <h1 className='text-6xl 2xl:text-7xl w-[70vw] text-center' id="title-help">Une communication sur mesure, pour des professionnels comme <span className="text-[#188FA7] font-bold"> vous</span> !</h1>
                         </div>
                     </div>
                     <div className="mx-12 xl:mx-48 flex justify-center items-center mt-12">
                         <div className="m-8 p-8 rounded-xl" id="bg-creation">
                             <h1 className="font-bold text-4xl" id="subtitle">Expertise</h1>
-                            <p className="my-4 xl:w-2/3 text-xl">Bénéficiez des compétences et du savoir-faire d&apos;experts pour propulser votre activité.</p>
+                            <p className="my-4 xl:w-2/3 text-xl">Profitez de l&apos;expertise et du savoir-faire de professionnels pour booster votre activité.</p>
                             <Link to="/services">
                                 <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
                             </Link>
@@ -325,14 +323,14 @@ export default function TestHomePageScroll() {
 
                         <div className="m-8 p-8 rounded-xl" id="bg-creation2">
                             <h1 className="font-bold text-4xl" id="subtitle">Créativité</h1>
-                            <p className="my-4 xl:w-2/3 text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
+                            <p className="my-4 xl:w-2/3 text-xl">Des visuels et des messages percutants pour mettre en avant le meilleur de votre entreprise.</p>
                             <Link to="/services">
                                 <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
                             </Link>
                         </div>
                     </div>
                     <div className="mx-20 xl:mx-56 p-8 bg-[#188fa7] rounded-2xl text-[#188fa7]" id="bgcreation3">
-                        <h1 className="text-center text-5xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement <br />avec un expert</h1>
+                        <h1 className="text-center text-5xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement avec <br /> l&apos;un de nos experts</h1>
                         <div className="flex flex-col justify-center mt-12 items-center">
                             <Link to="/services">
                                 <button className="btn btn-outline rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">En savoir plus</button>

@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png';
+import logo from '../../assets/imgLanding.png';
 import { useState, useEffect } from 'react';
 import asphalt from '../../assets/asphalt-eater.png';
 import fromagerie from '../../assets/fromagerie-ema.png';
@@ -36,8 +36,8 @@ export default function ProjetsPage() {
 
     return (
         <>
-        <div className='flex flex-col items-center p-8 lg:p-16 lg:flex-row bg-[#188FA7]'>
-                <div className='lg:w-1/2 flex justify-center fade-left'>
+        <div className='flex flex-col items-center p-8 lg:p-16 justify-center lg:flex-row bg-[#188FA7]'>
+                <div className='lg:w-1/3 flex justify-center fade-left'>
                     <img src={logo} alt="logo" />
                 </div>
                 <div className='lg:w-1/3 fade-right text-white'>

@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import servicesFAQ from '../../assets/services-faq.webp';
 
 
+
 export default function PageServices() {
 
     const scrollToTop = () => {
@@ -93,12 +94,12 @@ export default function PageServices() {
                         <h1 className='text-4xl lg:text-6xl mt-4 mb-4 text-[#188FA7] font-bold capitalize' id=''>Transformer vos idées en réalité</h1>
                         <div className='bg-white w-[10vw] h-[2px] lg:my-8 hidden lg:block'></div>
                         <p className='text-[#188FA7] text-xl' id='subtitle'>Votre succès en ligne commence ici !</p>
-                        <div className='flex justify-around items-center my-12 text-[#188FA7]'>
+                        <div className='flex flex-col lg:flex-row justify-around items-center my-12 text-[#188FA7]'>
                             <div className='flex flex-col items-center justify-center'>
                                 <h1 className='text-2xl font-bold'>SEO</h1>
                                 <p className='text-5xl mt-4 font-bold text-[#041e42]'>96%</p>
                             </div>
-                            <div className='flex flex-col items-center justify-center'>
+                            <div className='flex flex-col items-center justify-center my-12 lg:my-0'>
                                 <h1 className='text-2xl font-bold'>Developpement</h1>
                                 <p className='text-5xl mt-4 font-bold text-[#041e42]'>98%</p>
                             </div>

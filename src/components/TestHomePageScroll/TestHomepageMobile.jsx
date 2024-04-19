@@ -14,7 +14,6 @@ import Service3 from '../../assets/34109.jpg';
 import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
-import separation from '../../assets/separation.svg';
 
 import emailjs from '@emailjs/browser';
 
@@ -114,22 +113,22 @@ export default function TestHomePageMobile() {
                 <div className='page page_1' id="page1">
                     <div className='lg:h-[100vh] h-[100vh] flex flex-col text-gray-900 '  id='hero'>
                         <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
-                        <h1 className="text-center text-4xl font-bold mx-8 lg:mx-48 xl:mx-80">L&apos;agence de communication dédiée aux</h1>
+                        <h1 className="text-center text-4xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication <br /> dévouée aux</h1>
                         <h1 className={`text-center text-4xl fade-in h-[9vh] text-[#188FA7] font-bold
                         `} id="">{displayText}</h1>
 
                         <div className="flex flex-col justify-center items-center pt-12">
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Un véritable savoir faire</p>
+                                <p>Un savoir faire à toute épreuve</p>
                             </div>
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full my-4 lg:my-0 lg:mx-6">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Les meilleurs experts</p>
+                                <p>Les meilleurs conseillers techniques</p>
                             </div>
                             <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9]  mx-12 rounded-full lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Des offres imbattables</p>
+                                <p>Des offres abordables</p>
                             </div>
                         </div>
 
@@ -143,9 +142,9 @@ export default function TestHomePageMobile() {
 
                 <div className='page page_1' id="page2">
                     <div className='flex flex-col lg:pt-20 text-gray-900 flex flex-col items-center' id="price">
-                        <h2 className='text-4xl mx-[10vw] font-bold text-center my-8 text-gray-900 pt-12 shadowtext'>Les <span className="text-[#188FA7]">meilleures</span> offres adaptées à votre budget</h2>
+                    <h2 className='text-4xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext capitalize'>Les offres les plus <span className="text-[#188FA7]">avantageuses</span>, selon vos besoins et votre budget</h2>
                         <div className="flex flex-col w-full justify-around">
-                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8">
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
                                 <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
                                 <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
                                 <div className="flex justify-center items-center">
@@ -164,7 +163,7 @@ export default function TestHomePageMobile() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8">
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
                                 <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Réseaux sociaux</h1>
                                 <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
                                 <div className="flex justify-center items-center">
@@ -184,7 +183,7 @@ export default function TestHomePageMobile() {
                                 </div>
                             </div>
 
-                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8">
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
                             <div className="flex flex-col items-center justify-around" id="pub">
                                 <div className="my-12 mx-12">
                                     <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Vos publicités en ligne</h1>
@@ -223,37 +222,37 @@ export default function TestHomePageMobile() {
                 <div className='page page_2 flex items-center justify-center' id="page3">
                     <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-center'>
                         <div className='lg:w-1/2 fade-right'>
-                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>Soyez accompagné par une agence de communication</h2>
+                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>Soyez accompagné par notre agence de communication</h2>
                             <div className='my-8 flex justify-start items-center'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-7xl text-[#041e42] font-bold">Votre <span className="text-[#188FA7]">Réussite</span>, <br /></h1>
-                            <h1 className="text-7xl text-[#041e42] font-bold lg:ml-48">Notre Métier</h1>
+                            <h1 className="text-7xl text-[#041e42] font-bold">Votre <span className="text-[#188FA7]">Succès</span>, <br /></h1>
+                            <h1 className="text-7xl text-[#041e42] font-bold ml-12 md:ml-24">Notre Expertise</h1>
                             <p className={`text-center lg:text-start lg:ml-48 mt-8 text-xl`}>
-                                Votre entreprise mérite la meilleure communication. <br />
-                                Libérez votre potentiel avec M&V Digital Developpement !
+                            Valorisez votre entreprise grâce à une communication de qualité optimale. <br /> <br />
+                                Décuplez vos performances avec M&V Digital Développement !
                             </p>
 
                             <div className="flex items-center justify-center mt-12">
                                 <div>
                                     <div className="flex items-center">
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
-                                        <p className="font-bold text-lg">Devenez plus visible pour attirer plus de clients</p>
+                                        <p className="font-bold text-lg" id="subtitle">Augmentez votre visibilité pour attirer davantage de clients</p>
                                     </div>
 
-                                    <div className="flex items-center my-6">
+                                    <div className="flex items-center my-12">
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
-                                        <p className="font-bold text-lg">Obtenez des résultats rapides et mesurables.</p>
+                                        <p className="font-bold text-lg" id="subtitle">Accédez à des résultats tangibles et rapides, mesurables à chaque étape</p>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
-                                        <p className="font-bold text-lg">Gagnez du temps grâce à une équipe d&apos;experts dédiée.</p>
+                                        <p className="font-bold text-lg" id="subtitle">Optimisez votre temps grâce à notre équipe totalement dévouée à votre projet</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <img src={smile} alt="" className="rounded-xl my-8"/>
+                        <img src={smile} alt="photo-expertise" className="rounded-xl my-8 md:w-1/3 md:mt-24"/>
                     </div>
                 </div>
 
@@ -261,11 +260,11 @@ export default function TestHomePageMobile() {
                 <div className='page page_3 w-[100vw] mb-24' id="page4bg">
                     <div className='text-start mt-12'>
                         <div className="flex justify-center items-center">
-                            <h1 className='text-4xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16' id="title-help">Comment pouvons nous vous <span className="text-[#188FA7] font-bold"> aider</span> ?</h1>
+                            <h1 className='text-4xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16' id="title-help">Comment pouvons nous <br /> vous <span className="text-[#188FA7] font-bold"> aider</span> ?</h1>
                         </div>
                     </div>
                     
-                    <div className="justify-center mt-16 flex flex-col mx-8">
+                    <div className="justify-center mt-16 flex flex-col mx-8 md:mx-32">
                        <div className="">
                             <div className="rounded-xl h-[28vh] mb-[32px] flex flex-col justify-between relative overflow-hidden" id="service1">
                                 <img src={Service1} alt="" className="object-cover absolute w-full h-full -z-1 rounded-xl" id="img_serviceMobile"/>
@@ -318,13 +317,13 @@ export default function TestHomePageMobile() {
                     <div className='text-start mt-6'>
                         <div className="flex flex-col justify-center items-center">
                             <h2 className='text-lg uppercase text-center mt-8 text-[#188FA7]'>pourquoi choisir M&V Digital Developpement ?</h2>
-                            <h1 className='text-3xl mx-8 mt-4 text-center' id="title-help">une communication par des<span className="text-[#188FA7] font-bold"> pros</span>, pour des<span className="text-[#188FA7] font-bold"> pros</span></h1>
+                            <h1 className='text-3xl mx-8 md:mx-24 mt-4 text-center' id="title-help">Une communication sur mesure, pour des professionnels comme <span className="text-[#188FA7] font-bold"> vous</span> !</h1>
                         </div>
                     </div>
                     <div className="mx-2 flex flex-col justify-center items-center mt-6">
                         <div className="m-4 p-8 rounded-xl text-center" id="bg-creation">
                             <h1 className="font-bold text-4xl" id="subtitle">Expertise</h1>
-                            <p className="my-4 xl:w-2/3 text-xl">Bénéficiez des compétences et du savoir-faire d&apos;experts pour propulser votre activité.</p>
+                            <p className="my-4 xl:w-2/3 text-xl">Profitez de l&apos;expertise et du savoir-faire de professionnels pour booster votre activité.</p>
                             <Link to="/services">
                                 <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
                             </Link>
@@ -332,14 +331,14 @@ export default function TestHomePageMobile() {
 
                         <div className="m-4 p-8 rounded-xl text-center" id="bg-creation2">
                             <h1 className="font-bold text-4xl" id="subtitle">Créativité</h1>
-                            <p className="my-4 xl:w-2/3 text-xl">Des visuels et des messages impactants pour montrer le meilleur de votre entreprise.</p>
+                            <p className="my-4 xl:w-2/3 text-xl">Des visuels et des messages percutants pour mettre en avant le meilleur de votre entreprise.</p>
                             <Link to="/services">
                                 <button className="btn glass bg-[#188fa7] rounded-full text-white mt-8 mb-12">En savoir plus</button>
                             </Link>
                         </div>
                     </div>
                     <div className="mx-6 p-8 bg-[#188fa7] rounded-2xl text-[#188fa7] mb-12" id="bgcreation3">
-                        <h1 className="text-center text-4xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement <br />avec un expert</h1>
+                        <h1 className="text-center text-4xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement avec <br /> l&apos;un de nos experts</h1>
                         <div className="flex flex-col justify-center mt-12 items-center">
                             <Link to="/services">
                                 <button className="btn btn-outline bg-white rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">En savoir plus</button>

@@ -7,14 +7,14 @@ import ContactPage from "./components/ContactHomepage/ContactPage"
 import ProjetsPage from "./components/Projets/ProjetsPage"
 import TestHomePageScroll from "./components/TestHomePageScroll/TestHomePageScroll"
 import TestHomePageMobile from "./components/TestHomePageScroll/TestHomepageMobile"
-
 import WebPage from "./components/PageServices/WebPage"
 import PrintPage from "./components/PageServices/PrintPage"
 import GestionRS from "./components/PageServices/GestionRS"
 import PublicitesPage from "./components/PageServices/PublicitésPage"
-
 import Equipe from "./components/Equipe/Equipe"
 import CookieConsent from "./components/CookieConsent/CookieConsent"
+
+import LandingPage from "./components/LandingPage/LandingPage"
 
 import { Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -147,6 +147,15 @@ function App() {
               <HeroOtherPage title={"Publicités en ligne"}/>
               <PublicitesPage/>
               <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/landing-page"
+          element={
+            <>
+              <LandingPage/>
             </>
           }
         />

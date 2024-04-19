@@ -25,9 +25,9 @@ export default function WebPage() {
 
     return (
         <div>
-            <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40" id='page2'>
+            <div className="text-center py-12 px-12 lg:pt-24 xl:px-60 lg:px-40" id='page2'>
                 <h2 className="uppercase">Création de site internet</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]">Un site web <span className="text-[#188FA7]">clé en main </span> et bien référencé</h1>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]">Site web <span className="text-[#188FA7]">clé en main</span>, optimisé pour le référencement</h1>
                 <p className="lg:text-xl">Devenez visible avec un site internet professionnel conçu par des experts.</p>
                 <div className="mt-12">
                     <Link to="/contact">
@@ -43,7 +43,7 @@ export default function WebPage() {
                             <div className='my-8 flex justify-start items-center'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Le site web qui vous rendra visible</h1>
+                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl capitalize">Votre site web, <br /> <span className='ml-12'>votre <span className="text-[#188FA7]">vitrine</span> numérique</span></h1>
 
                             <div className="flex items-center justify-center mt-12">
                                 <div>
@@ -51,7 +51,7 @@ export default function WebPage() {
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
                                         <div>
                                             <p className="font-bold text-lg">Un site professionnel</p>
-                                            <p>Présentez votre activité avec un site 100 % personnalisé adapté à vos besoins.</p>
+                                            <p>une expérience web sur mesure, conçue spécifiquement pour répondre à vos besoins.</p>
                                         </div>
 
                                     </div>
@@ -60,15 +60,15 @@ export default function WebPage() {
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
                                             <p className="font-bold text-lg">Une équipe d’experts</p>
-                                            <p>Bénéficiez du savoir-faire de toute une équipe d&apos;experts.</p>
+                                            <p>Profitez de l&apos;expertise d&apos;une équipe complète de professionnels aguerris à votre service.</p>
                                         </div>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Des offres flexibles</p>
-                                            <p>Restez maître de votre budget avec nos offres sans engagement.</p>
+                                            <p className="font-bold text-lg">Des offres imbattables</p>
+                                            <p>Gardez le contrôle de vos finances grâce à nos offres flexibles</p>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ export default function WebPage() {
                 <div className='text-center xl:mx-[25vw] px-4'>
                     <h2>CONCEPTION DE SITE WEB ADAPTÉ À VOTRE ACTIVITÉ</h2>
                     <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Pour chaque objectif, une solution <span className='text-[#188FA7]'>Digitale</span></h1>
-                    <p className='xl:px-16'>En fonction de vos besoins, nous concevons le site internet adapté et mettons en place une stratégie de référencement spécifique à votre activité.</p>
+                    <p className='xl:px-16'>Nous élaborons un site internet sur mesure en fonction de vos exigences, tout en mettant en œuvre une stratégie de référencement spécialement adaptée à votre secteur d&apos;activité.</p>
                 </div>
 
                 <div className='px-4 lg:flex lg:justify-center lg:items-center mt-12'>
