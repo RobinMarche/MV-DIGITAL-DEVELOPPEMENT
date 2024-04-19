@@ -67,10 +67,7 @@ export default function Testimonials() {
               />
               <div className="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
                 <p >
-                  <span className="font-serif">&quot;</span> Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam
-                  consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti
-                  repudiandae ad doloribus. <span className="font-serif">&quot;</span>
+                  <span className="font-serif">&quot;</span> Un site qui fonctionne parfaitement, un accompagnement complet, un grande disponibilité et du professionnalisme lors de leur accompagnement. Voilà comment résumer le travail de MV Digital Developpement. Je recommande ! <span className="font-serif">&quot;</span>
                 </p>
                 <div>
                   <h6 className="text-lg font-semibold leading-none">Rayan C.</h6>

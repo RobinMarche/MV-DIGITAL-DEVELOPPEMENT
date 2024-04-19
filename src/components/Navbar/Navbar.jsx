@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logoMV.svg';
 import logoWhite from '../../assets/logo_white.png';
 import phone from '../../assets/phone.png';
 import menu from '../../assets/menu.png';

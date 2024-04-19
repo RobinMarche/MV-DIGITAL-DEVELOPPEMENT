@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logoMV.svg';
 import thomas from '../../assets/thomasssss-removebg-preview.png';
 import robin from '../../assets/xxxxx-removebg-preview.png';
 import { useState, useEffect } from 'react';
@@ -25,8 +25,8 @@ export default function Equipe() {
 
 
             <div className='flex flex-col justify-center items-center lg:flex-row lg:pt-24 lg:pb-12 xl:px-48' id='page2'>
-                <img src={logo} alt="logo" className='my-8 fade-left'/>
-                <p className="text-center p-8 fade-right">Bienvenue chez M&V Digital Developpement ! Notre équipe dynamique de deux passionnés de développement web et de marketing digital combine créativité et expertise technique pour concevoir des solutions digitales percutantes. Avec nous, chaque projet devient une aventure unique, façonnée par notre engagement à exceller. Transformons ensemble vos idées en succès numériques !</p>
+                <img src={logo} alt="logo" className='my-8 fade-left w-1/4'/>
+                <p className="text-center lg:text-start p-8 fade-right">Bienvenue chez M&V Digital Developpement ! Notre équipe dynamique de deux passionnés de développement web et de marketing digital combine créativité et expertise technique pour concevoir des solutions digitales percutantes. Avec nous, chaque projet devient une aventure unique, façonnée par notre engagement à exceller. Transformons ensemble vos idées en succès numériques !</p>
             </div>
 
             {/* <div className='lg:flex justify-around items-center py-12 bg-[#188FA7]'>
