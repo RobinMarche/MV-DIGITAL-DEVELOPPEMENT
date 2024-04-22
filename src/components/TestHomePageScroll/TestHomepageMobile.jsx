@@ -118,15 +118,15 @@ export default function TestHomePageMobile() {
                         `} id="">{displayText}</h1>
 
                         <div className="flex flex-col justify-center items-center pt-12">
-                            <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full lg:mx-0">
+                            <div className="flex items-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-6 rounded-full w-[80vw] md:w-[50vw] lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
                                 <p>Un savoir faire à toute épreuve</p>
                             </div>
-                            <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-12 rounded-full my-4 lg:my-0 lg:mx-6">
+                            <div className="flex items-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-6 rounded-full w-[80vw] md:w-[50vw] my-4 lg:my-0 lg:mx-6">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
                                 <p>Les meilleurs conseillers techniques</p>
                             </div>
-                            <div className="flex items-center justify-center border-[1px] border-gray-500 p-3 bg-white/[0.9]  mx-12 rounded-full lg:mx-0">
+                            <div className="flex items-center border-[1px] border-gray-500 p-3 bg-white/[0.9]  mx-6 rounded-full w-[80vw] md:w-[50vw] lg:mx-0">
                                 <img src={badgeCheck} alt="badge-check" className="mr-4"/>
                                 <p>Des offres abordables</p>
                             </div>
@@ -142,7 +142,7 @@ export default function TestHomePageMobile() {
 
                 <div className='page page_1' id="page2">
                     <div className='flex flex-col lg:pt-20 text-gray-900 flex flex-col items-center' id="price">
-                    <h2 className='text-4xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext capitalize'>Les offres les plus <span className="text-[#188FA7]">avantageuses</span>, selon vos besoins et votre budget</h2>
+                    <h2 className='text-4xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext'>Les offres les plus <span className="text-[#188FA7]">Avantageuses</span>, selon vos besoins et votre budget</h2>
                         <div className="flex flex-col w-full justify-around">
                             <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
                                 <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
@@ -260,7 +260,7 @@ export default function TestHomePageMobile() {
                 <div className='page page_3 w-[100vw] mb-24' id="page4bg">
                     <div className='text-start mt-12'>
                         <div className="flex justify-center items-center">
-                            <h1 className='text-4xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16' id="title-help">Comment pouvons nous <br /> vous <span className="text-[#188FA7] font-bold"> aider</span> ?</h1>
+                            <h1 className='text-4xl 2xl:text-7xl w-[70vw] text-center 2xl:mt-16 font-bold text-[#041e42]'>Comment pouvons nous <br /> vous <span className="text-[#188FA7] font-bold"> Aider</span> ?</h1>
                         </div>
                     </div>
                     
@@ -317,7 +317,7 @@ export default function TestHomePageMobile() {
                     <div className='text-start mt-6'>
                         <div className="flex flex-col justify-center items-center">
                             <h2 className='text-lg uppercase text-center mt-8 text-[#188FA7]'>pourquoi choisir M&V Digital Developpement ?</h2>
-                            <h1 className='text-3xl mx-8 md:mx-24 mt-4 text-center' id="title-help">Une communication sur mesure, pour des professionnels comme <span className="text-[#188FA7] font-bold"> vous</span> !</h1>
+                            <h1 className='text-3xl mx-8 md:mx-24 mt-4 text-center font-bold text-[#041e42]'>Une communication sur mesure, pour des professionnels comme <span className="text-[#188FA7] font-bold"> Vous</span> !</h1>
                         </div>
                     </div>
                     <div className="mx-2 flex flex-col justify-center items-center mt-6">
@@ -399,36 +399,43 @@ export default function TestHomePageMobile() {
                         <div className="text-center text-xl font-bold mb-8 text-white italic" id="subtitle">Vous avez des questions ?</div>
                     </div>
                     <div>
-                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                    <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            Pourquoi choisir une agence de communication telle que M&V Digital Developpement ?
                             </div>
-                            <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <div className="collapse-content px-4"> 
+                                <p className="py-8">Choisir M&V Digital Développement pour la création de site internet, la publicité en ligne et la gestion des réseaux sociaux vous offre expertise professionnelle, efficacité, et une approche intégrée qui maximise votre visibilité et optimise vos investissements. <br /><br />L&apos;agence vous aide à économiser du temps en gérant toutes vos nécessités numériques sous un même toit, assurant des résultats mesurables et un accompagnement personnalisé pour répondre à vos objectifs spécifiques. 
+                                </p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            Quel est le prix de la création d’un site web ?
                             </div>
-                            <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
-                            </div>
-                        </div>
-                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
-                            <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
-                            </div>
-                            <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <div className="collapse-content px-4"> 
+                                <p className="py-8">Le tarif pour la création d&apos;un site web peut varier en fonction de plusieurs éléments, tels que la complexité du design, le nombre de pages, le SEO, et les besoins spécifiques. Chaque projet est unique et mérite une évaluation sur mesure.
+                                <br /><br />
+                                Pour une estimation adaptée à votre projet, n&apos;hésitez pas à nous contacter. Vous pouvez demander nos tarifs détaillés en cliquant sur &apos;Contactez-nous&apos; sur notre site pour prendre rendez-vous avec un de nos experts pour discuter de vos besoins spécifiques.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            En quoi consiste le référencement naturel (SEO) ?
                             </div>
-                            <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                            <div className="collapse-content px-4"> 
+                                <p className="py-8">Le référencement naturel, ou SEO (Search Engine Optimization), désigne l&apos;ensemble des stratégies utilisées pour améliorer la position d&apos;un site web dans les résultats de recherche sans recourir à des annonces payantes. Cette méthode se concentre sur l&apos;accroissement de la visibilité en ligne de façon organique.
+                                <br /><br />
+                                Cette pratique englobe l&apos;optimisation de divers éléments du site, à la fois sur le plan technique et en termes de contenu. Par exemple, cela peut inclure l&apos;ajustement de la structure du site web, l&apos;amélioration de la rapidité de chargement des pages, la rédaction de contenu riche en mots-clés pertinents, et l&apos;établissement de liens de qualité provenant d&apos;autres sites.
+                                <br /><br />
+                                L&apos;objectif est de positionner votre site parmi les premiers résultats sur les moteurs de recherche pour des recherches spécifiques, ce qui augmente la probabilité de visite et, par conséquent, le trafic organique vers votre site. Atteindre ces objectifs prend généralement du temps et nécessite une mise à jour régulière pour rester en phase avec les changements d&apos;algorithmes des moteurs de recherche.</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
+                            <div className="collapse-title text-lg font-medium">
+                            MV Digital propose-t-elle des consultations ou des audits gratuits avant de commencer un projet ?
+                            </div>
+                            <div className="collapse-content px-4"> 
+                                <p className="py-8">Oui, MV Digital offre des consultations initiales ou des audits gratuits avant de commencer un projet. Cela permet à l&apos;agence de mieux comprendre les besoins spécifiques de chaque client et d&apos;évaluer l&apos;état actuel de leur présence en ligne. Durant cette phase préliminaire, MV Digital peut identifier les défis et les opportunités pour formuler une stratégie efficace. Cet audit initial aide à établir une relation de confiance et à assurer que les objectifs du client sont clairement définis et compris avant de s&apos;engager dans un projet complet.</p>
                             </div>
                         </div>
                     </div>

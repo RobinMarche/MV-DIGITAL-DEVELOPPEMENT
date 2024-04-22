@@ -5,6 +5,11 @@
 
 /********************************* ANIMATION MENU DEROULANT MOBILE *************************************/
 
+html{
+    scroll-behavior: smooth;
+
+}
+
 .menu-enter {
     transform: translateY(150%);
 }

@@ -152,34 +152,40 @@ export default function ContactPage() {
                     <div className='lg:mx-24 xl:mx-[17vw]'>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            Pourquoi choisir une agence de communication telle que M&V Digital Developpement ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Choisir M&V Digital Développement pour la création de site internet, la publicité en ligne et la gestion des réseaux sociaux vous offre expertise professionnelle, efficacité, et une approche intégrée qui maximise votre visibilité et optimise vos investissements. <br /><br />L&apos;agence vous aide à économiser du temps en gérant toutes vos nécessités numériques sous un même toit, assurant des résultats mesurables et un accompagnement personnalisé pour répondre à vos objectifs spécifiques. </p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            Quel est le prix de la création d’un site web ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Le tarif pour la création d&apos;un site web peut varier en fonction de plusieurs éléments, tels que la complexité du design, le nombre de pages, le SEO, et les besoins spécifiques. Chaque projet est unique et mérite une évaluation sur mesure.
+                                <br /><br />
+                                Pour une estimation adaptée à votre projet, n&apos;hésitez pas à nous contacter. Vous pouvez demander nos tarifs détaillés en cliquant sur &apos;Contactez-nous&apos; sur notre site pour prendre rendez-vous avec un de nos experts pour discuter de vos besoins spécifiques.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            En quoi consiste le référencement naturel (SEO) ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Le référencement naturel, ou SEO (Search Engine Optimization), désigne l&apos;ensemble des stratégies utilisées pour améliorer la position d&apos;un site web dans les résultats de recherche sans recourir à des annonces payantes. Cette méthode se concentre sur l&apos;accroissement de la visibilité en ligne de façon organique.
+                                <br /><br />
+                                Cette pratique englobe l&apos;optimisation de divers éléments du site, à la fois sur le plan technique et en termes de contenu. Par exemple, cela peut inclure l&apos;ajustement de la structure du site web, l&apos;amélioration de la rapidité de chargement des pages, la rédaction de contenu riche en mots-clés pertinents, et l&apos;établissement de liens de qualité provenant d&apos;autres sites.
+                                <br /><br />
+                                L&apos;objectif est de positionner votre site parmi les premiers résultats sur les moteurs de recherche pour des recherches spécifiques, ce qui augmente la probabilité de visite et, par conséquent, le trafic organique vers votre site. Atteindre ces objectifs prend généralement du temps et nécessite une mise à jour régulière pour rester en phase avec les changements d&apos;algorithmes des moteurs de recherche.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200 my-4 rounded-xl">
                             <div className="collapse-title text-lg font-medium">
-                                Focus me to see content
+                            MV Digital propose-t-elle des consultations ou des audits gratuits avant de commencer un projet ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Oui, MV Digital offre des consultations initiales ou des audits gratuits avant de commencer un projet. Cela permet à l&apos;agence de mieux comprendre les besoins spécifiques de chaque client et d&apos;évaluer l&apos;état actuel de leur présence en ligne. Durant cette phase préliminaire, MV Digital peut identifier les défis et les opportunités pour formuler une stratégie efficace. Cet audit initial aide à établir une relation de confiance et à assurer que les objectifs du client sont clairement définis et compris avant de s&apos;engager dans un projet complet.</p>
                             </div>
                         </div>
                     </div>

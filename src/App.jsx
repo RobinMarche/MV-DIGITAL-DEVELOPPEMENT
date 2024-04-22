@@ -15,6 +15,7 @@ import Equipe from "./components/Equipe/Equipe"
 import CookieConsent from "./components/CookieConsent/CookieConsent"
 
 import LandingPage from "./components/LandingPage/LandingPage"
+import LandingPageWeb from "./components/LandingPage/LandingPageWeb"
 
 import { Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -152,10 +153,19 @@ function App() {
         />
 
         <Route
-          path="/landing-page"
+          path="/decouverte"
           element={
             <>
               <LandingPage/>
+            </>
+          }
+        />
+
+        <Route
+          path="/decouverte-site-internet"
+          element={
+            <>
+              <LandingPageWeb/>
             </>
           }
         />
