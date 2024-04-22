@@ -127,26 +127,26 @@ export default function PageServices() {
                     <div className='mb-12'>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Pourquoi choisir une agence de communication telle que M&V Digital Developpement ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Choisir M&V Digital Développement pour la création de site internet, la publicité en ligne et la gestion des réseaux sociaux vous offre expertise professionnelle, efficacité, et une approche intégrée qui maximise votre visibilité et optimise vos investissements. L&apos;agence vous aide à économiser du temps en gérant toutes vos nécessités numériques sous un même toit, assurant des résultats mesurables et un accompagnement personnalisé pour répondre à vos objectifs spécifiques.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none my-6">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Pourquoi devrais-je choisir MV Digital pour gérer mes réseaux sociaux ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Opter pour MV Digital pour la gestion de vos réseaux sociaux vous offre expertise et efficacité, permettant d&apos;améliorer votre interaction avec l&apos;audience et d&apos;élargir votre présence en ligne. MV Digital libère vos ressources internes en prenant en charge la création de contenu engageant, l&apos;analyse des performances, et l&apos;ajustement des stratégies en temps réel. Cela vous assure que votre communication numérique est gérée par des professionnels, optimisant ainsi vos investissements et favorisant la croissance de votre marque.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            MV Digital propose-t-elle des consultations ou des audits gratuits avant de commencer un projet ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Oui, MV Digital offre des consultations initiales ou des audits gratuits avant de commencer un projet. Cela permet à l&apos;agence de mieux comprendre les besoins spécifiques de chaque client et d&apos;évaluer l&apos;état actuel de leur présence en ligne. Durant cette phase préliminaire, MV Digital peut identifier les défis et les opportunités pour formuler une stratégie efficace. Cet audit initial aide à établir une relation de confiance et à assurer que les objectifs du client sont clairement définis et compris avant de s&apos;engager dans un projet complet.</p>
                             </div>
                         </div>
                     </div>

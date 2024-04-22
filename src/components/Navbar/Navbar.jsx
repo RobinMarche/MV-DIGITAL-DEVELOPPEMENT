@@ -16,7 +16,7 @@ export default function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
           const scrollPosition = window.scrollY;
-          const shouldChangeBackground = scrollPosition > 400;
+          const shouldChangeBackground = scrollPosition > 1;
           setScrollBackground(shouldChangeBackground);
         };
     

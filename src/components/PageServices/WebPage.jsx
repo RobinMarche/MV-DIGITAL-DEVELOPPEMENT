@@ -160,26 +160,44 @@ export default function WebPage() {
                     <div className='mb-12'>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Quel est le prix de la création d’un site web ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Le tarif pour la création d&apos;un site web peut varier en fonction de plusieurs éléments, tels que la complexité du design, le nombre de pages, le SEO, et les besoins spécifiques. Chaque projet est unique et mérite une évaluation sur mesure.
+                                <br /><br />
+                                Pour une estimation adaptée à votre projet, n&apos;hésitez pas à nous contacter. Vous pouvez demander nos tarifs détaillés en cliquant sur &apos;Contactez-nous&apos; sur notre site pour prendre rendez-vous avec un de nos experts pour discuter de vos besoins spécifiques.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none my-6">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Est-il possible d&apos;apporter des modifications à un site web créé par MV Digital Développement après sa mise en ligne ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Bien sûr, nous reconnaissons que les besoins de votre entreprise évoluent au fil du temps. Chez MV Digital Développement, nous proposons non seulement la création initiale de votre site internet mais également la possibilité de le mettre à jour en fonction de vos nouvelles exigences.
+                                <br /><br />
+                                Si vous souhaitez actualiser les textes, remplacer des images, ou modifier la disposition de certaines pages, notre équipe dédiée est prête à intervenir. Grâce à un design responsive, votre site reste parfaitement utilisable et esthétique sur tous types de dispositifs, qu&apos;il s&apos;agisse d&apos;ordinateurs, de tablettes ou de smartphones.
+                                <br /><br />
+                                Nous nous engageons à ce que votre site web continue de refléter le dynamisme et l&apos;évolution de votre entreprise, assurant ainsi qu&apos;il reste un outil de communication et de marketing efficace et pertinent.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Pourquoi est-il avantageux de choisir une agence de création de sites web telle que MV Digital Développement ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Faire appel à une agence de création de sites web telle que MV Digital Développement présente plusieurs avantages clés. Notre mission est de soutenir votre entreprise dans son développement numérique, en vous garantissant un site internet constamment actualisé et adapté à vos besoins.
+                                <br /><br />
+                                Notre équipe est prête à mettre à jour votre contenu, vos images, et à sécuriser votre site avec un certificat SSL. Nous gérons également l&apos;hébergement de votre site sur des serveurs fiables et sécurisés, basés en France.
+                                <br /><br />
+                                De plus, MV Digital Développement est à votre disposition pour la refonte de votre site existant. Si vous possédez déjà un site et souhaitez en conserver le contenu, nos spécialistes en développement web prendront en charge l&apos;ensemble du processus pour vous.</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
+                            <div className="collapse-title text-xl font-medium">
+                            Puis-je envisager MV Digital Web pour la refonte de mon site internet ?
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>Oui, vous pouvez absolument vous tourner vers MV Digital Web pour la refonte de votre site internet. MV Digital Web est spécialisée dans la modernisation et l&apos;amélioration de sites web, en veillant à ce que ceux-ci répondent aux dernières normes en matière de design et de fonctionnalité. Ils sont également experts en transition vers de nouveaux sites web tout en conservant le contenu existant. <br /><br />Que vous souhaitiez rafraîchir l&apos;esthétique de votre site, améliorer l&apos;expérience utilisateur, optimiser le référencement, ou simplement migrer votre contenu vers une nouvelle plateforme plus moderne, l&apos;équipe de MV Digital Web peut vous fournir une solution sur mesure qui répondra parfaitement à vos attentes.</p>
                             </div>
                         </div>
                     </div>

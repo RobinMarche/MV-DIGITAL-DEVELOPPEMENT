@@ -144,26 +144,34 @@ export default function GestionRS() {
                     <div className='mb-12'>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Pourquoi devrais-je choisir MV Digital pour gérer mes réseaux sociaux ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Opter pour MV Digital pour la gestion de vos réseaux sociaux vous offre expertise et efficacité, permettant d&apos;améliorer votre interaction avec l&apos;audience et d&apos;élargir votre présence en ligne. MV Digital libère vos ressources internes en prenant en charge la création de contenu engageant, l&apos;analyse des performances, et l&apos;ajustement des stratégies en temps réel. Cela vous assure que votre communication numérique est gérée par des professionnels, optimisant ainsi vos investissements et favorisant la croissance de votre marque.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none my-6">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            MV Digital peut-il s&apos;occuper de la création de mon compte Facebook, Instagram ou autre réseau social ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Oui, MV Digital peut absolument prendre en charge la création de vos comptes sur Facebook, Instagram, ou toute autre plateforme de réseaux sociaux. Ils s&apos;occuperont de l&apos;ensemble du processus, depuis la mise en place des comptes jusqu&apos;à leur personnalisation, en s&apos;assurant que tout soit optimisé pour engager efficacement votre audience cible. En confiant la création et la gestion de vos réseaux sociaux à MV Digital, vous bénéficiez d&apos;un démarrage professionnel et stratégique sur les réseaux, essentiel pour construire une présence en ligne solide.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Combien de publications MV Digital va-t-il poster par mois sur mes réseaux sociaux ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Selon l&apos;offre que vous sélectionnerez pour affiner votre stratégie de médias sociaux, MV Digital postera entre 4 et 16 publications par mois sur vos comptes Facebook et Instagram. Ce nombre varie en fonction de vos objectifs spécifiques et du plan de gestion des réseaux sociaux que vous choisissez, permettant ainsi une personnalisation adaptée à vos besoins.</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
+                            <div className="collapse-title text-xl font-medium">
+                            Comment MV Digital choisit-elle les plateformes de réseaux sociaux adaptées à mon entreprise ?
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>MV Digital évalue plusieurs facteurs pour déterminer les plateformes de réseaux sociaux les mieux adaptées à votre entreprise. Cela inclut l&apos;analyse de votre public cible, l&apos;identification des plateformes où ce public est le plus actif, et l&apos;évaluation des objectifs spécifiques de votre stratégie marketing. Par exemple, si votre audience est principalement jeune et visuelle, Instagram et TikTok pourraient être privilégiés. Pour des interactions B2B, LinkedIn pourrait être plus approprié. MV Digital s&apos;assure que les plateformes choisies maximisent votre visibilité et engagement, alignées avec votre stratégie globale de communication.</p>
                             </div>
                         </div>
                     </div>
