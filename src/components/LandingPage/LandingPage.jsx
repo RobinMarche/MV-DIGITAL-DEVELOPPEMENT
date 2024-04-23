@@ -47,25 +47,25 @@ export default function LandingPage() {
     
     return (
         <>
-            <div className='flex items-center justify-center lg:justify-between px-12 py-4 lg:py-2'>
+            {/* <div className='flex items-center justify-center lg:justify-between px-12 py-4 lg:py-2'>
                 <img src={logo} alt="logo" className='w-[7vw] xl:w-[6vw] hidden lg:block'/>
                 <div className='flex items-center jusstify-center'>
                     <img src={phone} alt="phone" className='mr-2'/>
                     <p>06 81 74 23 42 / 06 33 90 40 50</p>
                 </div>
             </div>
-            <div className='h-[1px] bg-[#188fa7] mx-12'></div>
-            <div className="text-blue-800" >
-                <div className='flex flex-col lg:flex-row lg:items-center px-8 xl:px-12' id='page2'>
-                    <div className='py-12 xl:px-12 px-2 lg:max-w-[40vw]'>
+            <div className='h-[1px] bg-[#188fa7] mx-12'></div> */}
+            <div className="text-blue-800 " >
+                <div className='flex flex-col lg:flex-row lg:items-center px-8 xl:px-12 h-[100vh]' id='page2'>
+                    <div className='xl:px-12 px-2 lg:max-w-[50vw]'>
                         <div className='flex justify-center'>
-                            <img src={logo} alt="logo" className='w-1/2 mb-6' />
+                            <img src={logo} alt="logo" className='w-1/4 mb-6' />
                         </div>
                         <div className='relative inline-block flex flex-col justify-center'>
-                            <h1 className='text-4xl xl:text-6xl font-bold capitalize text-center lg:text-start'>Votre succès en ligne</h1>
+                            <h1 className='text-4xl xl:text-6xl font-bold capitalize text-center'>Votre succès en ligne</h1>
                             <div className='relative inline-block flex justify-center xl:block'>
-                                <span className='absolute bottom-0 left-[25%] xl:left-0 xl:w-[71%] w-[50%] h-[40%] bg-[#5ce1e6] -z-1'></span>
-                                <h1 className='text-4xl xl:text-6xl font-bold capitalize relative text-center lg:text-start'>commence ici</h1>
+                                <span className='absolute bottom-0 left-[25%] xl:left-[25%] xl:w-[50%] w-[50%] h-[30%] bg-[#5ce1e6] -z-1'></span>
+                                <h1 className='text-4xl xl:text-6xl font-bold capitalize relative text-center'>commence ici</h1>
                             </div>
                         </div>
 
@@ -79,7 +79,7 @@ export default function LandingPage() {
                                 <p className='text-xl font-bold' id='subtitle'>Création et refonte de site internet sur mesure</p>
                             </div>
                             <div className='flex items-center'>
-                                <img src={sparkles} alt="check" className='mr-2 my-8' />
+                                <img src={sparkles} alt="check" className='mr-2 my-4' />
                                 <p className='text-xl font-bold' id='subtitle'>Gestion de vos réseaux sociaux</p>
                             </div>
                             <div className='flex items-center'>
@@ -91,10 +91,10 @@ export default function LandingPage() {
                         <p className='mt-12 text-lg text-center lg:text-start leading-10'>
                         Que vous ayez besoin d&apos;un <span className='text-[#ff66c4] font-bold' id='subtitle'>Site Internet</span> , d&apos;une <span className='text-[#ff66c4] font-bold' id='subtitle'>Gestion de vos Réseaux Sociaux</span>, de la <span className='text-[#ff66c4] font-bold' id='subtitle'>Création de publicités</span> en ligne, ou de toutes ces solutions réunies,</p>
 
-                        <p className='font-bold italic text-2xl text-center mt-12'>Nous avons la solution pour vous !</p>
+                        <p className='font-bold italic text-2xl text-center my-2'>Nous avons la solution pour vous !</p>
 
 
-                        <div className='flex flex-col justify-center mt-12 items-center'>
+                        <div className='flex flex-col justify-center mt-6 items-center'>
                             <p className='mb-8 font-bold text-lg' id='subtitle'>A partir de <span className='text-2xl'>49,99 €</span> !</p>
                             <a href="#contact">
                                 <button className='btn glass rounded-full bg-[#ff66c4] px-16 h-[10vh] border-none text-white text-3xl normal-case hover:bg-[#188fa7] hover:glass'>Contactez-nous !</button>
@@ -102,7 +102,7 @@ export default function LandingPage() {
                         </div>
                     </div>
                     <div className='hidden lg:block'>
-                        <img src={imgLanding} alt="" />
+                        <img src={imgLanding} alt=""/>
                     </div>
                 </div>
 

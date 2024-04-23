@@ -14,6 +14,8 @@ import Service3 from '../../assets/34109.jpg';
 import Service4 from '../../assets/pubRS.jpg';
 import contact from '../../assets/40001.jpg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
+import imgLanding from '../../assets/bgHero2.svg';
+import flecheBas from '../../assets/fleche-bas.svg';
 
 import emailjs from '@emailjs/browser';
 
@@ -110,113 +112,44 @@ export default function TestHomePageMobile() {
         <>
 
             <div id='' style={{ scrollBehavior: 'smooth' }}>
-                <div className='page page_1' id="page1">
-                    <div className='lg:h-[100vh] h-[100vh] flex flex-col text-gray-900 '  id='hero'>
-                        <h2 className="pt-12 text-center uppercase text-[#188FA7] mb-4 font-bold mx-8">M&V Digital Developpement - au service des pros</h2>
-                        <h1 className="text-center text-4xl font-bold mx-8 lg:mx-48 xl:mx-80 text-[#041e42]">L&apos;agence de communication <br /> dévouée aux</h1>
-                        <h1 className={`text-center text-4xl fade-in h-[9vh] text-[#188FA7] font-bold
-                        `} id="">{displayText}</h1>
+            <div className='flex flex-col lg:flex-row lg:items-center px-8 xl:px-12 pt-8' id='page2'>
+                    <div className='xl:px-12 px-2'>
+                        <div className='relative inline-block flex flex-col justify-center'>
+                            <h1 className="text-center text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 text-[#041e42]">Partenaires de croissance pour les </h1>
 
-                        <div className="flex flex-col justify-center items-center pt-12">
-                            <div className="flex items-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-6 rounded-full w-[80vw] md:w-[50vw] lg:mx-0">
-                                <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Un savoir faire à toute épreuve</p>
-                            </div>
-                            <div className="flex items-center border-[1px] border-gray-500 p-3 bg-white/[0.9] mx-6 rounded-full w-[80vw] md:w-[50vw] my-4 lg:my-0 lg:mx-6">
-                                <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Les meilleurs conseillers techniques</p>
-                            </div>
-                            <div className="flex items-center border-[1px] border-gray-500 p-3 bg-white/[0.9]  mx-6 rounded-full w-[80vw] md:w-[50vw] lg:mx-0">
-                                <img src={badgeCheck} alt="badge-check" className="mr-4"/>
-                                <p>Des offres abordables</p>
+                            <div className='relative inline-block flex justify-center xl:block'>
+                                {/* <span className='absolute bottom-0 left-[25%] xl:left-[0%] xl:w-[50%] w-[50%] h-[30%] bg-[#ff66c4] -z-1'></span> */}
+                                <h1 className={`text-start mx-8 text-4xl 2xl:text-7xl lg:text-7xl fade-in h-[9vh] text-[#188FA7] font-bold relative`} id="">{displayText}</h1>
                             </div>
                         </div>
 
-                        <div className="flex justify-center pt-24">
-                            <Link to="/contact">
-                                <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Prendre rendez-vous</button>
+                        <div className='lg:hidden w-full flex justify-center'>
+                            <img src={imgLanding} alt="imgLanding" className='w-[100vw] md:w-1/2'/>
+                        </div>
+
+                        <p className='my-12 text-lg text-center lg:text-start leading-10 mx-2'>
+                        Que vous ayez besoin d&apos;un <span className='text-[#188FA7] font-bold' id='subtitle'>Site Internet</span> , d&apos;une <span className='text-[#188FA7] font-bold' id='subtitle'>Gestion de vos Réseaux Sociaux</span>, de la <span className='text-[#188FA7] font-bold' id='subtitle'>Création de publicités</span> en ligne, ou de toutes ces solutions réunies,</p>
+
+                        <p className='font-bold italic text-4xl text-center mt-2 mb-16 text-[#041e42]'>Nous avons la solution pour vous !</p>
+
+
+                        <div className='flex flex-col justify-center mt-6 items-center'>
+                            <Link to="/contact" className="mb-6">
+                                <button className='btn glass rounded-full bg-red-400 px-6 h-[6vh] border-none text-white text-xl normal-case hover:bg-[#188fa7] hover:glass w-[70vw] md:w-[30vw]'>Contactez-nous !</button>
                             </Link>
+                            <a href="#ancre">
+                                <button className="btn btn-outline rounded-full px-6 h-[6vh] text-[#188fa7] text-xl normal-case w-[70vw] md:w-[30vw]">Nos Tarifs <img src={flecheBas} alt="arrow-down" /></button>
+                            </a>
+                            
                         </div>
+                    </div>
+                    <div className='hidden lg:block'>
+                        <img src={imgLanding} alt=""/>
                     </div>
                 </div>
 
-                <div className='page page_1' id="page2">
-                    <div className='flex flex-col lg:pt-20 text-gray-900 flex flex-col items-center' id="price">
-                    <h2 className='text-4xl mx-[15vw] font-bold text-center my-8 text-[#041e42] py-12 shadowtext'>Les offres les plus <span className="text-[#188FA7]">Avantageuses</span>, selon vos besoins et votre budget</h2>
-                        <div className="flex flex-col w-full justify-around">
-                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
-                                <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
-                                <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
-                                <div className="flex justify-center items-center">
-                                    <p className="text-[45px] uppercase text-[#188FA7]" id="font-price">44.99€</p>
-                                    <div className="text-xl text-[#188FA7] ml-2" id="">
-                                        <p>par</p>
-                                        <p>mois</p>
-                                    </div>
-                                </div>
-                                <div className="flex justify-center my-6 text-md text-center">
-                                    <p className="">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
-                                </div>
-                                <div className="flex justify-center my-6">
-                                    <Link to="/contact">
-                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
-                                <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Réseaux sociaux</h1>
-                                <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
-                                <div className="flex justify-center items-center">
-                                    <p className="text-[45px] uppercase text-[#188FA7]" id="font-price">144.99€</p>
-                                    <div className="text-xl text-[#188FA7] ml-2" id="">
-                                        <p>par</p>
-                                        <p>mois</p>
-                                    </div>
-                                </div>
-                                <div className="flex justify-center my-6 text-md text-center">
-                                    <p className="">Développez votre notoriété et gagnez en crédibilité pour attirer de nouveaux clients.</p>
-                                </div>
-                                <div className="flex justify-center my-6">
-                                    <Link to="/contact">
-                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
-                                    </Link>
-                                </div>
-                            </div>
 
-                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
-                            <div className="flex flex-col items-center justify-around" id="pub">
-                                <div className="my-12 mx-12">
-                                    <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Vos publicités en ligne</h1>
-                                    <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
-                                    <div className="flex justify-center items-center">
-                                        <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase text-[#188FA7]" id="font-price">130€</p>
-                                        <div className="text-2xl text-[#188FA7] ml-2" id="">
-                                            <p>par</p>
-                                            <p>mois</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex justify-center mt-8 2xl:my-6">
-                                        <Link to="/services/publicites">
-                                            <button className="btn rounded-full bg-red-400 border-red-400 text-white">Je lance mon projet <img src={arrow} alt="" /> </button>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="text-center text-xl mx-4">
-                                    <h1 className="mb-8 text-2xl text-red-400" id="font-menu">Propulsez votre visibilité !</h1>
-                                    <p>
-                                        La publicité en ligne offre une visibilité essentielle à la croissance de toute entreprise dans l&apos;économie numérique.
-                                    </p>
-                                </div>
-                                <div className="text-2xl text-[#188fa7] flex flex-col justify-center items-center mt-4" id="font-menu">
-                                    <img src={banniereRS} alt="" />
-                                </div>
-                                
-
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
+                
 
 
                 <div className='page page_2 flex items-center justify-center' id="page3">
@@ -311,12 +244,99 @@ export default function TestHomePageMobile() {
                     </div>
                 </div>
 
+                <div className='page page_1' id="page2">
+                    <div className='flex flex-col text-gray-900 flex flex-col items-center' id="price">
+                    <h2 className='text-4xl mx-[10vw] font-bold text-center text-[#041e42] pb-12 shadowtext'>Les offres les plus <span className="text-[#188FA7]">Avantageuses</span>, selon vos besoins et votre budget</h2>
+                        <div className="flex flex-col w-full justify-around">
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
+                                <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Site Web</h1>
+                                <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
+                                <div className="flex justify-center items-center">
+                                    <p className="text-[45px] uppercase text-[#188FA7]" id="font-price">44.99€</p>
+                                    <div className="text-xl text-[#188FA7] ml-2" id="">
+                                        <p>par</p>
+                                        <p>mois</p>
+                                    </div>
+                                </div>
+                                <div className="flex justify-center my-6 text-md text-center">
+                                    <p className="">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
+                                </div>
+                                <div className="flex flex-col items-center justify-center my-6">
+                                    <Link to="/contact">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white mb-4 w-[60vw] md:w-[30vw]">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    </Link>
+                                    <Link to="/services/web">
+                                        <button className="btn rounded-full btn-outline border-[#188fa7] text-[#188fa7] w-[60vw] md:w-[30vw]">Plus d&apos;infos</button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
+                                <h1 className="text-center text-2xl text-[#188FA7]" id="font-menu">Réseaux sociaux</h1>
+                                <h1 className="text-center text-xl mt-8 uppercase tracking-wide">A Partir De</h1>
+                                <div className="flex justify-center items-center">
+                                    <p className="text-[45px] uppercase text-[#188FA7]" id="font-price">144.99€</p>
+                                    <div className="text-xl text-[#188FA7] ml-2" id="">
+                                        <p>par</p>
+                                        <p>mois</p>
+                                    </div>
+                                </div>
+                                <div className="flex justify-center my-6 text-md text-center">
+                                    <p className="">Développez votre notoriété et gagnez en crédibilité pour attirer de nouveaux clients.</p>
+                                </div>
+                                <div className="flex flex-col items-center justify-center my-6">
+                                    <Link to="/contact">
+                                        <button className="btn rounded-full bg-red-400 border-red-400 text-white mb-4 w-[60vw] md:w-[30vw]">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                    </Link>
+                                    <Link to="/services/gestion-rs">
+                                        <button className="btn rounded-full btn-outline border-[#188fa7] text-[#188fa7] w-[60vw] md:w-[30vw]">Plus d&apos;infos</button>
+                                    </Link>
+                                </div>
+                            </div>
+
+                            <div className="bg-white rounded-2xl p-8 shadow-2xl m-8 md:mx-48">
+                            <div className="flex flex-col items-center justify-around" id="pub">
+                                <div className="my-12 mx-12">
+                                    <h1 className="text-center text-xl 2xl:text-2xl text-[#188FA7]" id="font-menu">Vos publicités en ligne</h1>
+                                    <h1 className="text-center text-lg mt-8 uppercase tracking-widest">A Partir De</h1>
+                                    <div className="flex justify-center items-center">
+                                        <p className="2xl:text-[80px] text-6xl 2xl:text-[70px] uppercase text-[#188FA7]" id="font-price">130€</p>
+                                        <div className="text-2xl text-[#188FA7] ml-2" id="">
+                                            <p>par</p>
+                                            <p>mois</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col justify-center mt-8 2xl:my-6">
+                                        <Link to="/services/publicites">
+                                            <button className="btn rounded-full bg-red-400 border-red-400 text-white w-[60vw] md:w-[30vw] mb-4">Je lance mon projet <img src={arrow} alt="" /> </button>
+                                        </Link>
+                                        <Link to="/services/publicites">
+                                        <button className="btn rounded-full btn-outline border-[#188fa7] text-[#188fa7] w-[60vw] md:w-[30vw]">Plus d&apos;infos</button>
+                                    </Link>
+                                    </div>
+                                </div>
+                                <div className="text-center text-xl mx-4">
+                                    <h1 className="mb-8 text-2xl text-red-400" id="font-menu">Propulsez votre visibilité !</h1>
+                                    <p>
+                                        La publicité en ligne offre une visibilité essentielle à la croissance de toute entreprise dans l&apos;économie numérique.
+                                    </p>
+                                </div>
+                                <div className="text-2xl text-[#188fa7] flex flex-col justify-center items-center mt-4" id="font-menu">
+                                    <img src={banniereRS} alt="" />
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
 
 
                 <div className='page page_4' id="page5">
                     <div className='text-start mt-6'>
                         <div className="flex flex-col justify-center items-center">
-                            <h2 className='text-lg uppercase text-center mt-8 text-[#188FA7]'>pourquoi choisir M&V Digital Developpement ?</h2>
+                            <h2 className='text-lg uppercase text-center mt-8 mx-4 text-[#188FA7]'>pourquoi choisir M&V Digital Developpement ?</h2>
                             <h1 className='text-3xl mx-8 md:mx-24 mt-4 text-center font-bold text-[#041e42]'>Une communication sur mesure, pour des professionnels comme <span className="text-[#188FA7] font-bold"> Vous</span> !</h1>
                         </div>
                     </div>
@@ -341,7 +361,7 @@ export default function TestHomePageMobile() {
                         <h1 className="text-center text-4xl font-bold mt-12 mb-24" id="subtitle">Échangez gratuitement avec <br /> l&apos;un de nos experts</h1>
                         <div className="flex flex-col justify-center mt-12 items-center">
                             <Link to="/services">
-                                <button className="btn btn-outline bg-white rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">En savoir plus</button>
+                                <button className="btn btn-outline bg-white rounded-full border-[#188fa7] text-[#188fa7] px-14 text-lg mb-6">Découvrir</button>
                             </Link>
                             <Link to="/contact">
                                 <button className="btn rounded-full px-12 text-lg mb-12 bg-red-400 text-white border-red-400">Contactez-nous</button>

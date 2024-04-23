@@ -21,51 +21,7 @@ export default function Equipe() {
 
     return (
         <>
-        <div className=''>
-
-
-            <div className='flex flex-col justify-center items-center lg:flex-row lg:pt-24 lg:pb-12 xl:px-48' id='page2'>
-                <img src={logo} alt="logo" className='my-8 fade-left w-1/4'/>
-                <p className="text-center lg:text-start p-8 fade-right">Bienvenue chez M&V Digital Developpement ! Notre équipe dynamique de deux passionnés de développement web et de marketing digital combine créativité et expertise technique pour concevoir des solutions digitales percutantes. Avec nous, chaque projet devient une aventure unique, façonnée par notre engagement à exceller. Transformons ensemble vos idées en succès numériques !</p>
-            </div>
-
-            {/* <div className='lg:flex justify-around items-center py-12 bg-[#188FA7]'>
-                <div className={`flex justify-center bg-white flex-col items-center mx-6 lg:w-[40%] 2xl:w-[25%] border-[1px] border-[#188FA7]`}>
-                    <img src={thomas} alt="thomas" className='lg:w-[100%]'/>
-                    <div className='px-8 pb-12 bg-white'>
-                        <p className='text-2xl my-2 text-start font-bold uppercase my-6 text-[#188FA7]'>Thomas Vannier</p>
-                        <p className='text-lg my-2 text-start uppercase font-bold mb-8'>Développeur Back End</p>
-                        <p className=''>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dolores excepturi inventore, blanditiis expedita tempora quia quisquam omnis mollitia quas, error ipsam iste! Dolorum ullam dolore minus rerum quibusdam, eius repudiandae, accusamus nam molestias quod eligendi rem eos aut error iure non aperiam voluptates nostrum veritatis dignissimos necessitatibus ipsum sit.</p>
-                        <div className='flex mt-12 items-center'>
-                            <Link to="https://www.facebook.com/thomas.vannier.75" target='_blank'>
-                                <img src={fb} alt="fb" className='mr-4' />
-                            </Link>
-
-                            <Link to="https://www.linkedin.com/in/thomas-vannier-499145282/" target='_blank'>
-                                <img src={linkedin} alt="linkedin" />
-                            </Link>
-                        </div>
-                    </div>
-                        
-                </div>
-                <div className={`flex justify-center bg-white flex-col items-center mt-8 lg:mt-0 mx-6 lg:w-[40%] 2xl:w-[25%]  border-[1px] border-[#188FA7]`}>
-                    <img src={robin} alt="robin" className='lg:w-[100%]'/>
-                    <div className='px-8 pb-12 bg-white'>
-                        <p className='text-2xl my-2 text-start font-bold uppercase my-6 text-[#188FA7]'>Robin Marche</p>
-                        <p className='text-lg my-2 text-start uppercase font-bold mb-8'>Développeur Front End</p>
-                        <p className=''>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dolores excepturi inventore, blanditiis expedita tempora quia quisquam omnis mollitia quas, error ipsam iste! Dolorum ullam dolore minus rerum quibusdam, eius repudiandae, accusamus nam molestias quod eligendi rem eos aut error iure non aperiam voluptates nostrum veritatis dignissimos necessitatibus ipsum sit.</p>
-                        <div className='flex mt-12 items-center'>
-                            <Link to="https://www.facebook.com/reed.sensi" target='_blank'>
-                                <img src={fb} alt="fb" className='mr-4' />
-                            </Link>
-                            
-                            <Link to="https://www.linkedin.com/in/robin-marche/" target='_blank'>
-                                <img src={linkedin} alt="linkedin" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
+        <div className='mt-8'>
 
             <div className='bg-red-200 mx-4 p-4 xl:mx-36 2xl:mx-48 xl:p-12 xl:my-12 rounded-2xl mb-12' id='bg_equipe'>
                 <div className='mt-12 mb-20'>
@@ -110,6 +66,11 @@ export default function Equipe() {
                         </div>
                     </div>
                 </div> 
+            </div>
+
+            <div className='flex flex-col justify-center items-center lg:flex-row lg:pt-12 lg:pb-12 xl:px-48' id='page2'>
+                <img src={logo} alt="logo" className='my-8 fade-left w-1/4'/>
+                <p className="text-center lg:text-start p-8 fade-right lg:text-xl">Notre équipe dynamique de deux passionnés de développement web et de marketing digital combine créativité et expertise technique pour concevoir des solutions digitales percutantes. Avec nous, chaque projet devient une aventure unique, façonnée par notre engagement à exceller. Transformons ensemble vos idées en succès numériques !</p>
             </div>
 
             <div className='mx-6 my-12 lg:my-24 xl:mx-48 flex flex-col lg:flex-row lg:mx-24'>

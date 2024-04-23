@@ -27,9 +27,9 @@ export default function PublicitesPage() {
     return (
         <div>
             <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40" id='page2'>
-                <h2 className="uppercase">Studio graphique</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]">Obtenez un <span className="text-[#188FA7]">maximum </span> de contrats grâce à la publicité en ligne</h1>
-                <p className="lg:text-xl">Lancez des campagnes publicitaires ciblées avec un budget maîtrisé pour générer plus de ventes.</p>
+                <h2 className="uppercase">ATELIER DE DESIGN GRAPHIQUE</h2>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]">Maximisez vos contrats avec des <span className="text-[#188FA7]">stratégies </span>de publicité en ligne efficaces</h1>
+                <p className="lg:text-xl">Déployez des campagnes publicitaires précises et budgetisées pour augmenter vos ventes.</p>
                 <div className="mt-12">
                     <Link to="/contact">
                         <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Contactez-nous</button>
@@ -44,15 +44,15 @@ export default function PublicitesPage() {
                             <div className='my-8 flex justify-start items-center'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Visez le <span className='text-[#188FA7]'>top</span> de la visibilité</h1>
+                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Atteignez le <span className='text-[#188FA7]'>sommet</span>  en matière de visibilité </h1>
 
                             <div className="flex items-center justify-center mt-12">
                                 <div>
                                     <div className="flex items-center">
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
                                         <div>
-                                            <p className="font-bold text-lg">Opportunités</p>
-                                            <p>Tirez profit de tout le potentiel de la publicité en ligne.</p>
+                                            <p className="font-bold text-lg">Potentiel</p>
+                                            <p>Exploitez pleinement les avantages de la publicité numérique.</p>
                                         </div>
 
                                     </div>
@@ -60,16 +60,16 @@ export default function PublicitesPage() {
                                     <div className="flex items-center my-6">
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Savoir-faire</p>
-                                            <p>Bénéficiez des compétences de nos experts en référencement.</p>
+                                            <p className="font-bold text-lg">Expertise</p>
+                                            <p>Profitez de l&apos;expertise pointue de nos spécialistes en référencement.</p>
                                         </div>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Retour sur investissement</p>
-                                            <p>Générez des résultats rapides à la hauteur de vos ambitions.</p>
+                                            <p className="font-bold text-lg">Rendement</p>
+                                            <p>Obtenez des résultats immédiats qui correspondent à vos objectifs.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -81,8 +81,8 @@ export default function PublicitesPage() {
 
             <div id='page4bg'>
                 <div className='text-center xl:mx-[25vw] px-4'>
-                    <h2>DES CAMPAGNES GÉRÉES PAR DES EXPERTS SEA</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Un <span className='text-[#188FA7]'>expert </span>en référencement dédié à votre projet</h1>
+                    <h2>VOS CAMPAGNES PILOTÉES PAR DES SPÉCIALISTES SEA</h2>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Un <span className='text-[#188FA7]'>spécialiste </span>SEA dédié à votre projet</h1>
                 </div>
 
                 <div className='px-4 lg:flex lg:justify-center lg:items-center mt-12'>
@@ -92,31 +92,31 @@ export default function PublicitesPage() {
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
                                 <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Accompagnement complet avec un expert dédié</p>
-                                <p>Pour un suivi sur-mesure et personnalisé dédié à votre activité.</p>
+                                <p>Bénéficiez d&apos;un accompagnement personnalisé et adapté spécifiquement à votre secteur.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start my-8 lg:my-6'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Choix des meilleurs mots-clés en fonction de votre activité</p>
-                                <p>Pour garantir le meilleur retour sur investissement, nous définissons les mots-clés les mieux adaptés.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Sélection optimale de mots-clés pour votre secteur</p>
+                                <p>Nous identifions les mots-clés les plus efficaces pour maximiser votre retour sur investissement.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start mb-8 lg:mb-6'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Création de campagnes et annonces percutantes</p>
-                                <p>Pour être dans les meilleurs résultats Google rapidement.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Développement de campagnes et annonces impactantes </p>
+                                <p>Atteignez rapidement les premières positions sur Google.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Suivi de vos campagnes en temps réel</p>
-                                <p>Mesurez l&apos;efficacité de vos campagnes facilement et rapidement avec notre outil de suivi.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Monitoring en continu de vos campagnes </p>
+                                <p>Évaluez la performance de vos campagnes en temps réel grâce à notre système de suivi avancé.</p>
                             </div>
                         </div>
                     </div>
@@ -152,26 +152,45 @@ export default function PublicitesPage() {
                     <div className='mb-12'>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                                Pourquoi devrais-je choisir MV Digital pour mes campagnes sur Facebook Ads et Instagram ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Faire appel à MV Digital pour vos campagnes publicitaires sur Facebook et Instagram offre des bénéfices significatifs pour votre présence en ligne. Nos spécialistes utilisent des outils avancés, comme le pixel Facebook, pour affiner le ciblage de votre audience et améliorer les conversions de vos publicités.
+                                <br /><br />
+                                Nous nous engageons également à produire et partager du contenu qui capte l&apos;attention et fidélise votre communauté, tout en veillant à ce que chaque pièce reflète fidèlement votre marque. Chez MV Digital, nous travaillons en étroite collaboration avec vous pour valider tout contenu avant publication, assurant ainsi que tout matériel diffusé soit parfaitement aligné avec vos objectifs et valeurs de marque.
+                                <br /><br />
+                                En somme, travailler avec MV Digital vous garantit non seulement une expertise en publicité numérique mais aussi une cohérence et un contrôle accru sur l&apos;image de votre entreprise.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none my-6">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Quels sont les principaux avantages de la publicité en ligne pour une entreprise ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>La publicité en ligne offre plusieurs avantages clés pour les entreprises :
+                                Ciblage précis : Les plateformes en ligne permettent de cibler des audiences spécifiques en fonction de critères détaillés tels que l&apos;âge, le sexe, la localisation, les intérêts, et plus encore. <br /><br />
+                                Mesurabilité : Les résultats des campagnes publicitaires en ligne peuvent être mesurés avec précision, permettant aux entreprises de voir le nombre de clics, de conversions, et d&apos;interactions. <br /><br />
+                                Flexibilité : Les campagnes peuvent être ajustées en temps réel en fonction de leur performance, ce qui permet une optimisation continue.
+                                Coût-efficacité : Comparativement aux médias traditionnels, la publicité en ligne peut être moins coûteuse et les budgets peuvent être ajustés selon les besoins. <br /><br />
+                                Portée étendue : Internet offre une portée globale, permettant aux marques de toucher des clients potentiels au-delà des frontières géographiques.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Quelle est la différence entre la publicité payante (SEA) et le référencement naturel (SEO), et comment peuvent-ils se compléter ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>SEA (Search Engine Advertising) consiste à acheter des annonces qui apparaissent dans les résultats de recherche pour obtenir une visibilité immédiate. C&apos;est efficace pour générer un trafic ciblé rapidement. SEO (Search Engine Optimization), en revanche, vise à améliorer le classement organique d’un site via l&apos;optimisation du contenu et de la structure, offrant une visibilité durable sans coût direct par clic.
+                                <br /><br />
+                                Combiner SEA et SEO permet de maximiser la stratégie de marketing numérique : le SEA pour des résultats immédiats, surtout lors de lancements ou promotions, et le SEO pour construire une présence en ligne solide sur le long terme. Ensemble, ils offrent une approche complète pour attirer à la fois un trafic rapide et soutenu.</p>
+                            </div>
+                        </div>
+                        <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
+                            <div className="collapse-title text-xl font-medium">
+                            Comment la publicité en ligne peut-elle aider à cibler mon audience spécifique ?
+                            </div>
+                            <div className="collapse-content"> 
+                                <p>La publicité en ligne utilise des outils et des technologies avancés pour segmenter le public en fonction de divers critères démographiques, comportementaux et psychographiques. Les plateformes comme Google Ads et Facebook Ads permettent aux annonceurs de spécifier qui verra leurs annonces en fonction de facteurs tels que l&apos;âge, le lieu, les intérêts, les habitudes de navigation, et les interactions précédentes avec la marque. <br /><br /> Cela aide à maximiser l&apos;efficacité des campagnes en s&apos;assurant que les annonces sont vues par les personnes les plus susceptibles d&apos;être intéressées par le produit ou service offert, améliorant ainsi le retour sur investissement et minimisant le gaspillage de ressources.</p>
                             </div>
                         </div>
                     </div>
