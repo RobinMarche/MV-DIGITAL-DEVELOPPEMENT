@@ -27,8 +27,9 @@ export default function GestionRS() {
         <div>
             <div className="text-center py-12 px-12 lg:pt-24 xl:px-60 lg:px-32" id='page2'>
                 <h2 className="uppercase">GESTION DE VOS PUBLICATIONS sur les réseaux sociaux</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]"><span className="text-[#188FA7]">Rassurez vos clients </span>avec des réseaux sociaux professionnels</h1>
-                <p className="lg:text-xl">Affirmez votre expertise avec des comptes Instagram et Facebook professionnels gérés par des experts.</p>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]"><span className="text-[#188FA7]">Inspirez confiance</span> à vos clients grâce à une présence professionnelle sur les réseaux sociaux
+</h1>
+                <p className="lg:text-xl">Démontrez votre savoir-faire à travers des comptes Instagram et Facebook gérés de manière experte.</p>
                 <div className="mt-12">
                     <Link to="/contact">
                         <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Contactez-nous</button>
@@ -39,19 +40,20 @@ export default function GestionRS() {
             <div className='page page_2 flex items-center justify-center' id="page3">
                     <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-center'>
                         <div className='lg:w-1/2 fade-right'>
-                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>FACILITEZ LA GESTION DE VOS RÉSEAUX SOCIAUX</h2>
+                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>SIMPLIFIEZ LA GESTION DE VOS RÉSEAUX SOCIAUX</h2>
                             <div className='my-8 flex justify-start items-center'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Présentez votre entreprise sous son <span className='text-[#188FA7]'>meilleur jour</span></h1>
+                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Mettez en lumière les qualités de
+ <span className='text-[#188FA7]'> votre entreprise</span></h1>
 
                             <div className="flex items-center justify-center mt-12">
                                 <div>
                                     <div className="flex items-center">
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
                                         <div>
-                                            <p className="font-bold text-lg">Design</p>
-                                            <p>Confiez la création de vos publications à nos experts et mettez en avant vos expertises.</p>
+                                            <p className="font-bold text-lg">Création visuelle</p>
+                                            <p>Laissez nos spécialistes concevoir vos publications pour valoriser votre savoir-faire.</p>
                                         </div>
 
                                     </div>
@@ -59,16 +61,16 @@ export default function GestionRS() {
                                     <div className="flex items-center my-6">
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Régularité</p>
-                                            <p>Avec 4 à 8 posts publiés chaque mois, profitez de tous les avantages d’une communication de qualité.</p>
+                                            <p className="font-bold text-lg">Consistance</p>
+                                            <p>Bénéficiez d&apos;une communication de qualité avec 4 à 8 posts mensuels réguliers.</p>
                                         </div>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Image de marque</p>
-                                            <p>Soyez présents sur les réseaux sociaux et rassurez vos clients avec une image professionnelle</p>
+                                            <p className="font-bold text-lg">Présence de marque</p>
+                                            <p>Renforcez votre présence sur les réseaux sociaux et projetez une image professionnelle auprès de vos clients.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -80,9 +82,9 @@ export default function GestionRS() {
 
             <div id='page4bg'>
                 <div className='text-center xl:mx-[25vw] px-4'>
-                    <h2>VOTRE STRATÉGIE SOCIALE GÉRÉE PAR NOTRE AGENCE DE COMMUNICATION</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Le vrai <span className='text-[#188FA7]'>plus</span> pour votre crédibilité</h1>
-                    <p className='xl:px-16'>Profitez de toute la puissance des réseaux sociaux en toute sérénité !</p>
+                    <h2>VOTRE STRATÉGIE SUR LES RÉSEAUX SOCIAUX PILOTÉE PAR NOTRE AGENCE</h2>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>Un atout <span className='text-[#188FA7]'>majeur</span> pour renforcer votre crédibilité</h1>
+                    <p className='xl:px-16'>Exploitez le potentiel complet des réseaux sociaux avec tranquillité !</p>
                 </div>
 
                 <div className='px-4 lg:flex lg:justify-center lg:items-center mt-12'>
@@ -91,24 +93,24 @@ export default function GestionRS() {
                         <div className='flex items-start'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Un compte Facebook et Instagram actif et professionnel</p>
-                                <p>Nos équipes s’occupent pour vous de la création et de l’optimisation de votre page Facebook et Instagram.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Gestion professionnelle de vos comptes Facebook et Instagram </p>
+                                <p>Laissez nos professionnels prendre en charge la création et l&apos;amélioration de vos pages Facebook et Instagram.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start my-8 lg:my-6'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Une ligne éditoriale adaptée à votre activité</p>
-                                <p>Nous choisissons parmi de nombreuses thématiques qui ont fait leurs preuves celles qui seront le mieux adaptées à votre entreprise.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Contenu éditorial sur-mesure pour votre secteur</p>
+                                <p>Nous sélectionnons des thèmes éprouvés et les adaptons parfaitement aux besoins de votre entreprise.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>4 à 8 publications par mois</p>
-                                <p>Grâce à nos experts, bénéficiez d’une communication régulière et de qualité pour développer votre notoriété !</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>4 à 8 publications mensuelles</p>
+                                <p>Nos experts garantissent une communication fréquente et efficace pour accroître votre visibilité.</p>
                             </div>
                         </div>
                     </div>

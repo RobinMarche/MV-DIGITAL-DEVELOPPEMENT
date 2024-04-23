@@ -335,6 +335,26 @@ html{
     filter: brightness(40%);
 }
 
+#bg_price{
+    background-image: url('./assets/rose.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bg_price2{
+    background-image: url('./assets/bleu.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bg_price3{
+    background-image: url('./assets/orange.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 /******************************** ANIMATION NOS SERVICES HOMEPAGE ******************************************/

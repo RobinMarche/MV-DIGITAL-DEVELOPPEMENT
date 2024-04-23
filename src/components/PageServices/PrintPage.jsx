@@ -28,8 +28,8 @@ export default function PrintPage() {
         <div>
             <div className="text-center py-12 px-12 lg:pt-24 xl:px-80 lg:px-40" id='page2'>
                 <h2 className="uppercase">Studio graphique</h2>
-                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]" >Un logo percutant pour <span className="text-[#188FA7]">rassurer ses clients</span></h1>
-                <p className="lg:text-xl">Unique et impactant, un logo pro vous permet de vous différencier et de marquer les esprits de vos clients.</p>
+                <h1 className="text-4xl font-bold my-6 lg:text-6xl xl:text-8xl text-[#041e42]" >Un logo accrocheur pour asseoir la<span className="text-[#188FA7]"> présence de votre marque</span></h1>
+                <p className="lg:text-xl">Un logo professionnel, à la fois singulier et captivant, favorise votre distinction sur le marché et grave votre image dans la mémoire de vos clients.</p>
                 <div className="mt-12">
                     <Link to="/contact">
                         <button className="bg-red-600 text-white rounded-full normal-case px-8 py-4 text-xl">Contactez-nous</button>
@@ -40,19 +40,19 @@ export default function PrintPage() {
             <div className='page page_2 flex items-center justify-center' id="page3">
                     <div className='flex flex-col justify-center items-center p-8 lg:p-16 lg:flex-row lg:justify-center'>
                         <div className='lg:w-1/2 fade-right'>
-                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>UNE IDENTITÉ VISUELLE UNIQUE AVEC NOTRE AGENCE DE GRAPHISME</h2>
+                            <h2 className='text-lg uppercase text-start mt-8 text-[#188FA7]'>FORGEZ UNE IMAGE VISUELLE UNIQUE AVEC NOTRE AGENCE DE CRÉATION GRAPHIQUE</h2>
                             <div className='my-8 flex justify-start items-center'>
                                 <div className='bg-[#022a60] w-[15vw] h-[2px] lg:w-[12vw] 2xl:w-[8vw]'></div>
                             </div>
-                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Partagez votre <span className='text-[#188FA7]'>meilleure</span> image</h1>
+                            <h1 className="text-4xl text-[#041e42] font-bold text-center lg:text-start lg:text-5xl">Mettez en avant votre image la plus <span className='text-[#188FA7]'>valorisante</span></h1>
 
                             <div className="flex items-center justify-center mt-12">
                                 <div>
                                     <div className="flex items-center">
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
                                         <div>
-                                            <p className="font-bold text-lg">Un logo personnalisé</p>
-                                            <p>Obtenez un logo 100% personnalisé adapté à votre activité.</p>
+                                            <p className="font-bold text-lg">Un logo sur mesure</p>
+                                            <p>Créez un logo entièrement personnalisé, conçu pour correspondre parfaitement à votre secteur d&apos;activité.</p>
                                         </div>
 
                                     </div>
@@ -60,16 +60,16 @@ export default function PrintPage() {
                                     <div className="flex items-center my-6">
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Un graphiste dédié</p>
-                                            <p>Bénéficiez du savoir-faire et de la créativité d&apos;un graphiste dédié.</p>
+                                            <p className="font-bold text-lg">Votre graphiste attitré</p>
+                                            <p>Profitez de l&apos;expertise et de l&apos;innovation d&apos;un graphiste qui vous est exclusivement dédié.</p>
                                         </div>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
                                         <div>
-                                            <p className="font-bold text-lg">Une identité de marque cohérente</p>
-                                            <p>Construisez une identité visuelle cohérente sur l&apos;ensemble de vos supports.</p>
+                                            <p className="font-bold text-lg">Une identité de marque uniforme</p>
+                                            <p>Élaborez une identité visuelle uniforme qui se reflète à travers tous vos supports de communication.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -80,10 +80,10 @@ export default function PrintPage() {
             </div>
 
             <div id='page4bg'>
-                <div className='text-center xl:mx-[25vw] px-4'>
+                <div className='text-center xl:mx-[20vw] px-4'>
                     <h2>POURQUOI FAIRE APPEL À M&V DIGITAL DEVELOPPEMENT POUR SON IDENTITÉ VISUELLE ?</h2>
-                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'>M&V Digital Developpement vous propose une solution <span className='text-[#188FA7]'>clé en main</span></h1>
-                    <p className='xl:px-16'>Quels que soient vos besoins, nous avons une solution pour vous !</p>
+                    <h1 className='text-4xl font-bold my-6 lg:text-5xl xl:text-7xl text-[#041e42]'> M&V Digital Développement vous propose une prestation intégrale et<span className='text-[#188FA7]'> sur mesure</span>.</h1>
+                    <p className='xl:px-16'> Peu importe vos exigences, nous disposons de la solution adaptée à vos besoins !</p>
                 </div>
 
                 <div className='px-4 lg:flex lg:justify-center lg:items-center mt-12'>
@@ -92,24 +92,24 @@ export default function PrintPage() {
                         <div className='flex items-start'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Prise de brief par un graphiste dédié</p>
-                                <p>Afin de créer un logo qui vous corresponde, définissez vos attentes et vos objectifs avec un expert ALEO.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Consultation initiale avec votre graphiste attitré</p>
+                                <p>Pour concevoir un logo qui reflète parfaitement votre identité, précisez vos besoins et vos ambitions lors d&apos;un entretien avec un spécialiste MV digital.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start my-8 lg:my-6'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Création graphique</p>
-                                <p>Votre graphiste dédié vous proposera différentes pistes créatives pour que vous puissiez choisir celle qui vous convient le plus.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Processus de création graphique</p>
+                                <p>Votre graphiste personnel élaborera plusieurs concepts créatifs, vous permettant ainsi de sélectionner l&apos;option qui vous correspond le mieux.</p>
                             </div>
                         </div>
 
                         <div className='flex items-start'>
                             <img src={badgeCheck} alt="badge"/>
                             <div className='ml-2'>
-                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Retouches et livraison</p>
-                                <p>Nous vous envoyons différentes propositions de logo et effectuons des retouches afin qu’il soit conforme à vos attentes.</p>
+                                <p className='font-bold text-md lg:text-xl text-[#188FA7]'>Révisions et finalisation</p>
+                                <p>Nous vous présenterons diverses ébauches de logo et procéderons aux ajustements nécessaires pour qu&apos;il réponde parfaitement à vos critères.</p>
                             </div>
                         </div>
                     </div>

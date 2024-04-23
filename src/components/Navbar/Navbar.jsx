@@ -1,5 +1,5 @@
 import logo from '../../assets/logoMV.svg';
-import logoWhite from '../../assets/logo_white.png';
+import logoWhite from '../../assets/MVLogoWhite.svg';
 import phone from '../../assets/phone.png';
 import menu from '../../assets/menu.png';
 import xcircle from '../../assets/x.png';
@@ -49,7 +49,11 @@ export default function Navbar() {
                 </div>
                 <div>
                     <Link to="/">
-                        <p className='text-xl' id='title-navbar'>M&V</p>
+                        {!showMenu ?
+                        <img src={logo} alt="logo" className='w-[17vw]' />
+                        :
+                        <img src={logoWhite} alt="logo" className='w-[17vw]' />
+                        }
                     </Link>
                 </div>
                 <div onClick={handlePhoneClick}>
@@ -126,7 +130,7 @@ export default function Navbar() {
             >
                 <div className="desktop-container bg-[#188FA7] pb-24 min-h-screen absolute lg:w-2/3 top-0 right-0 shadow-2xl flex flex-col">
                     <ul className='text-white text-end text-[400%] uppercase flex flex-col font-bold lg:text-start lg:pl-24 lg:text-[400%]' id='font-menu'>
-                        <img src={logoWhite} alt="logo" className='w-[15vw] py-12'/>
+                        <img src={logoWhite} alt="logo" className='w-[15vw] pt-12'/>
                         <Link to="/" onClick={handleMenu}>
                             <li className='pr-4 text-container hover:cursor-pointer hover:text-[#041e42]'>Accueil</li>       
                         </Link>
