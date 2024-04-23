@@ -7,7 +7,6 @@ import check from '../../assets/check.png';
 import timer from '../../assets/timer.png';
 import chart from '../../assets/bar-chart-3.png';
 import arrow from '../../assets/move-right.png';
-import badgeCheck from '../../assets/badge-check.png';
 import Service1 from '../../assets/web_web_mobile.jpg';
 import Service2 from '../../assets/phone.jpg';
 import Service3 from '../../assets/34109.jpg';
@@ -16,9 +15,13 @@ import contact from '../../assets/40001.jpg';
 import fleche from '../../assets/fleche.svg';
 import banniereRS from '../../assets/banniere_logo_RS.svg';
 import imgLanding from '../../assets/bgHero2.svg';
-import logo from '../../assets/logoMV.svg';
-import sparkles from '../../assets/sparkles.svg';
 import flecheBas from '../../assets/fleche-bas.svg';
+
+import googleLogo from '../../assets/google-logo.webp';
+import facebookLogo from '../../assets/facebook-logo.webp';
+import WPLogo from '../../assets/WP-logo.webp';
+import VSCLogo from '../../assets/VSC-logo.webp';
+import hostingerLogo from '../../assets/hostinger-logo.webp';
 
 import emailjs from '@emailjs/browser';
 
@@ -362,10 +365,28 @@ export default function TestHomePageScroll() {
                             </Link>
                         </div>
                     </div>
-                    
                 </div>
 
-                
+                <div className="mt-24">
+                    <div>
+                        <h1 className="text-4xl 2xl:text-5xl text-center font-bold text-[#041e42]">Nos Partenaires</h1>
+                    </div>
+                    {/* <div className="h-[1px] bg-black mx-96 my-12"></div> */}
+                    <div className="flex items-center justify-around my-24 xl:mx-48">
+                        <img src={googleLogo} alt="googleLogo" className="w-[12vw]"/>
+                        <div className="h-[10vh] w-[1px] bg-black"></div>
+                        <img src={facebookLogo} alt="facebookLogo" className="w-[12vw]"/>
+                        <div className="h-[10vh] w-[1px] bg-black"></div>
+                        <img src={WPLogo} alt="WPLogo" className="w-[12vw]"/>
+                        <div className="h-[10vh] w-[1px] bg-black"></div>
+                        <img src={VSCLogo} alt="VSCLogo" className="w-[12vw]"/>
+                        <div className="h-[10vh] w-[1px] bg-black"></div>
+                        <img src={hostingerLogo} alt="hostingerLogo" className="w-[12vw]"/>
+                    </div>
+                    {/* <div className="h-[1px] bg-black mx-96 my-12"></div> */}
+
+                </div>
+
 
 
                 <div className="relative h-[110vh] mt-24" id="page2">
@@ -456,10 +477,6 @@ export default function TestHomePageScroll() {
                         </div>
                     </div>
                 </div>
-
-
-
-
 
                 {messageForm !== "" && 
                     <div className="toast">

@@ -54,7 +54,7 @@ export default function PageServices() {
                         <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Web et Web Mobile</h1>
                         <p className='my-6'>Votre présence en ligne est cruciale. Nous concevons des sites web fonctionnels, esthétiques et adaptés à vos besoins spécifiques. Que ce soit une vitrine, un site e-commerce ou une application web, nous utilisons les dernières technologies pour assurer une expérience utilisateur optimale.</p>
                         <Link to="/services/web">
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
+                            <button className='btn rounded-full bg-[#188fa7] font-bold text-white'>Découvrir</button>
                         </Link>
                     </div>
 
@@ -63,7 +63,7 @@ export default function PageServices() {
                         <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Logo et supports imprimés</h1>
                         <p className='my-6'>Explorez une expérience utilisateur immersive et intuitive avec notre conception UX, où chaque élément est soigneusement orchestré pour créer une synergie harmonieuse entre fonctionnalité et esthétique, redéfinissant ainsi la manière dont vous interagissez avec notre site web.</p>
                         <Link to="/services/print">
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
+                            <button className='btn rounded-full bg-[#188fa7] font-bold text-white'>Découvrir</button>
                         </Link>
                     </div>
 
@@ -72,7 +72,7 @@ export default function PageServices() {
                         <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Gestion des réseaux sociaux</h1>
                         <p className='my-6'>Donnez une dimension tangible à votre identité avec notre expertise en impression. Chez M&V Digital Developpement, nous sublimons vos idées sur papier, créant des supports print exceptionnels qui captivent et laissent une impression mémorable.</p>
                         <Link to="/services/gestion-rs">
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
+                            <button className='btn rounded-full bg-[#188fa7] font-bold text-white'>Découvrir</button>
                         </Link>
                     </div>
 
@@ -81,7 +81,7 @@ export default function PageServices() {
                         <h1 className='font-bold text-2xl text-[#188FA7] tracking-widest' id='subtitle'>Publicités en ligne</h1>
                         <p className='my-6'>De la création d&apos;identité visuelle à la gestion de campagnes publicitaires, notre équipe créative s&apos;engage à donner vie à votre histoire de manière captivante. Nous concevons des messages impactants et des stratégies de communication cohérentes pour renforcer votre positionnement sur le marché.</p>
                         <Link to="/services/publicites">
-                            <button className='font-bold text-blue-500'>En savoir plus</button>
+                            <button className='btn rounded-full bg-[#188fa7] font-bold text-white'>Découvrir</button>
                         </Link>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ export default function PageServices() {
             </div>
         </div>
 
-        <div className='mx-6 lg:mx-24 xl:mx-48 my-24 flex flex-col lg:flex-row items-center justify-around'>
+        <div className='mx-6 lg:mx-24 xl:mx-48 mt-24 flex flex-col lg:flex-row items-center justify-around'>
                 <div className='flex flex-col justify-center items-center lg:w-[50%] lg:items-start lg:mr-12'>
                     <h2 className='font-bold'>FAQ</h2>
                     <h1 className='my-6 text-3xl text-center lg:text-start font-bold capitalize'>Questions fréquemments posées</h1>
