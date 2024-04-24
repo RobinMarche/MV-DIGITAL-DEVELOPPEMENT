@@ -108,12 +108,22 @@ export default function TestHomePageScroll() {
           );
       };
 
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+    };
+    
+    useEffect(() => {
+        scrollToTop();
+    }, []);
+
 
     return(
         <>
 
             <div id='container' style={{ scrollBehavior: 'smooth' }} className="relative w-[100vw]">
-                <div className='flex flex-col lg:flex-row lg:items-center px-8 xl:px-12 pt-16 h-[100vh]' id='page2'>
+                <div className='flex flex-col lg:flex-row lg:items-center px-8 xl:px-12 pt-16 h-[100vh]' id='page3bg'>
                     <div className='xl:px-12 px-2 lg:max-w-[50vw]'>
                         <div className='relative inline-block flex flex-col justify-center'>
                             <h1 className="text-start text-4xl lg:text-6xl 2xl:text-7xl font-bold mx-8 text-[#041e42]">Partenaires de croissance pour les </h1>
@@ -128,9 +138,12 @@ export default function TestHomePageScroll() {
                         </div>
 
                         <p className='my-12 text-lg text-center w-2/3 lg:text-start leading-10 mx-8'>
-                        Que vous ayez besoin d&apos;un <span className='text-[#188FA7] font-bold' id='subtitle'>Site Internet</span> , d&apos;une <span className='text-[#188FA7] font-bold' id='subtitle'>Gestion de vos Réseaux Sociaux</span>, de la <span className='text-[#188FA7] font-bold' id='subtitle'>Création de publicités</span> en ligne, ou de toutes ces solutions réunies,</p>
+                        Vous avez besoin d&apos;un <span className='text-[#188FA7] font-bold' id='subtitle'>Site Internet</span> , d&apos;une <span className='text-[#188FA7] font-bold' id='subtitle'>Gestion de vos Réseaux Sociaux</span>, de la <span className='text-[#188FA7] font-bold' id='subtitle'>Création de publicités</span> en ligne, ou de toutes ces solutions réunies ?</p>
 
-                        <p className='font-bold italic text-4xl text-center mt-2 mb-16 text-[#041e42]'>Nous avons la solution pour vous !</p>
+                        <div className="relative">
+                            <span className="absolute bg-red-400 left-[15%] bottom-0 h-[30%] w-[70%]"></span>
+                            <p className='font-bold italic text-4xl text-center mt-2 mb-16 text-[#041e42] relative'>Nous avons la solution pour vous !</p>
+                        </div>
 
 
                         <div className='flex flex-row justify-center mt-6 items-center'>
@@ -168,17 +181,17 @@ export default function TestHomePageScroll() {
                                 <div>
                                     <div className="flex items-center">
                                         <img src={visibility} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4"/>
-                                        <p className="font-bold text-lg" id="subtitle">Augmentez votre visibilité pour attirer davantage de clients</p>
+                                        <p className="italic text-lg" id="subtitle">Augmentez votre visibilité pour attirer davantage de clients</p>
                                     </div>
 
                                     <div className="flex items-center 2xl:my-6 my-6">
                                         <img src={chart} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
-                                        <p className="font-bold text-lg" id="subtitle">Accédez à des résultats tangibles et rapides, mesurables à chaque étape</p>
+                                        <p className="italic text-lg" id="subtitle">Accédez à des résultats tangibles et rapides, mesurables à chaque étape</p>
                                     </div>
 
                                     <div className="flex items-center">
                                         <img src={timer} alt="" className="bg-[#188FA7] rounded-full p-2 mr-4" />
-                                        <p className="font-bold text-lg" id="subtitle">Optimisez votre temps grâce à notre équipe totalement dévouée à votre projet</p>
+                                        <p className="italic text-lg" id="subtitle">Optimisez votre temps grâce à notre équipe totalement dévouée à votre projet</p>
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +268,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                 </div>
                                 <div className="flex justify-center my-6 text-lg 2xl:text-xl text-center">
-                                    <p className="font-bold italic" id="subtitle">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
+                                    <p className="italic" id="subtitle">Boostez votre activité grâce à <br /> votre site internet clé en main.</p>
                                 </div>
                                 <div className="flex justify-center my-2 2xl:my-6">
                                     <Link to="/contact">
@@ -277,7 +290,7 @@ export default function TestHomePageScroll() {
                                     </div>
                                 </div>
                                 <div className="flex justify-center my-6 text-lg 2xl:text-xl text-center">
-                                    <p className="font-bold italic" id="subtitle">Développez votre notoriété et gagnez en <br /> crédibilité pour attirer de nouveaux clients.</p>
+                                    <p className="italic" id="subtitle">Développez votre notoriété et gagnez en <br /> crédibilité pour attirer de nouveaux clients.</p>
                                 </div>
                                 <div className="flex justify-center my-2 2xl:my-6">
                                     <Link to="/contact">

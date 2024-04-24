@@ -82,7 +82,7 @@ export default function Footer() {
                     <p className='hover:text-black'>Mentions Légales</p>
                 </Link>
                 <p className='lg:mx-4'>-</p>
-                <Link to="/mentions-legales">
+                <Link to="/cgv">
                     <p className='hover:text-black'>Conditions Générales de Vente</p>
                 </Link>
             </div>

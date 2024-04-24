@@ -13,6 +13,8 @@ import GestionRS from "./components/PageServices/GestionRS"
 import PublicitesPage from "./components/PageServices/PublicitésPage"
 import Equipe from "./components/Equipe/Equipe"
 import CookieConsent from "./components/CookieConsent/CookieConsent"
+import MentionsLegales from "./components/MentionsLegales/MentionsLegales"
+import CGV from "./components/CGV/CGV"
 
 import LandingPage from "./components/LandingPage/LandingPage"
 import LandingPageWeb from "./components/LandingPage/LandingPageWeb"
@@ -166,6 +168,28 @@ function App() {
           element={
             <>
               <LandingPageWeb/>
+            </>
+          }
+        />
+
+        <Route
+          path="/mentions-legales"
+          element={
+            <>
+              <Navbar/>
+              <MentionsLegales/>
+              <Footer/>
+            </>
+          }
+        />
+
+        <Route
+          path="/cgv"
+          element={
+            <>
+              <Navbar/>
+              <CGV/>
+              <Footer/>
             </>
           }
         />

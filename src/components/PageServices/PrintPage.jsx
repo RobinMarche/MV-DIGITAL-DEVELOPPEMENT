@@ -141,26 +141,28 @@ export default function PrintPage() {
                     <div className='mb-12'>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Pourquoi est-il avantageux de faire appel à une agence de graphisme pour concevoir mon logo et mes cartes de visite ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Faire appel à une agence spécialisée en graphisme pour créer votre logo et vos cartes de visite offre des avantages significatifs. Un logo professionnellement conçu ne se contente pas de capter l&apos;attention ; il communique également les valeurs fondamentales de votre entreprise et vous distingue de la concurrence. Nos graphistes expérimentés s&apos;assurent que votre identité visuelle transmette le message souhaité de manière claire et efficace.
+                                <br /><br />
+                                Notre agence assure une cohérence visuelle entre tous vos supports de communication, en développant des chartes graphiques qui unifient et renforcent votre marque. En choisissant notre studio, vous bénéficiez d&apos;une direction artistique experte et d&apos;une stratégie de communication visuelle qui amplifie votre présence sur le marché et solidifie votre image de marque.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none my-6">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Quelles informations dois-je fournir pour commencer le design de mon logo ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Pour commencer le design de votre logo, il est important de fournir plusieurs informations clés qui aideront à guider le processus de création. Ces informations incluent le nom de votre entreprise, votre secteur d&apos;activité, vos couleurs préférées et tout élément visuel que vous souhaitez inclure. <br /><br /> Il est également utile de partager votre vision de l&apos;entreprise, les valeurs que vous souhaitez communiquer, et des exemples de logos que vous admirez. Plus vous fournissez de détails, plus il sera facile pour les designers de créer un logo qui répond à vos attentes et qui reflète fidèlement l&apos;identité de votre marque.</p>
                             </div>
                         </div>
                         <div tabIndex={0} className="collapse collapse-arrow border-b-[1px] border-black rounded-none">
                             <div className="collapse-title text-xl font-medium">
-                                Focus me to see content
+                            Offrez-vous des packs combinant logo, cartes de visite et autres supports imprimés ?
                             </div>
                             <div className="collapse-content"> 
-                                <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                                <p>Oui, nous offrons des packs combinés qui incluent la création de logo, de cartes de visite, et d&apos;autres supports imprimés comme des brochures, des flyers, et des en-têtes de lettre. <br /><br />Ces packs sont conçus pour offrir une solution complète et cohérente pour vos besoins en branding et en communication visuelle. En choisissant un pack combiné, vous bénéficiez d&apos;une image de marque uniforme à travers tous vos supports marketing, ce qui renforce l&apos;identité de votre entreprise et améliore votre visibilité sur le marché.</p>
                             </div>
                         </div>
                     </div>

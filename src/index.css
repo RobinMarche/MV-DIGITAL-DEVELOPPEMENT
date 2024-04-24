@@ -262,6 +262,13 @@ html{
     background-repeat: no-repeat;
 }
 
+#page3bg{
+    background-image: url('./assets/triangle_fond3.svg');
+    background-position: left;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
 #question{
     background-image: url('./assets/question.jpg');
     background-position: center;

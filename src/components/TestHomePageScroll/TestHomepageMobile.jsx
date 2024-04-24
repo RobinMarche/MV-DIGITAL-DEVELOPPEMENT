@@ -133,9 +133,13 @@ export default function TestHomePageMobile() {
                         </div>
 
                         <p className='my-12 text-lg text-center lg:text-start leading-10 mx-2'>
-                        Que vous ayez besoin d&apos;un <span className='text-[#188FA7] font-bold' id='subtitle'>Site Internet</span> , d&apos;une <span className='text-[#188FA7] font-bold' id='subtitle'>Gestion de vos Réseaux Sociaux</span>, de la <span className='text-[#188FA7] font-bold' id='subtitle'>Création de publicités</span> en ligne, ou de toutes ces solutions réunies,</p>
+                        Vous avez besoin d&apos;un <span className='text-[#188FA7] font-bold' id='subtitle'>Site Internet</span> , d&apos;une <span className='text-[#188FA7] font-bold' id='subtitle'>Gestion de vos Réseaux Sociaux</span>, de la <span className='text-[#188FA7] font-bold' id='subtitle'>Création de publicités</span> en ligne, ou de toutes ces solutions réunies ?</p>
 
-                        <p className='font-bold italic text-4xl text-center mt-2 mb-16 text-[#041e42]'>Nous avons la solution pour vous !</p>
+                        <div className="relative">
+                            <span className="absolute bg-red-400 left-[5%] md:left-[15%] md:w-[70%] bottom-0 h-[20%] w-[90%]"></span>
+                            <p className='font-bold italic text-4xl text-center mt-2 mb-16 text-[#041e42] relative'>Nous avons la solution pour vous !</p>
+                        </div>
+
 
 
                         <div className='flex flex-col justify-center mt-6 items-center'>
